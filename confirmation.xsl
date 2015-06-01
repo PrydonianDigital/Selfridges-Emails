@@ -129,12 +129,15 @@ Dear <xsl:value-of select="Title" /><xsl:text> </xsl:text><xsl:value-of select="
 
 										<table class="twelve columns">
 											<tr>
-												<td class="panel center">
+												<td class="panel center" style="text-transform: capitalize;">
 													Delivery to:
+
 <xsl:for-each select="//EmailDataArea">
 
 <xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/DeliveryName" /><xsl:text> </xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/Address1" /><xsl:text>, </xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/Address2" /><xsl:text>, </xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/Address3" /><xsl:text>, </xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City" /><xsl:text>, </xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/County" /><xsl:text>&#10;</xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/PostCode" /><xsl:text>, </xsl:text><xsl:value-of select="Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/CountryCode" />
+
 </xsl:for-each>
+
 												</td>
 												<td class="expander"></td>
 											</tr>
