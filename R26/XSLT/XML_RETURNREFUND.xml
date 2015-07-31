@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="140_ReturnRefunded.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>RETURN_REFUNDED</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mr</Title>
+		<FirstName>1corner1</FirstName>
+		<Surname>1corner2</Surname>
+		<Email>vijay.20886@gmail.com</Email>
+		<ContactNumber>83276872162834</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<ReturnDetails>
+			<OrderId>16000847</OrderId>
+			<ReturnedItems>
+				<ReturnedItem>
+					<SkuCode>30202146</SkuCode>
+					<Description>Master of G Riseman watch</Description>
+					<Brand>G-SHOCK</Brand>
+					<Colour>Black</Colour>
+					<colourSwatch>http://images.selfridges.com/is/image/selfridges/106-73036854-GW92001ER_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+					<Size></Size>
+					<thumbnail>http://images.selfridges.com/is/image/selfridges/106-73036854-GW92001ER_BLACK_M?$PDP_TMB$</thumbnail>
+					<productUrl>http://www.test2.selfridges.com/GB/en/cat/g-shock-master-of-g-riseman-watch_106-73036854-GW92001ER/</productUrl>
+					<Qty>1</Qty>
+					<RefundedTax>20.00</RefundedTax>
+					<Currency>GBP</Currency>
+					<StockStatus></StockStatus>
+				</ReturnedItem>
+				<ReturnedItem>
+					<SkuCode>30202146</SkuCode>
+					<Description>Master of G Riseman watch</Description>
+					<Brand>G-SHOCK</Brand>
+					<Colour>Black</Colour>
+					<colourSwatch>http://images.selfridges.com/is/image/selfridges/106-73036854-GW92001ER_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+					<Size></Size>
+					<thumbnail>http://images.selfridges.com/is/image/selfridges/106-73036854-GW92001ER_BLACK_M?$PDP_TMB$</thumbnail>
+					<productUrl>http://www.test2.selfridges.com/GB/en/cat/g-shock-master-of-g-riseman-watch_106-73036854-GW92001ER/</productUrl>
+					<Qty>1</Qty>
+					<RefundedTax>10.00</RefundedTax>
+					<Currency>GBP</Currency>
+					<StockStatus></StockStatus>
+				</ReturnedItem>
+			</ReturnedItems>
+			<ShippingRefundValue>0.00</ShippingRefundValue>
+			<GiftboxRefundValue>10</GiftboxRefundValue>
+		</ReturnDetails>
+		<PaymentMethods>
+			<PaymentMethod>
+			<TenderType>AMEX</TenderType>
+			<Last4Digits>0005</Last4Digits>
+			<Value>184.95</Value>
+			</PaymentMethod>
+		</PaymentMethods>
+	</EmailDataArea>
+</SFEmailMessages>
