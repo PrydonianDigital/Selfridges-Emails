@@ -15,15 +15,15 @@
 
 <html><body>
 
-<table class="row content" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; margin: 10px 0; padding: 0px;">
+<table class="row content" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; Margin: 10px 0; padding: 0px;">
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-		<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+		<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
 
-			<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; margin: 0 auto; padding: 0;">
+			<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;">
 				<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-					<td class="text-pad autolink mainText" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
+					<td class="text-pad autolink mainText" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
 
-						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
+						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
 
 						<xsl:choose>
 
@@ -31,9 +31,9 @@
 
 							<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px; padding: 0;" align="left">Your recent <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City"/></xsl:if></strong>.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your recent <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City"/></xsl:if></strong>.</p>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px; padding: 0;" align="left">Remember, we can only hold on to it for 5 days from <strong class="name" style="font-weight: bold;">
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Remember, we can only hold on to it for 5 days from <strong class="name" style="font-weight: bold;">
 <xsl:call-template name="formatdate">
 	<xsl:with-param name="datestr" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/LatestDeliveryDate"/>
 </xsl:call-template></strong>. After that, the order will be cancelled and you'll be refunded.</p>
@@ -41,12 +41,12 @@
 								<p><strong style="font-weight: bold;">What next?</strong></p>
 
 								<ul>
-									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</li>
+									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</li>
 								</ul>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px; padding: 0;" align="left">We will be happy to hold this item for you for five days. Please note that you must collect the order yourself in person – we apologise for any inconvenience this may cause.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We will be happy to hold this item for you for five days. Please note that you must collect the order yourself in person – we apologise for any inconvenience this may cause.</p>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0; padding: 4px 0 0 0;" align="left">Thank you for choosing <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> at Selfridges.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you for choosing <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> at Selfridges.</p>
 
 							</xsl:when>
 
@@ -56,9 +56,9 @@
 
 							<xsl:otherwise>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px; padding: 0;" align="left">Your recent order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City"/></xsl:if></strong>.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your recent order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City"/></xsl:if></strong>.</p>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px; padding: 0;" align="left">Remember, we can only hold on to it for 14 days from  <strong style="font-weight: bold;">
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Remember, we can only hold on to it for 14 days from  <strong style="font-weight: bold;">
 								<xsl:call-template name="formatdate">
 									<xsl:with-param name="datestr" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/LatestDeliveryDate"/>
 								</xsl:call-template>
@@ -68,14 +68,14 @@
 								<p><strong style="font-weight: bold;">What next?</strong></p>
 
 								<ul>
-									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone - to the in-store Click &amp; Collect point (<a href="http://www.selfridges.com/content/dispatch-and-delivery" target="_blank" style="color: #545454; text-decoration: underline;">see map</a>). </li>
+									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone - to the in-store Click &amp; Collect point (<a href="http://www.selfridges.com/content/dispatch-and-delivery" target="_blank" style="color: #545454; text-decoration: underline;">see map</a>). </li>
 
-									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px 20px; padding: 0;" align="left">Bring the card you paid with <strong style="font-weight: bold;">or</strong> a valid passport or photo driving licence. If you paid via PayPal or Gift Card, you'll need your passport or photo driving licence.</li>
+									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring the card you paid with <strong style="font-weight: bold;">or</strong> a valid passport or photo driving licence. If you paid via PayPal or Gift Card, you'll need your passport or photo driving licence.</li>
 
-									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0 0 14px 20px; padding: 0;" align="left">If you'd like somebody to collect the order on your behalf, they'll need a copy of this email and their passport or photo driving licence. Unfortunately, if you paid via PayPal, you'll need to collect the order yourself.</li>
+									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">If you'd like somebody to collect the order on your behalf, they'll need a copy of this email and their passport or photo driving licence. Unfortunately, if you paid via PayPal, you'll need to collect the order yourself.</li>
 								</ul>
 
-								<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; margin: 0; padding: 4px 0 0 0;" align="left">Thank you,<br /><strong style="font-weight: bold;">Selfridges</strong></p>
+								<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you,<br /><strong style="font-weight: bold;">Selfridges</strong></p>
 
 							</xsl:otherwise>
 
@@ -84,19 +84,19 @@
 						</xsl:choose>
 
 					</td>
-					<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+					<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
 				</tr>
 			</table>
 
 			<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 				<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-					<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 0px;" align="left" valign="top">
-						<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; margin: 0 auto; padding: 0;">
+					<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px;" align="left" valign="top">
+						<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;">
 							<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-								<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 0px 0px 0px;" align="left" valign="top">
-									<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 18px; letter-spacing: 2px; border-top-style: solid; border-top-color: #e7e7e7; border-top-width: 1px; border-bottom-style: solid; border-bottom-color: #e7e7e7; border-bottom-width: 1px; margin: 0; padding: 10px;" align="center">Your Order</h6>
+								<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 0px;" align="left" valign="top">
+									<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 18px; letter-spacing: 2px; border-top-style: solid; border-top-color: #e7e7e7; border-top-width: 1px; border-bottom-style: solid; border-bottom-color: #e7e7e7; border-bottom-width: 1px; Margin: 0; padding: 10px;" align="center">Your Order</h6>
 								</td>
-								<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+								<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
 							</tr>
 						</table>
 					</td>
@@ -145,7 +145,7 @@
 
 <table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-		<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; margin: 0; padding: 0px 0px 10px 0px;" align="left" valign="top">
+		<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 10px 0px;" align="left" valign="top">
 			<xsl:call-template name="orderTotals"/>
 		</td>
 	</tr>
