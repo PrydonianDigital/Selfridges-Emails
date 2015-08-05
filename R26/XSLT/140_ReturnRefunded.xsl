@@ -23,23 +23,15 @@
 
 						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
 
-<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'GOOD']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'RTV']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'RECOUP']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'REFURB']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'WRITE-OFF']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'CLICK &amp; COLLECT – NON_COLLECTION']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'REJECTED']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'NOT PRESENT'])">ALL</xsl:if>
+						<xsl:choose>
 
-<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'GOOD']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'RTV']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'RECOUP']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'REFURB']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'WRITE-OFF']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'CLICK &amp; COLLECT – NON_COLLECTION']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'REJECTED']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'NOT PRESENT'])">SOME</xsl:if>
-
-<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'REJECTED']) or (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'NOT PRESENT']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'GOOD']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'RTV']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'RECOUP']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'REFURB']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'WRITE-OFF']) and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus = 'CLICK &amp; COLLECT – NON_COLLECTION'])">NONE</xsl:if>
-
-
-
-							<xsl:choose>
-
-							<xsl:when test="(reason = 'GOOD') or (reason = 'RTV') or (reason = 'RECOUP') or (reason = 'REFURB') or (reason = 'WRITE-OFF') or (reason = 'CLICK &amp; COLLECT – NON_COLLECTION') and not(reason = 'REJECTED') and not(reason = 'NOT PRESENT')">
+							<xsl:when test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='a') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='b')">
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. <xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != ''">This includes your delivery charges, please see the details below.</xsl:if></p>
 
 							</xsl:when>
 
-							<xsl:when test="(reason = 'GOOD') or (reason = 'RTV') or (reason = 'RECOUP') or (reason = 'REFURB') or (reason = 'WRITE-OFF') or (reason = 'CLICK &amp; COLLECT – NON_COLLECTION') or (reason = 'REJECTED') or (reason = 'NOT PRESENT')">
+							<xsl:when test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='a') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='b')">
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. We've processed a refund for some of your items, please see the details below.</p>
 
@@ -53,8 +45,12 @@
 
 						</xsl:choose>
 
+						<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']) and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b'])">
+
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left"><xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher'">It will usually take 5 days for your account to be credited, however some payment providers can take longer.</xsl:if>
 							<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'"> As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</xsl:if></p>
+
+						</xsl:if>
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">For more details about our refund policy, please see our <a href="http://www.selfridges.com/content/refunds-and-returns" target="_blank" style="color: #545454; text-decoration: underline;">Refunds &amp; Returns</a> information.</p>
 
@@ -67,7 +63,7 @@
 	</tr>
 </table>
 
-<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='GOOD') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='RTV') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='RECOUP') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='REFURB') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='WRITE-OFF') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='CLICK &amp; COLLECT – NON_COLLECTION') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='REJECTED') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='NOT PRESENT')">
+<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']">
 
 	<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -87,7 +83,7 @@
 	<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
 		<!-- show refunded items -->
-		<xsl:for-each select="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='GOOD') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='RTV') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='RECOUP') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='REFURB') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='WRITE-OFF') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='CLICK &amp; COLLECT – NON_COLLECTION') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='REJECTED') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='NOT PRESENT')">
+		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']">
 			<xsl:call-template name="item"/>
 		</xsl:for-each>
 		<!-- end show refunded items -->
@@ -100,7 +96,7 @@
 
 </xsl:if>
 
-<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='GOOD') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='RTV') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='RECOUP') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='REFURB') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='WRITE-OFF') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='CLICK &amp; COLLECT – NON_COLLECTION') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='REJECTED') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='NOT PRESENT')">
+<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b']">
 
 	<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">

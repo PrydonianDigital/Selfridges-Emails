@@ -31,7 +31,7 @@
 					<Qty>1</Qty>
 					<RefundedTax>0.00</RefundedTax>
 					<Currency>GBP</Currency>
-					<StockStatus>GOOD</StockStatus>
+					<StockStatus>a</StockStatus>
 				</ReturnedItem>
 				<ReturnedItem>
 					<SkuCode>30202146</SkuCode>
@@ -45,13 +45,18 @@
 					<Qty>1</Qty>
 					<RefundedTax>0.00</RefundedTax>
 					<Currency>GBP</Currency>
-					<StockStatus>REJECTED</StockStatus>
+					<StockStatus>a</StockStatus>
 				</ReturnedItem>
 			</ReturnedItems>
 			<ShippingRefundValue></ShippingRefundValue>
 			<GiftboxRefundValue>12</GiftboxRefundValue>
 		</ReturnDetails>
 		<PaymentMethods>
+			<PaymentMethod>
+				<TenderType>Master</TenderType>
+				<Last4Digits>1234</Last4Digits>
+				<Value>184.95</Value>
+			</PaymentMethod>
 			<PaymentMethod>
 				<TenderType>eVoucher</TenderType>
 				<Last4Digits>1234</Last4Digits>
