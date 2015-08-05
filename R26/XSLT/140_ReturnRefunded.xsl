@@ -23,10 +23,34 @@
 
 						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
 
-						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong> has made its way back to us and we've processed your refund. </p>
+						<xsl:choose>
 
-						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">It will usually take 5 days for your account to be credited, however some payment providers can take longer.
-							<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'">If you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</xsl:if></p>
+							<xsl:when test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='a') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='b')">
+
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. <xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != ''">This includes your delivery charges, please see the details below.</xsl:if></p>
+
+							</xsl:when>
+
+							<xsl:when test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='a') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='b')">
+
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. We've processed a refund for some of your items, please see the details below.</p>
+
+							</xsl:when>
+
+							<xsl:otherwise>
+
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong> Unfortunately, we have been unable to process a refund. Our Customer Services team will be in touch shortly to explain why.</p>
+
+							</xsl:otherwise>
+
+						</xsl:choose>
+
+						<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']) and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b'])">
+
+						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left"><xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher'">It will usually take 5 days for your account to be credited, however some payment providers can take longer.</xsl:if>
+							<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'"> As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</xsl:if></p>
+
+						</xsl:if>
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">For more details about our refund policy, please see our <a href="http://www.selfridges.com/content/refunds-and-returns" target="_blank" style="color: #545454; text-decoration: underline;">Refunds &amp; Returns</a> information.</p>
 
@@ -39,34 +63,67 @@
 	</tr>
 </table>
 
-<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
-	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-		<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px;" align="left" valign="top">
-			<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;">
-				<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-					<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 0px;" align="left" valign="top">
-						<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 18px; letter-spacing: 2px; border-top-style: solid; border-top-color: #e7e7e7; border-top-width: 1px; border-bottom-style: solid; border-bottom-color: #e7e7e7; border-bottom-width: 1px; Margin: 0; padding: 10px;" align="center">Your Return Refund Details</h6>
-					</td>
-					<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
+<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']">
 
-<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
+	<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
+		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+			<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px;" align="left" valign="top">
+				<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;">
+					<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+						<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 0px;" align="left" valign="top">
+							<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 18px; letter-spacing: 2px; border-top-style: solid; border-top-color: #e7e7e7; border-top-width: 1px; border-bottom-style: solid; border-bottom-color: #e7e7e7; border-bottom-width: 1px; Margin: 0; padding: 10px;" align="center">Item(s) Refunded</h6>
+						</td>
+						<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 
-	<!-- show refunded items -->
-	<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem">
-		<xsl:call-template name="item"/>
-	</xsl:for-each>
-	<!-- end show refunded items -->
+	<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
-</table>
+		<!-- show refunded items -->
+		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']">
+			<xsl:call-template name="item"/>
+		</xsl:for-each>
+		<!-- end show refunded items -->
 
-<!-- show refunded totals -->
-<xsl:call-template name="orderTotals"/>
-<!-- end show refunded totals -->
+	</table>
+
+	<!-- show refunded totals -->
+	<xsl:call-template name="orderTotals"/>
+	<!-- end show refunded totals -->
+
+</xsl:if>
+
+<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b']">
+
+	<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
+		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+			<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px;" align="left" valign="top">
+				<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;">
+					<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+						<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 0px;" align="left" valign="top">
+							<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 18px; letter-spacing: 2px; border-top-style: solid; border-top-color: #e7e7e7; border-top-width: 1px; border-bottom-style: solid; border-bottom-color: #e7e7e7; border-bottom-width: 1px; Margin: 0; padding: 10px;" align="center">Item(s) Not Refunded</h6>
+						</td>
+						<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
+
+		<!-- show refunded items -->
+		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b']">
+			<xsl:call-template name="item"/>
+		</xsl:for-each>
+		<!-- end show refunded items -->
+
+	</table>
+
+</xsl:if>
 
 </body></html>
 
