@@ -31,7 +31,7 @@
 					<Qty>1</Qty>
 					<RefundedTax>0.00</RefundedTax>
 					<Currency>GBP</Currency>
-					<StockStatus>a</StockStatus>
+					<StockStatus>b</StockStatus>
 				</ReturnedItem>
 				<ReturnedItem>
 					<SkuCode>30202146</SkuCode>
