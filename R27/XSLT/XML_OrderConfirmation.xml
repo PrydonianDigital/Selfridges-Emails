@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="30_OrderConfirmation.xsl"?>
+
+<SFEmailMessages>
+<emailHeader>
+	<emailType>ORDER_RECEIVED</emailType>
+</emailHeader>
+<Recipient>
+	<Title>Mr</Title>
+	<FirstName>Anthony</FirstName>
+	<Surname>Barrow</Surname>
+	<Email>abarrow@salmon.com</Email>
+	<ContactNumber>07123456789</ContactNumber>
+	<MobileNumber/>
+	<CommunicationPreference>email</CommunicationPreference>
+</Recipient>
+<EmailDataArea>
+	<Order>
+		<OrderHeader>
+			<OrderId>268501</OrderId>
+			<OrderStatus>C</OrderStatus>
+			<OrderPrice>132.83</OrderPrice>
+			<OrderDiscount>0.00</OrderDiscount>
+			<OrderTax>0.00</OrderTax>
+			<ShippingPrice>14.85</ShippingPrice>
+			<ShippingTax>2.48</ShippingTax>
+			<Currency>GBP</Currency>
+		</OrderHeader>
+		<OrderDeliveryGroups>
+			<OrderDeliveryGroup>
+				<DeliveryGroupId>268501-01</DeliveryGroupId>
+				<Status>R</Status>
+				<DeliveryAddress>
+					<DeliveryName>Mr Anthony Barrow</DeliveryName>
+					<Address1>64</Address1>
+					<Address2>Clarendon road</Address2>
+					<Address3/>
+					<City>Watford</City>
+					<County>Herts</County>
+					<PostCode>WD17 1LA</PostCode>
+					<CountryCode>GB</CountryCode>
+					<DeliveryInstruction/>
+					<ContactPhone>01923 320000</ContactPhone>
+					<HomePhone>01923 320000</HomePhone>
+					<MobilePhone>01923 320000</MobilePhone>
+					<Email/>
+				</DeliveryAddress>
+				<DeliveryMethod>STANDARD</DeliveryMethod>
+				<EarliestDeliveryDate>20130815</EarliestDeliveryDate>
+				<EarliestDeliveryTimeSlotEnd>153000</EarliestDeliveryTimeSlotEnd>
+				<LatestDeliveryDate>20130815</LatestDeliveryDate>
+				<LatestDeliveryTimeSlotEnd>153000</LatestDeliveryTimeSlotEnd>
+				<Price>132.83</Price>
+				<Discount>0.00</Discount>
+				<Tax>0.00</Tax>
+				<ShippingPrice>14.85</ShippingPrice>
+				<ShippingTax>2.48</ShippingTax>
+				<Currency>GBP</Currency>
+				<hasWonderRoomItems>True</hasWonderRoomItems>
+				<Items>
+					<Item>
+						<SkuCode>78236516</SkuCode>
+						<Description>Lewes leather laptop bag</Description>
+						<Brand>SIMON CARTER</Brand>
+						<Colour>Black</Colour>
+						<colourSwatch>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_SW?$ORDERS_SWATCH$</colourSwatch>
+						<Size/>
+						<thumbnail>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_M?$PDP_THMBNL$</thumbnail>
+						<productUrl>http://www.selfridges.com/en/simon-carter-lewes-leather-laptop-bag_111-73050784-78236509</productUrl>
+						<Qty>1</Qty>
+						<UnitPrice>58.99</UnitPrice>
+						<TotalPrice>58.99</TotalPrice>
+						<Discount>0.00</Discount>
+						<Tax>9.83</Tax>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Status>R</Status>
+						<PaymentStatus>Pending</PaymentStatus>
+						<WonderRoomItem>False</WonderRoomItem>
+						<WonderRoomBrand/>
+						<TrackingCode/>
+						<giftMessage/>
+						<giftBox>false</giftBox>
+						<Personalization>
+							<Text>Tony</Text>
+							<Colour>Green</Colour>
+							<Font>Arial</Font>
+						</Personalization>
+					</Item>
+					<Item>
+						<SkuCode>78236516</SkuCode>
+						<Description>Lewes leather laptop bag</Description>
+						<Brand>SIMON CARTER</Brand>
+						<Colour>Black</Colour>
+						<colourSwatch>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_SW?$ORDERS_SWATCH$</colourSwatch>
+						<Size/>
+						<thumbnail>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_M?$PDP_THMBNL$</thumbnail>
+						<productUrl>http://www.selfridges.com/en/simon-carter-lewes-leather-laptop-bag_111-73050784-78236509</productUrl>
+						<Qty>1</Qty>
+						<UnitPrice>558.99</UnitPrice>
+						<TotalPrice>558.99</TotalPrice>
+						<Discount>0.00</Discount>
+						<Tax>79.83</Tax>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Status>R</Status>
+						<PaymentStatus>Settled</PaymentStatus>
+						<WonderRoomItem>True</WonderRoomItem>
+						<WonderRoomBrand>Selfridges</WonderRoomBrand>
+						<TrackingCode/>
+						<giftMessage/>
+						<giftBox>false</giftBox>
+					</Item>
+					<Item>
+						<SkuCode>12345678</SkuCode>
+						<Description>Giftbox</Description>
+						<Brand/>
+						<Colour/>
+						<colourSwatch/>
+						<Size/>
+						<thumbnail/>
+						<productUrl/>
+						<Qty>1</Qty>
+						<UnitPrice>5.99</UnitPrice>
+						<TotalPrice>5.99</TotalPrice>
+						<Discount>0.00</Discount>
+						<Tax>0.00</Tax>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Status>R</Status>
+						<PaymentStatus>Settled</PaymentStatus>
+						<WonderRoomItem>False</WonderRoomItem>
+						<WonderRoomBrand/>
+						<TrackingCode/>
+						<giftMessage>Happy Birthday</giftMessage>
+						<giftBox>true</giftBox>
+					</Item>
+				</Items>
+			</OrderDeliveryGroup>
+		</OrderDeliveryGroups>
+	</Order>
+</EmailDataArea>
+</SFEmailMessages>
