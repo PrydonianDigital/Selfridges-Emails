@@ -25,13 +25,13 @@
 
 						<xsl:choose>
 
-							<xsl:when test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='a') and not(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='b')">
+							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='ALL'">
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. <xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != ''">This includes your delivery charges, please see the details below.</xsl:if></p>
 
 							</xsl:when>
 
-							<xsl:when test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='a') and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/StockStatus='b')">
+							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='MIXED'">
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. We've processed a refund for some of your items, please see the details below.</p>
 
@@ -45,12 +45,8 @@
 
 						</xsl:choose>
 
-						<xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']) and (SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b'])">
-
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left"><xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher'">It will usually take 5 days for your account to be credited, however some payment providers can take longer.</xsl:if>
 							<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'"> As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</xsl:if></p>
-
-						</xsl:if>
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">For more details about our refund policy, please see our <a href="http://www.selfridges.com/content/refunds-and-returns" target="_blank" style="color: #545454; text-decoration: underline;">Refunds &amp; Returns</a> information.</p>
 
@@ -63,7 +59,7 @@
 	</tr>
 </table>
 
-<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']">
+<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='True']">
 
 	<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -83,7 +79,7 @@
 	<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
 		<!-- show refunded items -->
-		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='a']">
+		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='True']">
 			<xsl:call-template name="item"/>
 		</xsl:for-each>
 		<!-- end show refunded items -->
@@ -96,7 +92,7 @@
 
 </xsl:if>
 
-<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b']">
+<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='False']">
 
 	<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -116,7 +112,7 @@
 	<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
 		<!-- show refunded items -->
-		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockStatus='b']">
+		<xsl:for-each select="SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='False']">
 			<xsl:call-template name="item"/>
 		</xsl:for-each>
 		<!-- end show refunded items -->
