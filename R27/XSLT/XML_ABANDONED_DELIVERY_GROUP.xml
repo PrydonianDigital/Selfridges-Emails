@@ -68,15 +68,15 @@
 							<thumbnail>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_M?$PDP_THMBNL$</thumbnail>
 							<productUrl>http://www.selfridges.com/en/simon-carter-lewes-leather-laptop-bag_111-73050784-78236509</productUrl>
 							<Qty>1</Qty>
-							<UnitPrice>58.99</UnitPrice>
-							<TotalPrice>58.99</TotalPrice>
+							<UnitPrice>558.99</UnitPrice>
+							<TotalPrice>558.99</TotalPrice>
 							<Discount>0.00</Discount>
-							<Tax>9.83</Tax>
+							<Tax>79.83</Tax>
 							<DeductedVAT>0.00</DeductedVAT>
 							<Status>R</Status>
-							<PaymentStatus>Pending</PaymentStatus>
-							<WonderRoomItem>False</WonderRoomItem>
-							<WonderRoomBrand/>
+							<PaymentStatus>Settled</PaymentStatus>
+							<WonderRoomItem>True</WonderRoomItem>
+							<WonderRoomBrand>Selfridges</WonderRoomBrand>
 							<TrackingCode/>
 							<GiftMessage/>
 							<GiftBox/>
@@ -97,7 +97,7 @@
 							<Discount>0.00</Discount>
 							<Tax>79.83</Tax>
 							<DeductedVAT>0.00</DeductedVAT>
-							<Status>R</Status>
+							<Status>X</Status>
 							<PaymentStatus>Settled</PaymentStatus>
 							<WonderRoomItem>True</WonderRoomItem>
 							<WonderRoomBrand>Selfridges</WonderRoomBrand>
@@ -154,7 +154,7 @@
 							<Discount>0.00</Discount>
 							<Tax>9.83</Tax>
 							<DeductedVAT>0.00</DeductedVAT>
-							<Status>R</Status>
+							<Status>X</Status>
 							<PaymentStatus>Pending</PaymentStatus>
 							<WonderRoomItem>False</WonderRoomItem>
 							<WonderRoomBrand/>
