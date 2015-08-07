@@ -6,7 +6,7 @@
 
 <xsl:template name="orderTotals">
 
-	<table class="block-grid two-up orderTotals" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; max-width: 600px; padding: 0;">
+	<table class="block-grid two-up orderTotals" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; max-width: 600px; padding: 0; border-top-width:1px; border-top-style:solid;border-top-color: #e7e7e7;">
 
 	<xsl:choose>
 
