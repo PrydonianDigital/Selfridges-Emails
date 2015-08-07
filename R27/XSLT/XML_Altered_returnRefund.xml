@@ -54,7 +54,8 @@
   </ReturnDetails>
   <PaymentMethods>
    <PaymentMethod>
-    <TenderType>GiftCard</TenderType>
+    <TenderType>AMEX</TenderType>
+    <Last4Digits>1234</Last4Digits>
     <Value>1042.00</Value>
    </PaymentMethod>
   </PaymentMethods>
