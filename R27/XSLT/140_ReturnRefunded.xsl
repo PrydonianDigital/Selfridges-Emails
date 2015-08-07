@@ -31,7 +31,7 @@
 
 							</xsl:when>
 
-							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='MIXED'">
+							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='MIX'">
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. We've processed a refund for some of your items, please see the details below.</p>
 
