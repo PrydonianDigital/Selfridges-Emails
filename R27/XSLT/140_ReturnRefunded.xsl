@@ -27,7 +27,7 @@
 
 							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='ALL'">
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. <xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != ''">This includes your delivery charges, please see the details below.</xsl:if></p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. <xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != '') and (SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != '0.00')">This includes your delivery charges, please see the details below.</xsl:if></p>
 
 							</xsl:when>
 
