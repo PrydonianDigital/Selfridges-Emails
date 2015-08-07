@@ -22,13 +22,13 @@
 				<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
 					Payment method
 				</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
-					<xsl:if test="TenderType !=''"><span><xsl:value-of select="TenderType"/></span> </xsl:if>
+					<xsl:if test="TenderType !=''"><span><xsl:value-of select="TenderType"/> </span></xsl:if>
 					<xsl:choose>
 						<xsl:when test="Last4Digits !=''">
-							<span> (<xsl:value-of select="Last4Digits"/>)</span>
+							<span> (<xsl:value-of select="Last4Digits"/>) </span>
 						</xsl:when>
 						<xsl:otherwise>
-							<span><xsl:call-template name="currency"/><xsl:value-of select="Value"/></span>
+							<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="Value"/> </span>
 						</xsl:otherwise>
 					</xsl:choose>
 				</td>
