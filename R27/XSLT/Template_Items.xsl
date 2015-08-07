@@ -24,7 +24,9 @@
 			<xsl:if test="Size !=''">Size: <span> <xsl:value-of select="translate(Size, $special, $translated)"/></span><br /></xsl:if>
 			<xsl:if test="Qty !=''">Qty: <span> <xsl:value-of select="Qty"/></span></xsl:if><xsl:if test="UnitPrice !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(UnitPrice, '###,###,###,###,###.00')"/></span><br /></xsl:if><xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
 			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if>
-			<xsl:if test="Personalization/Text !=''">Personalisation: <span> "</span><strong style="color:{Personalization/Colour}; font-family: {Personalization/Font}"><xsl:value-of select="translate(Personalization/Text, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
+			<xsl:if test="Personalization/Text !=''">Message: <span> "</span><strong><xsl:value-of select="translate(Personalization/Text, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
+			<xsl:if test="Personalization/Font !=''">Font: <span> "</span><strong><xsl:value-of select="translate(Personalization/Font, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
+			<xsl:if test="Personalization/Colour !=''">Colour: <span> "</span><strong><xsl:value-of select="translate(Personalization/Colour, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 			<xsl:if test="ItemRefundReason !=''">Reason: <span> <xsl:value-of select="translate(ItemRefundReason, $special, $translated)"/></span><br /></xsl:if>
 		</span>
 	</td><td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
