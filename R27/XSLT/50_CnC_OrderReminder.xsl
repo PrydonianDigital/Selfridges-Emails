@@ -40,7 +40,7 @@
 
 								<p><strong style="font-weight: bold;">What next?</strong></p>
 
-								<ul>
+								<ul style="padding: 0 0 0 15px;">
 									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</li>
 								</ul>
 
@@ -67,7 +67,7 @@
 
 								<p><strong style="font-weight: bold;">What next?</strong></p>
 
-								<ul>
+								<ul style="padding: 0 0 0 15px;">
 									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone - to the in-store Click &amp; Collect point (<a href="http://www.selfridges.com/content/dispatch-and-delivery" target="_blank" style="color: #545454; text-decoration: underline;">see map</a>). </li>
 
 									<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring the card you paid with <strong style="font-weight: bold;">or</strong> a valid passport or photo driving licence. If you paid via PayPal or Gift Card, you'll need your passport or photo driving licence.</li>
@@ -94,7 +94,7 @@
 						<table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;">
 							<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 								<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 0px;" align="left" valign="top">
-									<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 18px; letter-spacing: 2px; background: #f5f5f5; Margin: 0; padding: 10px;" align="center">Your Order</h6>
+									<h6 class="yourOrder" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 100; text-align: center; line-height: 21px; word-break: normal; font-size: 14px; letter-spacing: 2px; background: #f5f5f5; Margin: 0; padding: 10px;" align="center">Your Order</h6>
 								</td>
 								<td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
 							</tr>
