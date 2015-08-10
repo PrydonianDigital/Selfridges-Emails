@@ -197,14 +197,6 @@
 				<Last4Digits>1234</Last4Digits>
 				<Value>15.50</Value>
 			</PaymentMethod>
-			<PaymentMethod>
-				<TenderType>EVoucher</TenderType>
-				<Value>15.50</Value>
-			</PaymentMethod>
-			<PaymentMethod>
-				<TenderType>GiftCard</TenderType>
-				<Value>15.50</Value>
-			</PaymentMethod>
 		</PaymentMethods>
 	</EmailDataArea>
 </SFEmailMessages>

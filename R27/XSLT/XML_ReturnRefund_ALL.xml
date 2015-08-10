@@ -49,8 +49,8 @@
      <Currency>GBP</Currency>
     </ReturnedItem>
    </ReturnedItems>
-   <ShippingRefundValue>0.00</ShippingRefundValue>
-   <GiftboxRefundValue>0.00</GiftboxRefundValue>
+   <ShippingRefundValue>10.00</ShippingRefundValue>
+   <GiftboxRefundValue>10.00</GiftboxRefundValue>
   </ReturnDetails>
   <PaymentMethods>
    <PaymentMethod>

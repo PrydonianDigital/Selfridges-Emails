@@ -133,7 +133,7 @@
        <Discount>0.00</Discount>
        <Tax>0.00</Tax>
        <DeductedVAT>0.00</DeductedVAT>
-       <Status>R</Status>
+       <Status>S</Status>
        <PaymentStatus>Pending</PaymentStatus>
        <WonderRoomItem>True</WonderRoomItem>
        <WonderRoomBrand></WonderRoomBrand>
