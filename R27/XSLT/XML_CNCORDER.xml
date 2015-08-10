@@ -82,6 +82,11 @@
        <giftMessage></giftMessage>
        <giftBox>false</giftBox>
        <VATRate>20.00</VATRate>
+       <Personalization>
+	       <Text>Tony</Text>
+	       <Colour>Green</Colour>
+	       <Font>Arial</Font>
+	  </Personalization>
       </Item>
       <Item>
        <SkuCode>47348752</SkuCode>
