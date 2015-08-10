@@ -27,7 +27,7 @@
 
 						<xsl:choose>
 
-							<xsl:when test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'EVoucher'">
+							<xsl:when test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'">
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</p>
 
