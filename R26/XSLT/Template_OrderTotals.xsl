@@ -198,7 +198,7 @@
 			<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
 				<strong style="font-weight: bold;"><xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">Refund </xsl:if>Total</strong>
 			</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
-				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/Value), '###,###,###.00')"/>
+				<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/Value), '###,###,###.00')"/>
 			</td>
 		</tr>
 	</xsl:if>

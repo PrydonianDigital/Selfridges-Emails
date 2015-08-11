@@ -26,6 +26,14 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='SGD'"><span>S&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='HKD'"><span>HK&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='CNY'"><span>&#xa5;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='GBP'"><span>&#xa3;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='USD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='CAD'"><span>C&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='AUD'"><span>AU&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='SGD'"><span>S&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='HKD'"><span>HK&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='CNY'"><span>&#xa5;</span></xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>
