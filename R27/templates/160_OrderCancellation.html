@@ -1,12 +1,23 @@
 [EMV TEXTPART]
 Dear [EMV DYN]FirstName[EMV /DYN],
 
-We are sorry to tell you that the below item from your order [EMV DYN]OrderId[EMV /DYN] has been cancelled. Unfortunately, when we went to dispatch the item to you, it didn't pass our quality checks.
+[EMV IF] (Reason = "Customer Cancellation") [EMV THEN]
+You placed an order with us but had a change of heart. Don't worry, we have cancelled your order [EMV DYN]OrderId[EMV /DYN] and you will not be charged.
 
-We have now processed a refund for this item. It will usually take 5 days for your original payment method to be credited, however some payment providers can take longer. If you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.
+Although payment has not been taken, this may affect your available balance for up to 3 days. In rare instances it could be longer, depending on your payment provider.
+
+If you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.
+
+[EMV /THEN] [EMV ELSE]
+We are sorry to tell you that your order [EMV DYN]OrderId[EMV /DYN] has been cancelled. Unfortunately, when we tried to locate the stock for your order, the item(s) could not be found.  At this point we don’t know if or when more stock will arrive.
 
 We appreciate that this is really disappointing for you. Please know that we really value your custom and are constantly monitoring our standards to prevent this from happening again.
 
+Don't worry, if you paid with a debit or credit card, you won’t be charged for the cancelled item(s). If you paid via Gift Card, eVoucher or Paypal, you will be refunded with an eVoucher in a separate email.
+
+Apologies again for the inconvenience caused.
+
+[EMV /ELSE] [EMV /IF]
 Thank you,
 Selfridges
 
@@ -425,12 +436,11 @@ color: #545454 !important;
 <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 16px; font-size: 11px; Margin: 0; padding: 0;" align="left" valign="top"></td>
 </tr></table></td>
 </tr></table>
-
 <!--table class="row branding" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; Margin-bottom: 0; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top">
 
 <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; width: 580px; vertical-align: top; text-align: left; Margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top">
 
-<img src="http://placehold.it/580x300/ffd603/545454?text=Selfridges" style="outline: none; text-decoration: none; image-rendering: auto; -ms-interpolation-mode: nearest-neighbor; width: auto; max-width: 100%; float: none; clear: both; display: block; Margin: 0;" align="none" /></td>
+<img src="http://placehold.it/580x200/ffd603/545454?text=Selfridges" style="outline: none; text-decoration: none; image-rendering: auto; -ms-interpolation-mode: nearest-neighbor; width: auto; max-width: 100%; float: none; clear: both; display: block; Margin: 0;" align="none" /></td>
 <td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
 </tr></table></td>
 </tr></table-->

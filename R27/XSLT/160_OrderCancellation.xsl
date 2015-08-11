@@ -2,8 +2,6 @@
 
 <xsl:import href="Template_Currency.xsl"/>
 <xsl:import href="Template_Items.xsl"/>
-<xsl:import href="Template_ThisDelivery.xsl"/>
-<xsl:import href="Template_AbandonedDeliveryGroupId.xsl"/>
 
 <xsl:template match="/">
 
@@ -23,16 +21,21 @@
 
 						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
 
-						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left">We are sorry to tell you that part of your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> has been cancelled. Unfortunately, when we tried to locate the stock for your order, the item(s) listed below could not be found. At this point we don’t know if or when more stock will arrive.</p>
+						<xsl:choose>
 
-						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left">We appreciate that this is really disappointing for you. Please know that we really value your custom and are constantly monitoring our standards to prevent this from happening again.</p>
+							<xsl:when test="">
 
-						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left"><xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher') and (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'GiftCard')">Don't worry, if you paid with a debit or credit card, you won’t be charged for the cancelled item(s).</xsl:if>
-							<xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher') or (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'GiftCard')"> If you paid via Gift Card, eVoucher or Paypal, you will be refunded with an eVoucher in a separate email.</xsl:if></p>
 
-						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We'll send you another email when the rest of your order has been dispatched.</p>
 
-						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Apologies again for the inconvenience caused.</p>
+							</xsl:when>
+
+							<xsl:otherwise>
+
+
+
+							</xsl:otherwise>
+
+						</xsl:choose>
 
 						<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you,<br /><strong style="font-weight: bold;">Selfridges</strong></p>
 
@@ -63,7 +66,7 @@
 
 	<xsl:variable name="currentDelivery" select="SFEmailMessages/EmailDataArea/AbandonedDeliveryGroupId" />
 
-	<xsl:for-each select="SFEmailMessages/EmailDataArea/Items/Item[Status='X']">
+	<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item[Status='X']">
 		<xsl:call-template name="item"/>
 	</xsl:for-each>
 
