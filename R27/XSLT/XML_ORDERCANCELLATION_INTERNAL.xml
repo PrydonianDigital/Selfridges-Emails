@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="160_OrderCancellation.xsl"?>
+
+<SFEmailMessages>
+ <emailHeader>
+  <emailType>ORDER_CANCELLATION</emailType>
+ </emailHeader>
+ <Recipient>
+  <Title>Mr</Title>
+  <FirstName>4corner1</FirstName>
+  <Surname>4corner2</Surname>
+  <Email>ginish.joseph@prolifics.com</Email>
+  <ContactNumber>447769359185</ContactNumber>
+  <MobileNumber></MobileNumber>
+  <CommunicationPreference>email</CommunicationPreference>
+ </Recipient>
+ <EmailDataArea>
+  <Reason>Internal</Reason>
+  <Order>
+   <OrderHeader>
+    <OrderId>16001022</OrderId>
+    <OrderStatus>X</OrderStatus>
+    <OrderPrice>0.00</OrderPrice>
+    <OrderDiscount>0.00</OrderDiscount>
+    <OrderTax>0.00</OrderTax>
+    <ShippingPrice>0.00</ShippingPrice>
+    <DeductedVAT>0.00</DeductedVAT>
+    <Currency>GBP</Currency>
+   </OrderHeader>
+   <OrderDeliveryGroups>
+    <OrderDeliveryGroup>
+     <DeliveryGroupId>16001022-01</DeliveryGroupId>
+     <Status>X</Status>
+     <DeliveryAddress>
+      <DeliveryName></DeliveryName>
+      <Address1>The Trafford Centre</Address1>
+      <Address2></Address2>
+      <Address3></Address3>
+      <City>Manchester</City>
+      <County>Lancashire</County>
+      <PostCode>M17 8DA</PostCode>
+      <CountryCode>GB</CountryCode>
+      <DeliveryInstruction></DeliveryInstruction>
+      <ContactPhone></ContactPhone>
+      <HomePhone></HomePhone>
+      <MobilePhone></MobilePhone>
+      <Email></Email>
+     </DeliveryAddress>
+     <hasWonderRoomItems>false</hasWonderRoomItems>
+     <DeliveryMethod>UKSTORE</DeliveryMethod>
+     <EarliestDeliveryDate></EarliestDeliveryDate>
+     <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
+     <LatestDeliveryDate>20150705</LatestDeliveryDate>
+     <LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
+     <Price>0.00</Price>
+     <Discount>0.00</Discount>
+     <Tax>0.00</Tax>
+     <ShippingPrice>0.00</ShippingPrice>
+     <DeductedVAT>0.00</DeductedVAT>
+     <Currency>GBP</Currency>
+     <Items>
+      <Item>
+       <SkuCode>26247861</SkuCode>
+       <Description>Leather credit card slip</Description>
+       <Brand>MULBERRY</Brand>
+       <Colour>Oak</Colour>
+       <colourSwatch>http://images.selfridges.com/is/image/selfridges/217-82025479-RL3433342G110_OAK_SW?$PDP_SWATCH$</colourSwatch>
+       <Size></Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/217-82025479-RL3433342G110_OAK_M?$PDP_TMB$</thumbnail>
+       <productUrl>http://www.test2.selfridges.com/GB/en/cat/mulberry-leather-credit-card-slip_217-82025479-RL3433342G110/</productUrl>
+       <Qty>0</Qty>
+       <UnitPrice>90.00</UnitPrice>
+       <TotalPrice>0.00</TotalPrice>
+       <Discount>0.00</Discount>
+       <Tax>0.00</Tax>
+       <DeductedVAT>0.00</DeductedVAT>
+       <Status>X</Status>
+       <PaymentStatus>Cancelled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode></TrackingCode>
+       <giftMessage></giftMessage>
+       <giftBox>false</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+     </Items>
+    </OrderDeliveryGroup>
+   </OrderDeliveryGroups>
+  </Order>
+ </EmailDataArea>
+</SFEmailMessages>
