@@ -72,7 +72,7 @@
        <Colour>Black</Colour>
        <colourSwatch>http://images.selfridges.com/is/image/selfridges/782-10003-112859_BLACK_SW?$PDP_SWATCH$</colourSwatch>
        <Size>1 Size</Size>
-       <thumbnail>http://images.selfridges.com/is/image/selfridges/782-10003-112859_BLACK_M?$PDP_TMB$</thumbnail>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/782-10003-112859_BLACK_M?$PDP_THMBNL$</thumbnail>
        <productUrl>http://www.test2.selfridges.com/GB/en/cat/ted-baker-exotic-embossed-bifold-leather-wallet_782-10003-112859/</productUrl>
        <Qty>1</Qty>
        <UnitPrice>59.00</UnitPrice>
@@ -96,7 +96,7 @@
        <Colour></Colour>
        <colourSwatch></colourSwatch>
        <Size></Size>
-       <thumbnail>http://images.selfridges.com/is/image/selfridges/918-1000-SLFGIFTBOXING_M_M?$PDP_TMB$</thumbnail>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/918-1000-SLFGIFTBOXING_M?$PDP_THMBNL$</thumbnail>
        <productUrl></productUrl>
        <Qty>1</Qty>
        <UnitPrice>5.00</UnitPrice>
