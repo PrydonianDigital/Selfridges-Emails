@@ -43,7 +43,7 @@
 		</RefundDetails>
 		<PaymentMethods>
         	<PaymentMethod>
-				<TenderType>eVoucher</TenderType>
+				<TenderType>AMEX</TenderType>
 				<Last4Digits>0005</Last4Digits>
 				<Value>242.00</Value>
 			</PaymentMethod>

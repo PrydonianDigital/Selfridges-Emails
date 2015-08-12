@@ -27,7 +27,7 @@
 
 							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='ALL'">
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. <xsl:if test="(SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != '') and (SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue != '0.00')">This includes your delivery charges, please see the details below.</xsl:if></p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>.</p>
 
 							</xsl:when>
 
@@ -39,7 +39,7 @@
 
 							<xsl:otherwise>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong> Unfortunately, we have been unable to process a refund. Our Customer Services team will be in touch shortly to explain why.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. Unfortunately, we have been unable to process a refund. Our Customer Services team will be in touch shortly to explain why.</p>
 
 							</xsl:otherwise>
 
@@ -47,8 +47,6 @@
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left"><xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher') and (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'GiftCard')">It will usually take 5 days for your account to be credited, however some payment providers can take longer.</xsl:if>
 							<xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher') or (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'GiftCard')"> As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</xsl:if></p>
-
-						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">For more details about our refund policy, please see our <a href="http://www.selfridges.com/content/refunds-and-returns" target="_blank" style="color: #545454; text-decoration: underline;">Refunds &amp; Returns</a> information.</p>
 
 						<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you,<br /><strong style="font-weight: bold;">Selfridges</strong></p>
 
@@ -115,6 +113,10 @@
 
 	</table>
 
+</xsl:if>
+
+<xsl:if test="SFEmailMessages/EmailDataArea/RefundType!='NONE'">
+	<xsl:call-template name="orderTotals"/>
 </xsl:if>
 
 </body></html>
