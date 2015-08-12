@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-stylesheet type="text/xsl" href="160_OrderCancellation.xsl"?>
+<?xml-stylesheet type="text/xsl" href="160_OrderCancellationAbandonedDeliveryGroup.xsl"?>
 
 <SFEmailMessages>
  <emailHeader>
@@ -16,7 +16,8 @@
   <CommunicationPreference>email</CommunicationPreference>
  </Recipient>
  <EmailDataArea>
-  <Reason>Internal</Reason>
+	 <AbandonedDeliveryGroupId>16001022-01</AbandonedDeliveryGroupId>
+  <Reason>abandonment</Reason>
   <Order>
    <OrderHeader>
     <OrderId>16001022</OrderId>

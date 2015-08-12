@@ -16,7 +16,9 @@
 
 <html><body>
 
-	<xml:if test="SFEmailMessages/EmailDataArea/Reason = 'Customer Cancellation'">
+	<xsl:choose>
+
+	<xsl:when test="SFEmailMessages/EmailDataArea/Reason = 'Customer Cancellation'">
 
 		<table class="row content" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; Margin: 10px 0; padding: 0px;">
 			<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -42,9 +44,9 @@
 			</tr>
 		</table>
 
-	</xml:if>
+	</xsl:when>
 
-	<xml:if test="SFEmailMessages/EmailDataArea/Reason = 'abandonment'">
+	<xsl:when test="SFEmailMessages/EmailDataArea/Reason = 'abandonment'">
 
 		<table class="row content" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; Margin: 10px 0; padding: 0px;">
 			<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -98,9 +100,13 @@
 
 		</table>
 
-	</xml:if>
+		<!-- show despatched subtotal -->
+		<xsl:call-template name="orderTotals" />
+		<!-- end show despatched subtotal -->
 
-	<xml:if test="SFEmailMessages/EmailDataArea/Reason = ''">
+	</xsl:when>
+
+	<xsl:otherwise>
 
 		<table class="row content" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; Margin: 10px 0; padding: 0px;">
 			<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -140,7 +146,6 @@
 			</tr>
 		</table>
 
-		<xsl:call-template name="AbandonedDeliveryGroupId"/>
 
 		<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
 			<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -179,7 +184,9 @@
 		<xsl:call-template name="orderTotals" />
 		<!-- end show despatched subtotal -->
 
-	</xml:if>
+	</xsl:otherwise>
+
+	</xsl:choose>
 
 </body></html>
 
