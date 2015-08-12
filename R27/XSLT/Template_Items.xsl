@@ -25,10 +25,11 @@
 			<xsl:if test="Size !=''">Size: <span> <xsl:value-of select="translate(Size, $special, $translated)"/></span><br /></xsl:if>
 			<xsl:if test="Qty !=''">Quantity: <span> <xsl:value-of select="Qty"/></span></xsl:if><xsl:if test="UnitPrice !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(UnitPrice, '###,###,###,###,###.00')"/></span><br /></xsl:if><xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
 			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if>
-			<xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Personalisation <br /></strong></xsl:if>
+			<xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Your Personalisation <br /></strong></xsl:if>
+
 			<xsl:if test="Personalization/Text !=''">Text: <span> "</span><strong><xsl:value-of select="translate(Personalization/Text, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 			<xsl:if test="Personalization/Font !=''">Font style: <span> "</span><strong><xsl:value-of select="translate(Personalization/Font, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
-			<xsl:if test="Personalization/Colour !=''">Colour: <span> "</span><strong><xsl:value-of select="translate(Personalization/Colour, $special, $translated)"/></strong><span>"</span></xsl:if>
+			<xsl:if test="Personalization/Colour !=''">Font colour: <span> "</span><strong><xsl:value-of select="translate(Personalization/Colour, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 		</span>
 	</td><td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
 		<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/></strong><br /></xsl:if>
@@ -50,11 +51,12 @@
 			<xsl:if test="Colour !=''">Colour: <span> <xsl:value-of select="translate(Colour, $special, $translated)"/></span><br /> </xsl:if>
 			<xsl:if test="Size !=''">Size: <span> <xsl:value-of select="translate(Size, $special, $translated)"/></span><br /></xsl:if>
 			<xsl:if test="Qty !=''">Quantity: <span> <xsl:value-of select="Qty"/></span></xsl:if><xsl:if test="UnitPrice !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(UnitPrice, '###,###,###,###,###.00')"/></span><br /></xsl:if><xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
-			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if><xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Personalisation <br /></strong></xsl:if>
+			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if>
+			<xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Your Personalisation <br /></strong></xsl:if>
 
 			<xsl:if test="Personalization/Text !=''">Text: <span> "</span><strong><xsl:value-of select="translate(Personalization/Text, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 			<xsl:if test="Personalization/Font !=''">Font style: <span> "</span><strong><xsl:value-of select="translate(Personalization/Font, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
-			<xsl:if test="Personalization/Colour !=''">Colour: <span> "</span><strong><xsl:value-of select="translate(Personalization/Colour, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
+			<xsl:if test="Personalization/Colour !=''">Font colour: <span> "</span><strong><xsl:value-of select="translate(Personalization/Colour, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 		</span>
 	</td><td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
 		<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/></strong><br /></xsl:if>
