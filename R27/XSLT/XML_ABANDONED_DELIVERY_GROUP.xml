@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-stylesheet type="text/xsl" href="80_CnC_AbandonedDeliveryGroup.xsl"?>
+<?xml-stylesheet type="text/xsl" href="160_OrderCancellationAbandonedDeliveryGroup.xsl"?>
 
 <SFEmailMessages>
 	<emailHeader>
@@ -89,7 +89,7 @@
 							<Colour>Black</Colour>
 							<colourSwatch>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_SW?$ORDERS_SWATCH$</colourSwatch>
 							<Size/>
-							<thumbnail>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_M?$PDP_THMBNL$</thumbnail>
+							<thumbnail>https://images.selfridges.com/is/image/selfridges/111-73050784-78236509_BLACK_M?$ORDERS_TMB$</thumbnail>
 							<productUrl>http://www.selfridges.com/en/simon-carter-lewes-leather-laptop-bag_111-73050784-78236509</productUrl>
 							<Qty>1</Qty>
 							<UnitPrice>558.99</UnitPrice>
@@ -195,6 +195,11 @@
 			<PaymentMethod>
 				<TenderType>VISA</TenderType>
 				<Last4Digits>1234</Last4Digits>
+				<Value>15.50</Value>
+			</PaymentMethod>
+			<PaymentMethod>
+				<TenderType>eVoucher</TenderType>
+				<Last4Digits></Last4Digits>
 				<Value>15.50</Value>
 			</PaymentMethod>
 		</PaymentMethods>

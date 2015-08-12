@@ -17,7 +17,7 @@
  </Recipient>
  <EmailDataArea>
 	 <AbandonedDeliveryGroupId>16001022-01</AbandonedDeliveryGroupId>
-  <Reason>abandonment</Reason>
+  <Reason></Reason>
   <Order>
    <OrderHeader>
     <OrderId>16001022</OrderId>

@@ -16,7 +16,7 @@
   <CommunicationPreference>email</CommunicationPreference>
  </Recipient>
  <EmailDataArea>
-  <RefundType>NONE</RefundType>
+  <RefundType>ALL</RefundType>
   <ReturnDetails>
    <OrderId>319544</OrderId>
    <ReturnedItems>
@@ -31,7 +31,7 @@
      <productUrl>http://www.slfst2p.selfridges.com/GB/en/cat/herve-leger-bandage-dress_238-3001172-HLT6I277/</productUrl>
      <Qty>1.0</Qty>
      <RefundedTax>0.00</RefundedTax>
-     <StockState>False</StockState>
+     <StockState>True</StockState>
      <Currency>GBP</Currency>
     </ReturnedItem>
     <ReturnedItem>
@@ -45,13 +45,18 @@
      <productUrl>http://www.slfst2p.selfridges.com/GB/en/cat/herve-leger-bandage-dress_238-3001172-HLT6I277/</productUrl>
      <Qty>1.0</Qty>
      <RefundedTax>0.00</RefundedTax>
-     <StockState>False</StockState>
+     <StockState>True</StockState>
      <Currency>GBP</Currency>
     </ReturnedItem>
    </ReturnedItems>
-   <ShippingRefundValue>0.00</ShippingRefundValue>
-   <GiftboxRefundValue>0.00</GiftboxRefundValue>
+   <ShippingRefundValue>1.00</ShippingRefundValue>
+   <GiftboxRefundValue>5.00</GiftboxRefundValue>
   </ReturnDetails>
-
+  <PaymentMethods>
+   <PaymentMethod>
+    <TenderType>GiftCard</TenderType>
+    <Value>1042.00</Value>
+   </PaymentMethod>
+  </PaymentMethods>
  </EmailDataArea>
 </SFEmailMessages>
