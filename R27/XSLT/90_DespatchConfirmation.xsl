@@ -51,7 +51,7 @@
 								<xsl:choose>
 
 									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/trackingURL!=''">
-										Simply <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">click here</a> to track your parcel.
+										Want to keep an eye on it? Find your <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">tracking information here</a>.
 									</xsl:when>
 									<xsl:otherwise>
 										Tracking information is available for most items. To find yours, simply sign in to <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">My Account</a> and go to My Orders.

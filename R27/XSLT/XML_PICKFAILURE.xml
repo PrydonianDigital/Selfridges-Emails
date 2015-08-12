@@ -40,5 +40,12 @@
 				<WonderRoomBrand></WonderRoomBrand>
 			</Item>
 		</Items>
+  <PaymentMethods>
+   <PaymentMethod>
+    <TenderType>eVoucher</TenderType>
+    <Last4Digits>1111</Last4Digits>
+    <Value>479.00</Value>
+   </PaymentMethod>
+  </PaymentMethods>
 	</EmailDataArea>
 </SFEmailMessages>

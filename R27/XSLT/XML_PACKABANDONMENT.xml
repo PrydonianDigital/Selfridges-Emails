@@ -193,7 +193,7 @@
 		</Order>
 		<PaymentMethods>
 			<PaymentMethod>
-				<TenderType>VISA</TenderType>
+				<TenderType>eVoucher</TenderType>
 				<Last4Digits>1234</Last4Digits>
 				<Value>15.50</Value>
 			</PaymentMethod>
