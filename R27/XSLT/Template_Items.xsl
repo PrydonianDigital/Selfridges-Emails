@@ -50,7 +50,8 @@
 			<xsl:if test="Colour !=''">Colour: <span> <xsl:value-of select="translate(Colour, $special, $translated)"/></span><br /> </xsl:if>
 			<xsl:if test="Size !=''">Size: <span> <xsl:value-of select="translate(Size, $special, $translated)"/></span><br /></xsl:if>
 			<xsl:if test="Qty !=''">Qty: <span> <xsl:value-of select="Qty"/></span></xsl:if><xsl:if test="UnitPrice !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(UnitPrice, '###,###,###,###,###.00')"/></span><br /></xsl:if><xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
-			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if>
+			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if><xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Personalisation: <br /></strong></xsl:if>
+
 			<xsl:if test="Personalization/Text !=''">Message: <span> "</span><strong><xsl:value-of select="translate(Personalization/Text, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 			<xsl:if test="Personalization/Font !=''">Font: <span> "</span><strong><xsl:value-of select="translate(Personalization/Font, $special, $translated)"/></strong><span>"</span><br /></xsl:if>
 			<xsl:if test="Personalization/Colour !=''">Colour: <span> "</span><strong><xsl:value-of select="translate(Personalization/Colour, $special, $translated)"/></strong><span>"</span><br /></xsl:if>

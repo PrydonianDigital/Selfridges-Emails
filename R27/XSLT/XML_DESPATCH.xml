@@ -89,7 +89,7 @@
     </OrderDeliveryGroup>
     <OrderDeliveryGroup>
      <DeliveryGroupId>16001152-03</DeliveryGroupId>
-     <trackingURL></trackingURL>
+     <trackingURL>dsjfh</trackingURL>
      <Status>r</Status>
      <DeliveryAddress>
       <DeliveryName>Mr Vijay Kayyam</DeliveryName>
@@ -158,7 +158,7 @@
        <Discount>-0.67</Discount>
        <Tax>0.00</Tax>
        <DeductedVAT>0.00</DeductedVAT>
-       <Status>R</Status>
+       <Status>S</Status>
        <PaymentStatus>Settled</PaymentStatus>
        <WonderRoomItem>false</WonderRoomItem>
        <WonderRoomBrand></WonderRoomBrand>
@@ -190,11 +190,6 @@
        <giftMessage></giftMessage>
        <giftBox>false</giftBox>
        <VATRate>20.00</VATRate>
-       <Personalization>
-	       <Text>Tony</Text>
-	       <Colour>Green</Colour>
-	       <Font>Arial</Font>
-	  </Personalization>
       </Item>
       <Item>
        <SkuCode>98332717</SkuCode>
@@ -211,7 +206,7 @@
        <Discount>-0.92</Discount>
        <Tax>0.00</Tax>
        <DeductedVAT>0.00</DeductedVAT>
-       <Status>R</Status>
+       <Status>S</Status>
        <PaymentStatus>Pending</PaymentStatus>
        <WonderRoomItem>false</WonderRoomItem>
        <WonderRoomBrand></WonderRoomBrand>
