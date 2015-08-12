@@ -100,10 +100,6 @@
 
 		</table>
 
-		<!-- show despatched subtotal -->
-		<xsl:call-template name="orderTotals" />
-		<!-- end show despatched subtotal -->
-
 	</xsl:when>
 
 	<xsl:otherwise>
