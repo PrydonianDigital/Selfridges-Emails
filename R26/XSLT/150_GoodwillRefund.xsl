@@ -25,27 +25,17 @@
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We've processed a refund  for your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/RefundDetails/OrderId"/></strong>.</p>
 
-						<xsl:choose>
+						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">
 
-							<xsl:when test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'">
+						<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher'">
+							It will usually take 5 days for your original payment method to be credited, however some payment providers can take longer.
+						</xsl:if>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</p>
+						<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'">
+							As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.
+						</xsl:if>
 
-							</xsl:when>
-
-							<xsl:when test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'GiftCard'">
-
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</p>
-
-							</xsl:when>
-
-							<xsl:otherwise>
-
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">It will usually take 5 days for your original payment method to be credited, however some payment providers can take longer.</p>
-
-							</xsl:otherwise>
-
-						</xsl:choose>
+						</p>
 
 						<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you,<br /> <strong style="font-weight: bold;">Selfridges</strong></p>
 

@@ -45,7 +45,11 @@
         	<PaymentMethod>
 				<TenderType>AMEX</TenderType>
 				<Last4Digits>0005</Last4Digits>
-				<Value>242.00</Value>
+				<Value>27.00</Value>
+			</PaymentMethod>
+        	<PaymentMethod>
+				<TenderType>eVoucher</TenderType>
+				<Value>27.00</Value>
 			</PaymentMethod>
 		</PaymentMethods>
 	</EmailDataArea>

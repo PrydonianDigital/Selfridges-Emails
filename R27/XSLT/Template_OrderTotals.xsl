@@ -32,6 +32,8 @@
 
 	</xsl:if>
 
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') and (SFEmailMessages/emailHeader/emailType!='INSTORE_REFUND') and (SFEmailMessages/emailHeader/emailType!='RETURN_REFUNDED')">
+
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
 			Subtotal
@@ -52,11 +54,14 @@
 				</xsl:otherwise>
 			</xsl:choose>
 			</xsl:if>
-			<xsl:if test="(SFEmailMessages/emailHeader/emailType='RETURN_RECEIVED') or (SFEmailMessages/emailHeader/emailType='INSTORE_REFUND') or (SFEmailMessages/emailHeader/emailType='RETURN_REFUNDED') or (SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND')">
-				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/Value), '###,###,###.00')"/>
+
+			<xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">
+				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue), '###,###,###,###,###.00')"/>
 			</xsl:if>
 		</td>
 	</tr>
+
+	</xsl:if>
 
 	<!-- RETURN REFUND -->
 
@@ -199,16 +204,17 @@
 
 		<xsl:for-each select="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod">
 
-			<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-				<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
-					<strong style="font-weight: bold;">Refund method</strong>
-				</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<tr style="vertical-align: top; text-align: left; padding: 0; border-top-width:1px; border-top-style:solid;border-top-color: #e7e7e7;" align="left">
+				<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+					<strong style="font-weight: normal;">Refund Method</strong>
+				</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 					<xsl:if test="TenderType !=''"><span><xsl:value-of select="TenderType"/></span> </xsl:if>
 					<xsl:choose>
 						<xsl:when test="Last4Digits !=''">
 							<span> (<xsl:value-of select="Last4Digits"/>)</span>
 						</xsl:when>
 						<xsl:otherwise>
+							<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="Value"/></span>
 						</xsl:otherwise>
 					</xsl:choose>
 				</td>

@@ -1,62 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml	version="1.0"	encoding="UTF-8"?>
 
-<?xml-stylesheet type="text/xsl" href="140_ReturnRefunded.xsl"?>
+<?xml-stylesheet	type="text/xsl"	href="140_ReturnRefunded.xsl"?>
 
 <SFEmailMessages>
- <emailHeader>
-  <emailType>RETURN_REFUNDED</emailType>
- </emailHeader>
- <Recipient>
-  <Title>Miss</Title>
-  <FirstName>retest</FirstName>
-  <Surname>one</Surname>
-  <Email>ginish.joseph@prolifics.com</Email>
-  <ContactNumber>09932993939393</ContactNumber>
-  <MobileNumber/>
-  <CommunicationPreference>email</CommunicationPreference>
- </Recipient>
- <EmailDataArea>
-  <RefundType>ALL</RefundType>
-  <ReturnDetails>
-   <OrderId>319544</OrderId>
-   <ReturnedItems>
-    <ReturnedItem>
-     <SkuCode>26410142</SkuCode>
-     <Description>Bandage dress</Description>
-     <Brand>HERVE LEGER</Brand>
-     <Colour>Blue sapphire</Colour>
-     <colourSwatch>http://images.selfridges.com/is/image/selfridges/238-3001172-HLT6I277_BLUESAPPHIRE_SW?$PDP_SWATCH$</colourSwatch>
-     <Size>S</Size>
-     <thumbnail>http://images.selfridges.com/is/image/selfridges/238-3001172-HLT6I277_BLUESAPPHIRE_M?$PDP_THMBNL$</thumbnail>
-     <productUrl>http://www.slfst2p.selfridges.com/GB/en/cat/herve-leger-bandage-dress_238-3001172-HLT6I277/</productUrl>
-     <Qty>1.0</Qty>
-     <RefundedTax>0.00</RefundedTax>
-     <StockState>True</StockState>
-     <Currency>GBP</Currency>
-    </ReturnedItem>
-    <ReturnedItem>
-     <SkuCode>26410156</SkuCode>
-     <Description>Bandage dress</Description>
-     <Brand>HERVE LEGER</Brand>
-     <Colour>Blue sapphire</Colour>
-     <colourSwatch>http://images.selfridges.com/is/image/selfridges/238-3001172-HLT6I277_BLUESAPPHIRE_SW?$PDP_SWATCH$</colourSwatch>
-     <Size>S</Size>
-     <thumbnail>http://images.selfridges.com/is/image/selfridges/238-3001172-HLT6I277_BLUESAPPHIRE_M?$PDP_THMBNL$</thumbnail>
-     <productUrl>http://www.slfst2p.selfridges.com/GB/en/cat/herve-leger-bandage-dress_238-3001172-HLT6I277/</productUrl>
-     <Qty>1.0</Qty>
-     <RefundedTax>0.00</RefundedTax>
-     <StockState>True</StockState>
-     <Currency>GBP</Currency>
-    </ReturnedItem>
-   </ReturnedItems>
-   <ShippingRefundValue>1.00</ShippingRefundValue>
-   <GiftboxRefundValue>5.00</GiftboxRefundValue>
-  </ReturnDetails>
-  <PaymentMethods>
-   <PaymentMethod>
-    <TenderType>eVoucher</TenderType>
-    <Value>1042.00</Value>
-   </PaymentMethod>
-  </PaymentMethods>
- </EmailDataArea>
+	<emailHeader>
+		<emailType>RETURN_REFUNDED</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Miss</Title>
+		<FirstName>retest</FirstName>
+		<Surname>one</Surname>
+		<Email>ginish.joseph@prolifics.com</Email>
+		<ContactNumber>09932993939393</ContactNumber>
+		<MobileNumber/>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<RefundType>ALL</RefundType>
+		<ReturnDetails>
+			<OrderId>319544</OrderId>
+			<ReturnedItems>
+				<ReturnedItem>
+					<SkuCode>26410142</SkuCode>
+					<Description>Bandage	dress</Description>
+					<Brand>HERVE	LEGER</Brand>
+					<Colour>Blue	sapphire</Colour>
+					<colourSwatch>http://images.selfridges.com/is/image/selfridges/238-3001172-HLT6I277_BLUESAPPHIRE_SW?$PDP_SWATCH$</colourSwatch>
+					<Size>S</Size>
+					<thumbnail>http://images.selfridges.com/is/image/selfridges/238-3001172-HLT6I277_BLUESAPPHIRE_M?$PDP_THMBNL$</thumbnail>
+					<productUrl>http://www.slfst2p.selfridges.com/GB/en/cat/herve-leger-bandage-dress_238-3001172-HLT6I277/</productUrl>
+					<Qty>1.0</Qty>
+					<RefundedTax>0.00</RefundedTax>
+					<StockState>True</StockState>
+					<Currency>GBP</Currency>
+				</ReturnedItem>
+				<ReturnedItem>
+					<SkuCode>88351292</SkuCode>
+					<Description>Padded	Pak&#39;r	glossy	backpack</Description>
+					<Brand>EASTPAK</Brand>
+					<Colour>Sunday	grey</Colour>
+					<ColourSwatch>http://images.selfridges.com/is/image/selfridges/193-84022787-EK620CORE_SUNDAYGREY_SW?$PDP_SWATCH$</ColourSwatch>
+					<Size></Size>
+					<Thumbnail>http://images.selfridges.com/is/image/selfridges/193-84022787-EK620CORE_SUNDAYGREY_M?$PDP_THMBNL$</Thumbnail>
+					<ProductUrl>http://www.slfst4p.selfridges.com/GB/en/cat/eastpak-padded-pakr-glossy-backpack_193-84022787-EK620CORE/</ProductUrl>
+					<Qty>1.0</Qty>
+					<RefundedTax>0.00</RefundedTax>
+					<StockState>True</StockState>
+					<Currency>GBP</Currency>
+				</ReturnedItem>
+			</ReturnedItems>
+			<ShippingRefundValue>1.00</ShippingRefundValue>
+			<GiftboxRefundValue>5.00</GiftboxRefundValue>
+		</ReturnDetails>
+		<PaymentMethods>
+			<PaymentMethod>
+				<TenderType>eVoucher</TenderType>
+				<Value>1042.00</Value>
+			</PaymentMethod>
+			<PaymentMethod>
+				<TenderType>AMEX</TenderType>
+				<Last4Digits>1234</Last4Digits>
+				<Value>27.00</Value>
+			</PaymentMethod>
+		</PaymentMethods>
+	</EmailDataArea>
 </SFEmailMessages>
