@@ -209,7 +209,6 @@
 							<span> (<xsl:value-of select="Last4Digits"/>)</span>
 						</xsl:when>
 						<xsl:otherwise>
-							<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="Value"/></span>
 						</xsl:otherwise>
 					</xsl:choose>
 				</td>

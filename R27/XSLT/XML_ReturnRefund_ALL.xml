@@ -54,7 +54,7 @@
   </ReturnDetails>
   <PaymentMethods>
    <PaymentMethod>
-    <TenderType>GiftCard</TenderType>
+    <TenderType>eVoucher</TenderType>
     <Value>1042.00</Value>
    </PaymentMethod>
   </PaymentMethods>

@@ -8,7 +8,7 @@
 
 	<table class="block-grid two-up orderTotals" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; max-width: 600px; padding: 0; border-top-width:1px; border-top-style:solid;border-top-color: #e7e7e7;">
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType != 'GOODWILL_REFUND') and (SFEmailMessages/emailHeader/emailType != 'RETURN_REFUNDED')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType != 'GOODWILL_REFUND') and (SFEmailMessages/emailHeader/emailType != 'RETURN_REFUNDED') and (SFEmailMessages/emailHeader/emailType != 'INSTORE_REFUND')">
 
 		<xsl:for-each select="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod">
 
@@ -195,7 +195,7 @@
 		</tr>
 	</xsl:if>
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType = 'GOODWILL_REFUND') or (SFEmailMessages/emailHeader/emailType = 'RETURN_REFUNDED')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType = 'GOODWILL_REFUND') or (SFEmailMessages/emailHeader/emailType = 'RETURN_REFUNDED') or (SFEmailMessages/emailHeader/emailType = 'INSTORE_REFUND')">
 
 		<xsl:for-each select="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod">
 
@@ -209,7 +209,6 @@
 							<span> (<xsl:value-of select="Last4Digits"/>)</span>
 						</xsl:when>
 						<xsl:otherwise>
-							<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="Value"/></span>
 						</xsl:otherwise>
 					</xsl:choose>
 				</td>
