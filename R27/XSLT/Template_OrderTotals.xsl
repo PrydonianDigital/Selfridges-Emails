@@ -43,13 +43,13 @@
 			<xsl:choose>
 				<!-- WONDER ROOM -->
 				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
-					<xsl:call-template name="sumPrice2">
+					<xsl:call-template name="sumPrice">
 						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']"/>
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:call-template name="sumPrice2">
-						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='false']"/>
+					<xsl:call-template name="sumPrice">
+						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item"/>
 					</xsl:call-template>
 				</xsl:otherwise>
 			</xsl:choose>
@@ -62,36 +62,6 @@
 	</tr>
 
 	</xsl:if>
-
-	<!-- RETURN REFUND -->
-
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !=''">
-
-	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Gift Box
-	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
-
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue,'###,###,###.00')"/>
-
-	</td></tr>
-	</xsl:if>
-	</xsl:if>
-
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !=''">
-
-	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Delivery
-	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
-
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue,'###,###,###.00')"/>
-
-	</td></tr>
-	</xsl:if>
-	</xsl:if>
-
-	<!-- end RETURN REFUND -->
 
 	<!-- GOODWILL -->
 
@@ -123,6 +93,36 @@
 
 	<!-- end GOODWILL -->
 
+	<!-- RETURN REFUND -->
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !=''">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Gift Box
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+	</xsl:if>
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !=''">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Delivery
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+	</xsl:if>
+
+	<!-- end RETURN REFUND -->
+
 	<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderHeader">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -135,17 +135,17 @@
 
 	<xsl:if test="OrderDiscount !='0.00'">
 
-	<!--tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
 			Discount
 		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 			<xsl:if test="OrderDiscount !=''"><xsl:variable name="OD" select="OrderDiscount"/><span>-<xsl:call-template name="currency"/><xsl:apply-templates select="currency" /><xsl:value-of select="translate($OD, '-', '')"/></span></xsl:if>
 		</td>
-	</tr-->
+	</tr>
 
 	</xsl:if>
 
-	<!--xsl:if test="StaffDiscount !='0.00'">
+	<xsl:if test="StaffDiscount !='0.00'">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
@@ -155,21 +155,9 @@
 		</td>
 	</tr>
 
-	</xsl:if-->
-
-	<xsl:if test="OrderTax !='0.00'">
-
-	<!--tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Tax
-		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
-			<xsl:if test="OrderTax !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="OrderTax"/></span> </xsl:if>
-		</td>
-	</tr-->
-
 	</xsl:if>
 
-	<!--xsl:if test="DeductedVAT !='0.00'">
+	<xsl:if test="DeductedVAT !='0.00'">
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
 			Deducted VAT
@@ -178,7 +166,19 @@
 		</td>
 	</tr>
 
-	</xsl:if-->
+	</xsl:if>
+
+	<xsl:if test="OrderTax !='0.00'">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Tax &amp; Duties
+		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<xsl:if test="OrderTax !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="OrderTax"/></span> </xsl:if>
+		</td>
+	</tr>
+
+	</xsl:if>
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">

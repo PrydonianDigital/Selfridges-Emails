@@ -34,26 +34,15 @@
 	</td><td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
 		<xsl:choose>
 			<xsl:when test="Discount ='0.00'">
-				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * TotalPrice, '###,###,###,###,###.00')"/></strong></xsl:if>
+				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/></strong></xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:if test="UnitPrice !=''"><strong><del style="text-decoration: line-through;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * TotalPrice, '###,###,###,###,###.00')"/><br /></del></strong></xsl:if>
-				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * (TotalPrice + Discount), '###,###,###,###,###.00')"/></strong></xsl:if>
+				<xsl:if test="UnitPrice !=''"><strong style="color: #E00000;"><xsl:call-template name="currency"/><xsl:value-of select="format-number((TotalPrice * Qty) + Discount, '###,###,###,###,###.00')"/></strong></xsl:if>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:if test="ItemRefundValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></xsl:if>
-	</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td></tr>
-	<xsl:if test="Tax !='0.00'">
-	<tr>
-		<td class="text-pad three sub-columns" style="border-collapse: collapse !important; vertical-align: top; text-align: center; min-width: 0px; width: 25%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 10px 10px;" align="left" valign="top"></td>
-		<td class="text-pad three sub-columns" style="border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 25%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
-			<xsl:if test="Tax !='0.00'"><strong>Taxes, duties &amp; charges: </strong></xsl:if></td>
-			<td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
-				<xsl:if test="Tax !='0.00'"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Tax, '###,###,###,###,###.00')"/></strong><br /></xsl:if>
-			</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
-		</tr>
-	</xsl:if>
-	</table></td></tr>
+	</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td></tr></table></td></tr>
 
 		</xsl:when>
 
@@ -80,26 +69,15 @@
 	</td><td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
 		<xsl:choose>
 			<xsl:when test="Discount ='0.00'">
-				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * TotalPrice, '###,###,###,###,###.00')"/></strong></xsl:if>
+				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/></strong></xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:if test="UnitPrice !=''"><strong><del style="text-decoration: line-through;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * TotalPrice, '###,###,###,###,###.00')"/><br /></del></strong></xsl:if>
-				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * (TotalPrice + Discount), '###,###,###,###,###.00')"/></strong></xsl:if>
+				<xsl:if test="UnitPrice !=''"><strong><del style="text-decoration: line-through;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/><br /></del></strong></xsl:if>
+				<xsl:if test="UnitPrice !=''"><strong style="color: #E00000;"><xsl:call-template name="currency"/><xsl:value-of select="format-number((TotalPrice * Qty) + Discount, '###,###,###,###,###.00')"/></strong></xsl:if>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:if test="ItemRefundValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></xsl:if>
-	</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td></tr>
-	<xsl:if test="Tax !='0.00'">
-	<tr>
-		<td class="text-pad three sub-columns" style="border-collapse: collapse !important; vertical-align: top; text-align: center; min-width: 0px; width: 25%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 10px 10px;" align="left" valign="top"></td>
-		<td class="text-pad three sub-columns" style="border-collapse: collapse !important; vertical-align: top; text-align: left; min-width: 0px; width: 25%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
-			<xsl:if test="Tax !='0.00'"><strong>Taxes, duties &amp; charges: </strong></xsl:if></td>
-			<td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
-				<xsl:if test="Tax !='0.00'"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Tax, '###,###,###,###,###.00')"/></strong><br /></xsl:if>
-			</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td>
-		</tr>
-	</xsl:if>
-	</table></td></tr>
+	</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td></tr></table></td></tr>
 
 		</xsl:otherwise>
 
