@@ -172,7 +172,7 @@
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Tax &amp; Duties
+			Import Duties
 		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 			<xsl:if test="OrderTax !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="OrderTax"/></span> </xsl:if>
 		</td>

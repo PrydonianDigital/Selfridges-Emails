@@ -56,9 +56,9 @@
      <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
      <Price>37.03</Price>
      <Discount>-0.92</Discount>
-     <Tax>0.00</Tax>
+     <Tax>100.00</Tax>
      <ShippingPrice>4.95</ShippingPrice>
-     <DeductedVAT>0.00</DeductedVAT>
+     <DeductedVAT>10.00</DeductedVAT>
      <Currency>GBP</Currency>
      <Items>
       <Item>
@@ -114,9 +114,9 @@
      <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
      <Price>167.29</Price>
      <Discount>-4.66</Discount>
-     <Tax>0.00</Tax>
+     <Tax>10.00</Tax>
      <ShippingPrice>4.95</ShippingPrice>
-     <DeductedVAT>0.00</DeductedVAT>
+     <DeductedVAT>10.00</DeductedVAT>
      <Currency>GBP</Currency>
      <Items>
       <Item>

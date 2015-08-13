@@ -100,15 +100,15 @@
 
 	</table>
 
-	<!-- show despatched subtotal -->
-	<xsl:call-template name="orderTotalsDespatch" />
-	<!-- end show despatched subtotal -->
-
 	<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
 		<!-- show pending items -->
 		<xsl:call-template name="tofollow" />
 		<!-- end show pending items -->
+
+	<!-- show despatched subtotal -->
+	<xsl:call-template name="orderTotalsDespatch" />
+	<!-- end show despatched subtotal -->
 
 	</table>
 
