@@ -172,13 +172,8 @@
 	</tr>
 </table>
 
-<table class="row" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; padding: 0px;">
-	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
-		<td class="wrapper last" style="border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 0px 10px 0px;" align="left" valign="top">
-			<xsl:call-template name="orderTotals"/>
-		</td>
-	</tr>
-</table>
+<xsl:call-template name="orderTotals"/>
+
 
 </body></html>
 

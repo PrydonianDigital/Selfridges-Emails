@@ -23,7 +23,7 @@
 		<span style="font-size: 12px; line-height: 18px;">
 			<xsl:if test="Colour !=''">Colour: <span> <xsl:value-of select="translate(Colour, $special, $translated)"/></span><br /> </xsl:if>
 			<xsl:if test="Size !=''">Size: <span> <xsl:value-of select="translate(Size, $special, $translated)"/></span><br /></xsl:if>
-			<xsl:if test="Qty !=''">Quantity: <span> <xsl:value-of select="format-number(Qty, '###')"/><br /></span></xsl:if> <xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
+			<xsl:if test="Qty !=''">Quantity: <span> <xsl:value-of select="Qty"/><br /></span></xsl:if> <xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
 			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if>
 			<xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Your Personalisation <br /></strong></xsl:if>
 
@@ -58,7 +58,7 @@
 		<span style="font-size: 12px; line-height: 18px;">
 			<xsl:if test="Colour !=''">Colour: <span> <xsl:value-of select="translate(Colour, $special, $translated)"/></span><br /> </xsl:if>
 			<xsl:if test="Size !=''">Size: <span> <xsl:value-of select="translate(Size, $special, $translated)"/></span><br /></xsl:if>
-			<xsl:if test="Qty !=''">Quantity: <span> <xsl:value-of select="format-number(Qty, '###')"/><br /></span></xsl:if> <xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
+			<xsl:if test="Qty !=''">Quantity: <span> <xsl:value-of select="Qty"/><br /></span></xsl:if> <xsl:if test="ItemRefundValue !=''"><span> x <xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></span><br /></xsl:if>
 			<xsl:if test="giftMessage !=''">Gift Message: <span> "</span><em><xsl:value-of select="translate(giftMessage, $special, $translated)"/></em><span>"</span><br /></xsl:if>
 			<xsl:if test="Personalization/Text !=''"><strong style="font-weight: bold">Your Personalisation <br /></strong></xsl:if>
 
