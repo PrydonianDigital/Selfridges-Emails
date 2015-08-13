@@ -57,11 +57,6 @@
 				<TenderType>eVoucher</TenderType>
 				<Value>1042.00</Value>
 			</PaymentMethod>
-			<PaymentMethod>
-				<TenderType>AMEX</TenderType>
-				<Last4Digits>1234</Last4Digits>
-				<Value>27.00</Value>
-			</PaymentMethod>
 		</PaymentMethods>
 	</EmailDataArea>
 </SFEmailMessages>

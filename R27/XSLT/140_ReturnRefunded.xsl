@@ -33,7 +33,7 @@
 
 							<xsl:when test="SFEmailMessages/EmailDataArea/RefundType='MIX'">
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. We've processed a refund for some of your items, please see the details below. Unfortunately, we have been unable to process a full refund. Our Customer Services team will be in touch shortly to explain why.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Thank you for returning your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/ReturnDetails/OrderId" /></strong>. We've processed a refund for some of your items, please see the details below.</p>
 
 							</xsl:when>
 
@@ -54,8 +54,11 @@
 						<xsl:if test="SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher'">
 							As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.
 						</xsl:if>
-
 						</p>
+
+						<xsl:if test="SFEmailMessages/EmailDataArea/RefundType='MIX'">
+						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Unfortunately, we have been unable to process a refund for some of the items in your order. Our Customer Services team will be in touch shortly to explain why.</p>
+						</xsl:if>
 
 						<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you,<br /><strong style="font-weight: bold;">Selfridges</strong></p>
 
