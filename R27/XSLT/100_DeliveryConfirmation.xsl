@@ -28,17 +28,17 @@
 	</tr>
 </table>
 
-		<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
+<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
-			<!-- show this delivery -->
-			<xsl:call-template name="completed" />
-			<!-- end show this delivery -->
+	<!-- show this delivery -->
+	<xsl:call-template name="completed" />
+	<!-- end show this delivery -->
 
-		</table>
+</table>
 
-		<!-- show delivered totals -->
-		<xsl:call-template name="orderTotals" />
-		<!-- end show delivered totals -->
+<!-- show delivered totals -->
+<xsl:call-template name="orderTotals" />
+<!-- end show delivered totals -->
 
 </body></html>
 

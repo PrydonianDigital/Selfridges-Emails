@@ -106,11 +106,11 @@
 		<xsl:call-template name="tofollow" />
 		<!-- end show pending items -->
 
+	</table>
+
 	<!-- show despatched subtotal -->
 	<xsl:call-template name="orderTotalsDespatch" />
 	<!-- end show despatched subtotal -->
-
-	</table>
 
 </xsl:if>
 

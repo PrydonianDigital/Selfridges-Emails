@@ -21,11 +21,11 @@
     <OrderId>16000771</OrderId>
     <OrderStatus>C</OrderStatus>
     <OrderPrice>410.66</OrderPrice>
-    <OrderDiscount>0.00</OrderDiscount>
-    <StaffDiscount>0.00</StaffDiscount>
-    <OrderTax>0.00</OrderTax>
+    <OrderDiscount>-20.00</OrderDiscount>
+    <StaffDiscount>-294.75</StaffDiscount>
+    <OrderTax>92.22</OrderTax>
     <ShippingPrice>25.00</ShippingPrice>
-    <DeductedVAT>0.00</DeductedVAT>
+    <DeductedVAT>56.81</DeductedVAT>
     <Currency>GBP</Currency>
    </OrderHeader>
    <OrderDeliveryGroups>
