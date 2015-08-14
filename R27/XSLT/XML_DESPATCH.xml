@@ -107,7 +107,7 @@
       <Email></Email>
      </DeliveryAddress>
      <hasWonderRoomItems>false</hasWonderRoomItems>
-     <DeliveryMethod>UKSTD</DeliveryMethod>
+     <DeliveryMethod>INTNONEU</DeliveryMethod>
      <EarliestDeliveryDate>20150720</EarliestDeliveryDate>
      <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
      <LatestDeliveryDate>20150720</LatestDeliveryDate>
