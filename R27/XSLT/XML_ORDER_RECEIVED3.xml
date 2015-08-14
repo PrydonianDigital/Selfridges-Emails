@@ -48,7 +48,7 @@
       <Email></Email>
      </DeliveryAddress>
      <hasWonderRoomItems>false</hasWonderRoomItems>
-     <DeliveryMethod>INTNONEU</DeliveryMethod>
+     <DeliveryMethod>INTEU</DeliveryMethod>
      <EarliestDeliveryDate></EarliestDeliveryDate>
      <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
      <LatestDeliveryDate>20150707</LatestDeliveryDate>
@@ -71,7 +71,7 @@
        <productUrl>http://www.test2.selfridges.com/GB/en/cat/saint-laurent-classic-tribute-sandals-in-textured-black-leather_926-10004-2387500109/</productUrl>
        <Qty>1</Qty>
        <UnitPrice>575.00</UnitPrice>
-       <TotalPrice>525.13</TotalPrice>2
+       <TotalPrice>525.13</TotalPrice>
        <Discount>-275.83</Discount>
        <Tax>80.96</Tax>
        <DeductedVAT>49.87</DeductedVAT>
