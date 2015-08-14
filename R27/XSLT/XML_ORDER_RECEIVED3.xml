@@ -26,7 +26,7 @@
     <OrderTax>92.22</OrderTax>
     <ShippingPrice>25.00</ShippingPrice>
     <DeductedVAT>56.81</DeductedVAT>
-    <Currency>GBP</Currency>
+    <Currency>HKD</Currency>
    </OrderHeader>
    <OrderDeliveryGroups>
     <OrderDeliveryGroup>
@@ -58,7 +58,7 @@
      <Tax>0.00</Tax>
      <ShippingPrice>25.00</ShippingPrice>
      <DeductedVAT>0.00</DeductedVAT>
-     <Currency>GBP</Currency>
+     <Currency>HKD</Currency>
      <Items>
       <Item>
        <SkuCode>14585302</SkuCode>
