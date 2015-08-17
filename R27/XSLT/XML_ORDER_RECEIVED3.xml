@@ -26,7 +26,7 @@
     <OrderTax>92.22</OrderTax>
     <ShippingPrice>25.00</ShippingPrice>
     <DeductedVAT>56.81</DeductedVAT>
-    <Currency>HKD</Currency>
+    <Currency>EUR</Currency>
    </OrderHeader>
    <OrderDeliveryGroups>
     <OrderDeliveryGroup>
