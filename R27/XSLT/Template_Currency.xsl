@@ -8,7 +8,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='CAD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='AUD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='SGD'"><span>&#x24;</span></xsl:if>
-	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='D'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='HKD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='CNY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='AED'"><span>&#x62f;&#x2e;&#x625;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='SAR'"><span>&#xfdfc;</span></xsl:if>
@@ -27,7 +27,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='CAD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='AUD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='SGD'"><span>&#x24;</span></xsl:if>
-	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='D'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='HKD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='CNY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='GBP'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
@@ -35,7 +35,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='CAD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='AUD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='SGD'"><span>&#x24;</span></xsl:if>
-	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='D'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='HKD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='CNY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='AED'"><span>&#x62f;&#x2e;&#x625;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='SAR'"><span>&#xfdfc;</span></xsl:if>
@@ -54,7 +54,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='CAD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='AUD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='SGD'"><span>&#x24;</span></xsl:if>
-	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='D'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='HKD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='CNY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='AED'"><span>&#x62f;&#x2e;&#x625;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='SAR'"><span>&#xfdfc;</span></xsl:if>
