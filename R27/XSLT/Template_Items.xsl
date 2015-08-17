@@ -81,12 +81,27 @@
 		</span>
 	</td><td class="text-pad four sub-columns last textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; min-width: 0px; width: 33.333333%; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 0 10px;" align="right" valign="top">
 		<xsl:choose>
-			<xsl:when test="Discount ='0.00'">
-				<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/></strong></xsl:if>
+			<xsl:when test="/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryMethod='INTNONEU'">
+				<xsl:choose>
+					<xsl:when test="Discount ='0.00'">
+						<xsl:if test="TotalPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(TotalPrice, '###,###,###,###,###.00')"/></strong></xsl:if>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:if test="TotalPrice !=''"><strong><del style="text-decoration: line-through;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(TotalPrice, '###,###,###,###,###.00')"/><br /></del></strong></xsl:if>
+						<xsl:if test="TotalPrice !=''"><strong style="color: #E00000;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(TotalPrice + Discount, '###,###,###,###,###.00')"/></strong></xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:if test="UnitPrice !=''"><strong><del style="text-decoration: line-through;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(Qty * UnitPrice, '###,###,###,###,###.00')"/><br /></del></strong></xsl:if>
-				<xsl:if test="UnitPrice !=''"><strong style="color: #E00000;"><xsl:call-template name="currency"/><xsl:value-of select="format-number((TotalPrice * Qty) + Discount, '###,###,###,###,###.00')"/></strong></xsl:if>
+				<xsl:choose>
+					<xsl:when test="Discount ='0.00'">
+						<xsl:if test="UnitPrice !=''"><strong><xsl:call-template name="currency"/><xsl:value-of select="format-number(UnitPrice * Qty, '###,###,###,###,###.00')"/></strong></xsl:if>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:if test="UnitPrice !=''"><strong><del style="text-decoration: line-through;"><xsl:call-template name="currency"/><xsl:value-of select="format-number(UnitPrice * Qty, '###,###,###,###,###.00')"/><br /></del></strong></xsl:if>
+						<xsl:if test="UnitPrice !=''"><strong style="color: #E00000;"><xsl:call-template name="currency"/><xsl:value-of select="format-number((UnitPrice * Qty) + Discount, '###,###,###,###,###.00')"/></strong></xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:if test="ItemRefundValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></xsl:if>

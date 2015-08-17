@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="100_DeliveryConfirmation.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>DELIVERY_CONFIRMATION</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mr</Title>
+		<FirstName>Chris</FirstName>
+		<Surname>Marriott</Surname>
+		<Email>chris.marriot@selfridges.co.uk</Email>
+		<ContactNumber></ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+
+
+<DeliveryDetails>
+	<DeliveryGroupId>130004136-01</DeliveryGroupId>
+	<ParcelNumber>0</ParcelNumber>
+	<Status>Delivered</Status>
+	<FailReason></FailReason>
+</DeliveryDetails>
+<Order>
+			<OrderHeader>
+				<OrderId>130004136</OrderId>
+				<OrderStatus>c</OrderStatus>
+				<OrderPrice>41.00</OrderPrice>
+
+				<OrderDiscount>0.00</OrderDiscount>
+
+				<OrderTax>0.00</OrderTax>
+				<ShippingPrice>8.00</ShippingPrice>
+				<DeductedVAT>0.00</DeductedVAT>
+				<Currency>GBP</Currency>
+			</OrderHeader>
+			<OrderDeliveryGroups>
+
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>130004136-01</DeliveryGroupId>
+						<Status>c</Status>
+
+								<DeliveryAddress>
+									<DeliveryName>Mr Chris Marriott</DeliveryName>
+									<Address1>17 Harlyn Drive</Address1>
+									<Address2></Address2>
+									<Address3></Address3>
+									<City>PINNER</City>
+									<County>Middlesex</County>
+									<PostCode>HA5 2DF</PostCode>
+									<CountryCode>GB</CountryCode>
+									<DeliveryInstruction></DeliveryInstruction>
+									<ContactPhone>447446050316</ContactPhone>
+									<HomePhone>447446050316</HomePhone>
+									<MobilePhone>447446050316</MobilePhone>
+									<Email></Email>
+								</DeliveryAddress>
+
+						<hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+							<DeliveryMethod>DRFNMDYT2F</DeliveryMethod>
+
+								<EarliestDeliveryDate>20150814</EarliestDeliveryDate>
+								<EarliestDeliveryTimeSlotEnd>080000</EarliestDeliveryTimeSlotEnd>
+								<LatestDeliveryDate>20150814</LatestDeliveryDate>
+								<LatestDeliveryTimeSlotEnd>180000</LatestDeliveryTimeSlotEnd>
+
+						<Price>41.00</Price>
+						<Discount>0.00</Discount>
+						<Tax>0.00</Tax>
+						<ShippingPrice>8.00</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>GBP</Currency>
+						<Items>
+
+								<Item>
+									<SkuCode>76656262</SkuCode>
+									<Description>Rosemary and Eucalyptus scented candle</Description>
+									<Brand>THE REAL FLOWER COMPANY</Brand>
+									<Colour></Colour>
+									<colourSwatch></colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/687-10007-SCENTEDCANDLEROSEMARYANDEUCALYPTUS_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test1.selfridges.com/GB/en/cat/the-real-flower-company-rosemary-and-eucalyptus-scented-candle_687-10007-SCENTEDCANDLEROSEMARYANDEUCALYPTUS/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>33.00</UnitPrice>
+									<TotalPrice>33.00</TotalPrice>
+									<Discount>0.00</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>d</Status>
+									<PaymentStatus>Settled</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode>0</TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+			</OrderDeliveryGroups>
+
+</Order>
+	</EmailDataArea>
+</SFEmailMessages>

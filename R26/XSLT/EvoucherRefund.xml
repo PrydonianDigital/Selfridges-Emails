@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="150_GoodwillRefund.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>EVOUCHER_REFUND_NOTIFICATION</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Ms</Title>
+		<FirstName>Jasmine</FirstName>
+		<Surname>Dosani</Surname>
+		<Email>jasmine.dosani@pmcretail.com</Email>
+		<ContactNumber>879879878232</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+
+		<EVoucherID>1439461764887</EVoucherID>
+		<Value>43.47</Value>
+
+	<OrderId>16002566</OrderId>
+	<Reason>Refund</Reason>
+	</EmailDataArea>
+</SFEmailMessages>

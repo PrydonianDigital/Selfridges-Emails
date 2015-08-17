@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="160_OrderCancellationAbandonedDeliveryGroup.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>ORDER_CANCELLATION</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mrs</Title>
+		<FirstName>Vas</FirstName>
+		<Surname>Ram</Surname>
+		<Email>vastest2020@gmail.com</Email>
+		<ContactNumber>536475879879</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+
+
+		<Reason>Customer Cancellation</Reason>
+		<Order>
+						<OrderHeader>
+				<OrderId>16002683</OrderId>
+				<OrderStatus>X</OrderStatus>
+				<OrderPrice>20.00</OrderPrice>
+
+				<OrderDiscount>20.00</OrderDiscount>
+
+				<OrderTax>0.00</OrderTax>
+				<ShippingPrice>0.00</ShippingPrice>
+				<DeductedVAT>0.00</DeductedVAT>
+				<Currency>GBP</Currency>
+			</OrderHeader>
+			<OrderDeliveryGroups>
+
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>16002683-02</DeliveryGroupId>
+						<Status>X</Status>
+
+								<DeliveryAddress>
+									<DeliveryName>Mrs Vas Ram</DeliveryName>
+									<Address1>12 Richens Close</Address1>
+									<Address2></Address2>
+									<Address3></Address3>
+									<City>HOUNSLOW</City>
+									<County></County>
+									<PostCode>TW3 1PL</PostCode>
+									<CountryCode>GB</CountryCode>
+									<DeliveryInstruction></DeliveryInstruction>
+									<ContactPhone>536475879879</ContactPhone>
+									<HomePhone>536475879879</HomePhone>
+									<MobilePhone>536475879879</MobilePhone>
+									<Email></Email>
+								</DeliveryAddress>
+
+						<hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+							<DeliveryMethod>UKSTD</DeliveryMethod>
+
+								<EarliestDeliveryDate>20150819</EarliestDeliveryDate>
+								<EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+								<LatestDeliveryDate>20150819</LatestDeliveryDate>
+								<LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+
+						<Price>10.91</Price>
+						<Discount>10.91</Discount>
+						<Tax>0.00</Tax>
+						<ShippingPrice>0.00</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>GBP</Currency>
+						<Items>
+
+								<Item>
+									<SkuCode>43556496</SkuCode>
+									<Description>Lou slim-fit tapered jeans</Description>
+									<Brand>NEUW</Brand>
+									<Colour>Indigo</Colour>
+									<colourSwatch>http://images.selfridges.com/is/image/selfridges/362-3000979-LOUN30817_INDIGO_SW?$PDP_SWATCH$</colourSwatch>
+									<Size>3432</Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/362-3000979-LOUN30817_INDIGO_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test2.selfridges.com/GB/en/cat/neuw-lou-slim-fit-tapered-jeans_362-3000979-LOUN30817/</productUrl>
+									<Qty>0</Qty>
+									<UnitPrice>150.00</UnitPrice>
+									<TotalPrice>0.00</TotalPrice>
+									<Discount>10.91</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>X</Status>
+									<PaymentStatus>Cancelled</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>16002683-01</DeliveryGroupId>
+						<Status>X</Status>
+
+								<DeliveryAddress>
+									<DeliveryName>Mrs vas ram</DeliveryName>
+									<Address1>4 Richens Close</Address1>
+									<Address2></Address2>
+									<Address3></Address3>
+									<City>HOUNSLOW</City>
+									<County></County>
+									<PostCode>TW3 1PL</PostCode>
+									<CountryCode>GB</CountryCode>
+									<DeliveryInstruction></DeliveryInstruction>
+									<ContactPhone>456456432565</ContactPhone>
+									<HomePhone>456456432565</HomePhone>
+									<MobilePhone>456456432565</MobilePhone>
+									<Email></Email>
+								</DeliveryAddress>
+
+						<hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+							<DeliveryMethod>UKSTD</DeliveryMethod>
+
+								<EarliestDeliveryDate>20150819</EarliestDeliveryDate>
+								<EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+								<LatestDeliveryDate>20150819</LatestDeliveryDate>
+								<LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+
+						<Price>9.09</Price>
+						<Discount>9.09</Discount>
+						<Tax>0.00</Tax>
+						<ShippingPrice>0.00</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>GBP</Currency>
+						<Items>
+
+								<Item>
+									<SkuCode>34871553</SkuCode>
+									<Description>365 long dress</Description>
+									<Brand>SKIN</Brand>
+									<Colour>White</Colour>
+									<colourSwatch>http://images.selfridges.com/is/image/selfridges/211-3001815-SSFJ1TLRWHT_WHITE_SW?$PDP_SWATCH$</colourSwatch>
+									<Size>L</Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/211-3001815-SSFJ1TLRWHT_WHITE_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test2.selfridges.com/GB/en/cat/skin-365-long-dress_211-3001815-SSFJ1TLRWHT/</productUrl>
+									<Qty>0</Qty>
+									<UnitPrice>125.00</UnitPrice>
+									<TotalPrice>0.00</TotalPrice>
+									<Discount>9.09</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>X</Status>
+									<PaymentStatus>Cancelled</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+			</OrderDeliveryGroups>
+
+		</Order>
+
+	</EmailDataArea>
+</SFEmailMessages>

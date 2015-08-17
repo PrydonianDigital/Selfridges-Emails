@@ -30,9 +30,9 @@
 
 							<!-- if has Wonder Room Items -->
 
-							<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
+							<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
 
-								<strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong>
+								<strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']/WonderRoomBrand, $special, $translated)"/></strong>
 
 							</xsl:when>
 
@@ -52,9 +52,9 @@
 
 										<!-- if has Wonder Room Items -->
 
-										<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
+										<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
 
-											<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</li>
+											<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</li>
 
 										</xsl:when>
 
@@ -82,7 +82,7 @@
 
 									<!-- if has Wonder Room Items -->
 
-									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
+									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
 
 										<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We will be happy to hold this item for you for five days. Please note that you must collect the order yourself in person – we apologise for any inconvenience this may cause.</p>
 
@@ -136,11 +136,11 @@
 
 				<!-- if has Wonder Room Items -->
 
-				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
+				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
 
 					<table class="row itemDetails" style="border-spacing: 0; border-collapse: collapse; width: 100%; vertical-align: top; text-align: left; position: relative; display: block; line-height: 20px; padding: 0px 0px 0px;">
 
-						<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']">
+						<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']">
 							<xsl:call-template name="item"/>
 						</xsl:for-each>
 

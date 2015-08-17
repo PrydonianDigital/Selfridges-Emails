@@ -61,7 +61,7 @@
 
 	<xsl:variable name="currentDelivery" select="SFEmailMessages/EmailDataArea/AbandonedDeliveryGroupId" />
 
-	<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item[Status='X']">
+	<xsl:for-each select="SFEmailMessages/EmailDataArea/Item">
 		<xsl:call-template name="item"/>
 	</xsl:for-each>
 
@@ -74,10 +74,6 @@
 	<!-- end show this delivery -->
 
 </table>
-
-<!-- show despatched subtotal -->
-<xsl:call-template name="orderTotals" />
-<!-- end show despatched subtotal -->
 
 </body></html>
 

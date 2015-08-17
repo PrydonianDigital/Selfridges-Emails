@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="130_ReturnReceived.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>RETURN_RECEIVED</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mr</Title>
+		<FirstName>Richard</FirstName>
+		<Surname>Gwinnett</Surname>
+		<Email>richard.gwinnett@dhl.com</Email>
+		<ContactNumber>01675431200</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<ReturnDetails>
+	<OrderId>130004084</OrderId>
+	<ReturnedItems>
+
+	</ReturnedItems>
+	<ShippingRefundValue></ShippingRefundValue>
+	<GiftboxRefundValue></GiftboxRefundValue>
+</ReturnDetails>
+	</EmailDataArea>
+</SFEmailMessages>
