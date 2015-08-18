@@ -20,11 +20,11 @@
    <OrderHeader>
     <OrderId>16000554</OrderId>
     <OrderStatus>C</OrderStatus>
-    <OrderPrice>433.00</OrderPrice>
+    <OrderPrice>409.00</OrderPrice>
     <OrderDiscount>-24.00</OrderDiscount>
     <OrderTax>0.00</OrderTax>
     <ShippingPrice>0.00</ShippingPrice>
-    <DeductedVAT>-5.00</DeductedVAT>
+    <DeductedVAT>0.00</DeductedVAT>
     <Currency>GBP</Currency>
    </OrderHeader>
    <OrderDeliveryGroups>
@@ -46,7 +46,7 @@
       <MobilePhone></MobilePhone>
       <Email></Email>
      </DeliveryAddress>
-     <hasWonderRoomItems>True</hasWonderRoomItems>
+     <hasWonderRoomItems>false</hasWonderRoomItems>
      <DeliveryMethod>UKSTORE</DeliveryMethod>
      <EarliestDeliveryDate>20150617</EarliestDeliveryDate>
      <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
@@ -71,7 +71,7 @@
        <Qty>2</Qty>
        <UnitPrice>69.00</UnitPrice>
        <TotalPrice>138.00</TotalPrice>
-       <Discount>0.00</Discount>
+       <Discount>-24.00</Discount>
        <Tax>0.00</Tax>
        <DeductedVAT>0.00</DeductedVAT>
        <Status>C</Status>

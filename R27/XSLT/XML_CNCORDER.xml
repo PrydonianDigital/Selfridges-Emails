@@ -8,101 +8,73 @@
  </emailHeader>
  <Recipient>
   <Title>Mr</Title>
-  <FirstName>John</FirstName>
-  <Surname>Firsttest</Surname>
-  <Email>ginish.joseph@prolifics.com</Email>
-  <ContactNumber>0342535354</ContactNumber>
+  <FirstName>Vijayapal</FirstName>
+  <Surname>Kayyam</Surname>
+  <Email>vijay.20886@gmail.com</Email>
+  <ContactNumber>07769359185</ContactNumber>
   <MobileNumber></MobileNumber>
   <CommunicationPreference>email</CommunicationPreference>
  </Recipient>
  <EmailDataArea>
   <Order>
    <OrderHeader>
-    <OrderId>16000554</OrderId>
+    <OrderId>130004476</OrderId>
     <OrderStatus>C</OrderStatus>
-    <OrderPrice>433.00</OrderPrice>
-    <OrderDiscount>-24.00</OrderDiscount>
-    <OrderTax>0.00</OrderTax>
-    <ShippingPrice>0.00</ShippingPrice>
-    <DeductedVAT>-5.00</DeductedVAT>
-    <Currency>GBP</Currency>
+    <OrderPrice>91.94</OrderPrice>
+    <OrderDiscount>0.00</OrderDiscount>
+    <StaffDiscount>0.00</StaffDiscount>
+    <OrderTax>13.39</OrderTax>
+    <ShippingPrice>25.00</ShippingPrice>
+    <DeductedVAT>13.39</DeductedVAT>
+    <Currency>USD</Currency>
    </OrderHeader>
    <OrderDeliveryGroups>
     <OrderDeliveryGroup>
-     <DeliveryGroupId>16000491-01</DeliveryGroupId>
+     <DeliveryGroupId>130004476-01</DeliveryGroupId>
      <Status>B</Status>
      <DeliveryAddress>
-      <DeliveryName></DeliveryName>
-      <Address1>The Bullring</Address1>
-      <Address2>Upper Mall East</Address2>
+      <DeliveryName>Mr Vijay Kayya</DeliveryName>
+      <Address1>200 Delaware Ave</Address1>
+      <Address2></Address2>
       <Address3></Address3>
-      <City>Birmingham</City>
-      <County>Birmingham</County>
-      <PostCode>B5 4BP</PostCode>
-      <CountryCode>GB</CountryCode>
+      <City>Buffalo</City>
+      <County>NY</County>
+      <PostCode>14202</PostCode>
+      <CountryCode>US</CountryCode>
       <DeliveryInstruction></DeliveryInstruction>
-      <ContactPhone></ContactPhone>
-      <HomePhone></HomePhone>
-      <MobilePhone></MobilePhone>
+      <ContactPhone>447769359185</ContactPhone>
+      <HomePhone>447769359185</HomePhone>
+      <MobilePhone>447769359185</MobilePhone>
       <Email></Email>
      </DeliveryAddress>
      <hasWonderRoomItems>false</hasWonderRoomItems>
-     <DeliveryMethod>UKSTORE</DeliveryMethod>
-     <EarliestDeliveryDate>20150617</EarliestDeliveryDate>
+     <DeliveryMethod>INTNONEU</DeliveryMethod>
+     <EarliestDeliveryDate></EarliestDeliveryDate>
      <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
-     <LatestDeliveryDate>20150617</LatestDeliveryDate>
-     <LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
-     <Price>433.00</Price>
+     <LatestDeliveryDate>20150827</LatestDeliveryDate>
+     <LatestDeliveryTimeSlotEnd>135536</LatestDeliveryTimeSlotEnd>
+     <Price>91.94</Price>
      <Discount>0.00</Discount>
-     <Tax>0.00</Tax>
-     <ShippingPrice>0.00</ShippingPrice>
-     <DeductedVAT>0.00</DeductedVAT>
-     <Currency>GBP</Currency>
+     <Tax>20.00</Tax>
+     <ShippingPrice>25.00</ShippingPrice>
+     <DeductedVAT>13.39</DeductedVAT>
+     <Currency>USD</Currency>
      <Items>
       <Item>
-       <SkuCode>27807729</SkuCode>
-       <Description>J&#39;adore eau de parfum spray 50ml</Description>
-       <Brand>DIOR</Brand>
-       <Colour></Colour>
-       <colourSwatch></colourSwatch>
-       <Size></Size>
-       <thumbnail>http://images.selfridges.com/is/image/selfridges/359-84011246-F071522009_M?$PDP_THMBNL$</thumbnail>
-       <productUrl>http://www.test2.selfridges.com/GB/en/cat/dior-jadore-eau-de-parfum-spray-50ml_359-84011246-F071522009/</productUrl>
-       <Qty>2</Qty>
-       <UnitPrice>69.00</UnitPrice>
-       <TotalPrice>138.00</TotalPrice>
-       <Discount>0.00</Discount>
-       <Tax>0.00</Tax>
-       <DeductedVAT>0.00</DeductedVAT>
-       <Status>C</Status>
-       <PaymentStatus>Pending</PaymentStatus>
-       <WonderRoomItem>True</WonderRoomItem>
-       <WonderRoomBrand></WonderRoomBrand>
-       <TrackingCode></TrackingCode>
-       <giftMessage></giftMessage>
-       <giftBox>false</giftBox>
-       <VATRate>20.00</VATRate>
-       <Personalization>
-	       <Text>Tony</Text>
-	       <Colour>Green</Colour>
-	       <Font>Arial</Font>
-	  </Personalization>
-      </Item>
-      <Item>
-       <SkuCode>47348752</SkuCode>
-       <Description>Genetic x Liberty Ross stretch-jacquard skirt</Description>
-       <Brand>GENETIC DENIM</Brand>
-       <Colour>Gold/black</Colour>
-       <colourSwatch>http://images.selfridges.com/is/image/selfridges/150-3003899-W5035MS01HYS_GOLDBLACK_SW?$PDP_SWATCH$</colourSwatch>
-       <Size>23</Size>
-       <thumbnail>http://images.selfridges.com/is/image/selfridges/150-3003899-W5035MS01HYS_GOLDBLACK_M?$PDP_THMBNL$</thumbnail>
-       <productUrl>http://www.test2.selfridges.com/GB/en/cat/genetic-denim-genetic-x-liberty-ross-stretch-jacquard-skirt_150-3003899-W5035MS01HYS/</productUrl>
+       <SkuCode>47733091</SkuCode>
+       <Description>Polo dress S-XL</Description>
+       <Brand>RALPH LAUREN</Brand>
+       <Colour>Active pink</Colour>
+       <colourSwatch>http://images.selfridges.com/is/image/selfridges/177-88064526-G14143CSB9401A6629_ACTIVEPINK_SW?$PDP_SWATCH$</colourSwatch>
+       <Size>L</Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/177-88064526-G14143CSB9401A6629_ACTIVEPINK_M?$PDP_TMB$</thumbnail>
+       <productUrl>http://www.test1.selfridges.com/GB/en/cat/ralph-lauren-polo-dress-s-xl_177-88064526-G14143CSB9401A6629/</productUrl>
        <Qty>1</Qty>
-       <UnitPrice>295.00</UnitPrice>
-       <TotalPrice>295.00</TotalPrice>
+       <UnitPrice>66.94</UnitPrice>
+       <TotalPrice>53.55</TotalPrice>
        <Discount>0.00</Discount>
-       <Tax>0.00</Tax>
-       <DeductedVAT>0.00</DeductedVAT>
+       <Tax>20.00</Tax>
+       <DeductedVAT>13.39</DeductedVAT>
        <Status>C</Status>
        <PaymentStatus>Pending</PaymentStatus>
        <WonderRoomItem>false</WonderRoomItem>
@@ -111,6 +83,11 @@
        <giftMessage></giftMessage>
        <giftBox>false</giftBox>
        <VATRate>20.00</VATRate>
+       <Personalization>
+        <Text></Text>
+        <Colour></Colour>
+        <Font></Font>
+       </Personalization>
       </Item>
      </Items>
     </OrderDeliveryGroup>

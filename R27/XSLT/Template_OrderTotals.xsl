@@ -40,19 +40,12 @@
 		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 			<xsl:call-template name="currency"/>
 			<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item">
-			<xsl:choose>
 				<!-- WONDER ROOM -->
-				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
-					<xsl:call-template name="sumPrice">
-						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']"/>
-					</xsl:call-template>
-				</xsl:when>
-				<xsl:otherwise>
+
 					<xsl:call-template name="sumPrice">
 						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item"/>
 					</xsl:call-template>
-				</xsl:otherwise>
-			</xsl:choose>
+
 			</xsl:if>
 
 			<xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">

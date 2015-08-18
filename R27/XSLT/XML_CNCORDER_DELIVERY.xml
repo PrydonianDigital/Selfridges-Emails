@@ -24,7 +24,7 @@
     <OrderDiscount>-24.00</OrderDiscount>
     <OrderTax>0.00</OrderTax>
     <ShippingPrice>0.00</ShippingPrice>
-    <DeductedVAT>-5.00</DeductedVAT>
+    <DeductedVAT>0.00</DeductedVAT>
     <Currency>GBP</Currency>
    </OrderHeader>
    <OrderDeliveryGroups>
