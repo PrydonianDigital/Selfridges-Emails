@@ -63,8 +63,7 @@
 </RefundDetails>
 <PaymentMethods>
 	<PaymentMethod>
-		<TenderType>VISA DELTA</TenderType>
-		<Last4Digits>1111</Last4Digits>
+		<TenderType>eVoucher</TenderType>
 		<Value>1309.95</Value>
 	</PaymentMethod>
 </PaymentMethods>

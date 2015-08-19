@@ -5,7 +5,7 @@
 <xsl:import href="Template_SumPrice.xsl"/>
 <xsl:import href="Template_ThisDelivery.xsl"/>
 <xsl:import href="Template_ToFollow.xsl"/>
-<xsl:import href="Template_OrderTotalsDespatch.xsl"/>
+<xsl:import href="Template_OrderTotals.xsl"/>
 <xsl:import href="Template_DespatchedDeliveryGroupId.xsl"/>
 
 <xsl:template match="/">
@@ -97,6 +97,10 @@
 		<!-- end show pending items -->
 
 	</table>
+
+<!-- show refunded totals -->
+<xsl:call-template name="orderTotals"/>
+<!-- end show refunded totals -->
 
 </xsl:if>
 
