@@ -4,6 +4,7 @@
 <xsl:template name="currency">
 	<!-- main order -->
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='GBP'"><span>&#xa3;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='GBX'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='USD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='CAD'"><span>&#x24;</span></xsl:if>
@@ -24,6 +25,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderHeader/Currency='TWD'"><span>&#x24;</span></xsl:if>
 	<!-- returned -->
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='GBP'"><span>&#xa3;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='GBX'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='USD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='CAD'"><span>&#x24;</span></xsl:if>
@@ -44,6 +46,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='TWD'"><span>&#x24;</span></xsl:if>
 	<!-- refunded -->
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='GBP'"><span>&#xa3;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='GBX'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='USD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='CAD'"><span>&#x24;</span></xsl:if>
@@ -64,6 +67,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='TWD'"><span>&#x24;</span></xsl:if>
 	<!-- other -->
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='GBP'"><span>&#xa3;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='GBX'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='USD'"><span>&#x24;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='CAD'"><span>&#x24;</span></xsl:if>
