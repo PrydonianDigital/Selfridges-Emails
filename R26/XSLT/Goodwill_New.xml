@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="150_GoodwillRefund.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>GOODWILL_REFUND</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mr</Title>
+		<FirstName>Guest</FirstName>
+		<Surname>Customer</Surname>
+		<Email>guest.customer@test.com</Email>
+		<ContactNumber>0234353253</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+
+<RefundDetails>
+	<OrderId>16003034</OrderId>
+	<ShippingRefundValue>10.00</ShippingRefundValue>
+	<giftingRefundValue>5.00</giftingRefundValue>
+	<ShippingRefundReason></ShippingRefundReason>
+	<giftingRefundReason></giftingRefundReason>
+	<RefundedItems>
+
+			<RefundedItem>
+				<SkuCode>45211928</SkuCode>
+				<Description>Mini Sac De Jour box tote</Description>
+				<Brand>SAINT LAURENT</Brand>
+				<Colour>Lipstick fushia</Colour>
+				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/118-2000644-340778BOO0J5623_LIPSTICKFUSHIA_SW?$PDP_SWATCH$</ColourSwatch>
+				<Size></Size>
+				<Thumbnail>http://images.selfridges.com/is/image/selfridges/118-2000644-340778BOO0J5623_LIPSTICKFUSHIA_M?$PDP_TMB$</Thumbnail>
+				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/saint-laurent-mini-sac-de-jour-box-tote_118-2000644-340778BOO0J5623/</ProductUrl>
+			    <Qty>1</Qty>
+			    <ItemRefundValue>10.00</ItemRefundValue>
+			    <ItemRefundReason>Disputed delivery - carrier confirmed</ItemRefundReason>
+			    <TaxRefundValue></TaxRefundValue>
+			    <TaxRefundReason></TaxRefundReason>
+			    <Currency>GBP</Currency>
+			</RefundedItem>
+
+			<RefundedItem>
+				<SkuCode>45211928</SkuCode>
+				<Description>Mini Sac De Jour box tote</Description>
+				<Brand>SAINT LAURENT</Brand>
+				<Colour>Lipstick fushia</Colour>
+				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/118-2000644-340778BOO0J5623_LIPSTICKFUSHIA_SW?$PDP_SWATCH$</ColourSwatch>
+				<Size></Size>
+				<Thumbnail>http://images.selfridges.com/is/image/selfridges/118-2000644-340778BOO0J5623_LIPSTICKFUSHIA_M?$PDP_TMB$</Thumbnail>
+				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/saint-laurent-mini-sac-de-jour-box-tote_118-2000644-340778BOO0J5623/</ProductUrl>
+			    <Qty>1</Qty>
+			    <ItemRefundValue>12.00</ItemRefundValue>
+			    <ItemRefundReason>Disputed delivery - carrier confirmed</ItemRefundReason>
+			    <TaxRefundValue></TaxRefundValue>
+			    <TaxRefundReason></TaxRefundReason>
+			    <Currency>GBP</Currency>
+			</RefundedItem>
+
+	</RefundedItems>
+</RefundDetails>
+<PaymentMethods>
+	<PaymentMethod>
+		<TenderType>VISA DELTA</TenderType>
+		<Last4Digits>1111</Last4Digits>
+		<Value>1309.95</Value>
+	</PaymentMethod>
+</PaymentMethods>
+	</EmailDataArea>
+</SFEmailMessages>
