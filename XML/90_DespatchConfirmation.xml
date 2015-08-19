@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="../R27/XSLT/90_DespatchConfirmation.xsl"?>
+
+<SFEmailMessages>
+ <emailHeader>
+  <emailType>ORDER_DESPATCHED</emailType>
+ </emailHeader>
+ <Recipient>
+  <Title>Mr</Title>
+  <FirstName>1corner1</FirstName>
+  <Surname>1corner2</Surname>
+  <Email>mark@prydonian.digital</Email>
+  <ContactNumber>83276872162834</ContactNumber>
+  <MobileNumber></MobileNumber>
+  <CommunicationPreference>email</CommunicationPreference>
+ </Recipient>
+ <EmailDataArea>
+  <DespatchedDeliveryGroupId>16000771-01</DespatchedDeliveryGroupId>
+  <Order>
+   <OrderHeader>
+    <OrderId>16000771</OrderId>
+    <OrderStatus>r</OrderStatus>
+    <OrderPrice>410.66</OrderPrice>
+    <OrderDiscount>-20.00</OrderDiscount>
+    <StaffDiscount>-294.75</StaffDiscount>
+    <OrderTax>92.22</OrderTax>
+    <ShippingPrice>25.00</ShippingPrice>
+    <DeductedVAT>56.81</DeductedVAT>
+    <Currency>GBP</Currency>
+   </OrderHeader>
+   <OrderDeliveryGroups>
+    <OrderDeliveryGroup>
+     <DeliveryGroupId>16000771-01</DeliveryGroupId>
+     <Status>S</Status>
+     <DeliveryAddress>
+      <DeliveryName>Mr china1 china2</DeliveryName>
+      <Address1>China Hotel,</Address1>
+      <Address2></Address2>
+      <Address3></Address3>
+      <City>A Marriott Hotel</City>
+      <County>Guangzhou</County>
+      <PostCode>51 001</PostCode>
+      <CountryCode>CN</CountryCode>
+      <DeliveryInstruction>sdfsdf</DeliveryInstruction>
+      <ContactPhone>07769359185</ContactPhone>
+      <HomePhone>07769359185</HomePhone>
+      <MobilePhone>07769359185</MobilePhone>
+      <Email></Email>
+     </DeliveryAddress>
+     <hasWonderRoomItems>false</hasWonderRoomItems>
+     <DeliveryMethod>INTNONEU</DeliveryMethod>
+     <EarliestDeliveryDate></EarliestDeliveryDate>
+     <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
+     <LatestDeliveryDate>20150707</LatestDeliveryDate>
+     <LatestDeliveryTimeSlotEnd>125035</LatestDeliveryTimeSlotEnd>
+     <Price>411.20</Price>
+     <Discount>-314.21</Discount>
+     <Tax>92.22</Tax>
+     <ShippingPrice>25.00</ShippingPrice>
+     <DeductedVAT>56.81</DeductedVAT>
+     <Currency>GBP</Currency>
+     <Items>
+      <Item>
+       <SkuCode>14585302</SkuCode>
+       <Description>Classic tribute sandals in textured black leather</Description>
+       <Brand>SAINT LAURENT</Brand>
+       <Colour>Black</Colour>
+       <colourSwatch>http://images.selfridges.com/is/image/selfridges/926-10004-2387500109_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+       <Size>EUR 35 / 2 UK WOMEN</Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/926-10004-2387500109_BLACK_M?$PDP_TMB$</thumbnail>
+       <productUrl>http://www.test2.selfridges.com/GB/en/cat/saint-laurent-classic-tribute-sandals-in-textured-black-leather_926-10004-2387500109/</productUrl>
+       <Qty>1</Qty>
+       <UnitPrice>575.00</UnitPrice>
+       <TotalPrice>525.13</TotalPrice>
+       <Discount>-275.83</Discount>
+       <Tax>80.96</Tax>
+       <DeductedVAT>49.87</DeductedVAT>
+       <Status>S</Status>
+       <PaymentStatus>Settled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode>20150627003</TrackingCode>
+       <giftMessage>saint</giftMessage>
+       <giftBox>false</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+      <Item>
+       <SkuCode>99412142</SkuCode>
+       <Description>Ansley suede slippers</Description>
+       <Brand>UGG</Brand>
+       <Colour>Brown</Colour>
+       <colourSwatch>http://images.selfridges.com/is/image/selfridges/512-10004-2462930209_BROWN_SW?$PDP_SWATCH$</colourSwatch>
+       <Size>EUR 39 / 6 UK WOMEN</Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/512-10004-2462930209_BROWN_M?$PDP_TMB$</thumbnail>
+       <productUrl>http://www.test2.selfridges.com/GB/en/cat/ugg-ansley-suede-slippers_512-10004-2462930209/</productUrl>
+       <Qty>1</Qty>
+       <UnitPrice>80.00</UnitPrice>
+       <TotalPrice>73.06</TotalPrice>
+       <Discount>-38.38</Discount>
+       <Tax>11.26</Tax>
+       <DeductedVAT>6.94</DeductedVAT>
+       <Status>S</Status>
+       <PaymentStatus>Settled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode>20150627003</TrackingCode>
+       <giftMessage>ugg</giftMessage>
+       <giftBox>false</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+      <Item>
+       <SkuCode>75898472</SkuCode>
+       <Description>Selfridges gift box</Description>
+       <Brand></Brand>
+       <Colour></Colour>
+       <colourSwatch></colourSwatch>
+       <Size></Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/918-1000-SLFGIFTBOXING_M_M?$PDP_TMB$</thumbnail>
+       <productUrl>ProductDisplay?storeId=10052&amp;productId=167808&amp;catalogId=16151&amp;langId=-1</productUrl>
+       <Qty>1</Qty>
+       <UnitPrice>5.00</UnitPrice>
+       <TotalPrice>5.00</TotalPrice>
+       <Discount>-0.27</Discount>
+       <Tax>0.00</Tax>
+       <DeductedVAT>0.00</DeductedVAT>
+       <Status>S</Status>
+       <PaymentStatus>Settled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode>20150627003</TrackingCode>
+       <giftMessage></giftMessage>
+       <giftBox>true</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+      <Item>
+       <SkuCode>75898472</SkuCode>
+       <Description>Selfridges gift box</Description>
+       <Brand></Brand>
+       <Colour></Colour>
+       <colourSwatch></colourSwatch>
+       <Size></Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/918-1000-SLFGIFTBOXING_M_M?$PDP_TMB$</thumbnail>
+       <Qty>1</Qty>
+       <UnitPrice>5.00</UnitPrice>
+       <TotalPrice>5.00</TotalPrice>
+       <Discount>-0.27</Discount>
+       <Tax>0.00</Tax>
+       <DeductedVAT>0.00</DeductedVAT>
+       <Status>S</Status>
+       <PaymentStatus>Settled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode>20150627003</TrackingCode>
+       <giftMessage></giftMessage>
+       <giftBox>true</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+     </Items>
+    </OrderDeliveryGroup>
+   </OrderDeliveryGroups>
+  </Order>
+ </EmailDataArea>
+</SFEmailMessages>
