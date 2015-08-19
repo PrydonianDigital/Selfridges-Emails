@@ -46,15 +46,13 @@
 
 								<p><strong style="font-weight: bold;">What next?</strong></p>
 
-								<ul style="padding: 0 0 0 15px;">
-
 									<xsl:choose>
 
 										<!-- if has Wonder Room Items -->
 
 										<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
 
-											<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</li>
+											<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Bring this email – either as a print out or on your phone, the card you paid with and a valid passport <strong style="font-weight: bold;">or</strong> photo driving licence to the <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']/WonderRoomBrand, $special, $translated)"/></strong> boutique in <strong class="name" style="font-weight: bold;">The Wonder Room on G at Selfridges Oxford Street, London</strong>. Please do not go to the Click &amp; Collect point.</p>
 
 										</xsl:when>
 
@@ -64,19 +62,20 @@
 
 										<xsl:otherwise>
 
-											<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone - to the in-store Click &amp; Collect point (<a href="http://www.selfridges.com/content/dispatch-and-delivery" target="_blank" style="color: #545454; text-decoration: underline;">see map</a>). </li>
+											<ul style="padding: 0 0 0 15px;">
+												<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring this email – either as a print out or on your phone - to the in-store Click &amp; Collect point (<a href="http://www.selfridges.com/content/dispatch-and-delivery" target="_blank" style="color: #545454; text-decoration: underline;">see map</a>). </li>
 
-											<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring the card you paid with <strong style="font-weight: bold;">or</strong> a valid passport or photo driving licence. If you paid via PayPal or Gift Card, you'll need your passport or photo driving licence.</li>
+												<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">Bring the card you paid with <strong style="font-weight: bold;">or</strong> a valid passport or photo driving licence. If you paid via PayPal or Gift Card, you'll need your passport or photo driving licence.</li>
 
-											<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">If you'd like somebody to collect the order on your behalf, they'll need a copy of this email and their passport or photo driving licence. Unfortunately, if you paid via PayPal, you'll need to collect the order yourself.</li>
+												<li style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px 20px; padding: 0;" align="left">If you'd like somebody to collect the order on your behalf, they'll need a copy of this email and their passport or photo driving licence. Unfortunately, if you paid via PayPal, you'll need to collect the order yourself.</li>
+
+											</ul>
 
 										</xsl:otherwise>
 
 										<!-- end if no Wonder Room Items -->
 
 									</xsl:choose>
-
-								</ul>
 
 								<xsl:choose>
 

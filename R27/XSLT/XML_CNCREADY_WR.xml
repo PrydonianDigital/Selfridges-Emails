@@ -45,7 +45,7 @@
      </StoreAddress>
      <CollectionDate>20150709</CollectionDate>
      <ExpirationDays>4</ExpirationDays>
-     <hasWonderRoomItems>True</hasWonderRoomItems>
+     <hasWonderRoomItems>true</hasWonderRoomItems>
      <DeliveryMethod>UKSTORE</DeliveryMethod>
      <Price>479.00</Price>
      <Discount>-20.00</Discount>
