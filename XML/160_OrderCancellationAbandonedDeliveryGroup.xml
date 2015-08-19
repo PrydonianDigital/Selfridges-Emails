@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="../R27/XSLT/160_OrderCancellationAbandonedDeliveryGroup.xsl"?>
+
+<SFEmailMessages>
+ <emailHeader>
+  <emailType>ABANDONED_DELIVERY_GROUP</emailType>
+ </emailHeader>
+ <Recipient>
+  <Title>Mr</Title>
+  <FirstName>4corner1</FirstName>
+  <Surname>4corner2</Surname>
+  <Email>mark@prydonian.digital</Email>
+  <ContactNumber>447769359185</ContactNumber>
+  <MobileNumber></MobileNumber>
+  <CommunicationPreference>email</CommunicationPreference>
+ </Recipient>
+ <EmailDataArea>
+  <AbandonedDeliveryGroupId>16001004-02</AbandonedDeliveryGroupId>
+  <Order>
+   <OrderHeader>
+    <OrderId>16001004</OrderId>
+    <OrderStatus>X</OrderStatus>
+    <OrderPrice>99.90</OrderPrice>
+    <OrderDiscount>-90.00</OrderDiscount>
+    <OrderTax>0.00</OrderTax>
+    <ShippingPrice>9.90</ShippingPrice>
+    <DeductedVAT>0.00</DeductedVAT>
+    <Currency>GBP</Currency>
+   </OrderHeader>
+   <OrderDeliveryGroups>
+    <OrderDeliveryGroup>
+     <DeliveryGroupId>16001004-01</DeliveryGroupId>
+     <Status>X</Status>
+     <DeliveryAddress>
+      <DeliveryName>Mr 4corner1 4corner2</DeliveryName>
+      <Address1>4 Cornerfield</Address1>
+      <Address2></Address2>
+      <Address3></Address3>
+      <City>HATFIELD</City>
+      <County>Hertfordshire</County>
+      <PostCode>AL10 0UG</PostCode>
+      <CountryCode>GB</CountryCode>
+      <DeliveryInstruction></DeliveryInstruction>
+      <ContactPhone>447769359185</ContactPhone>
+      <HomePhone>447769359185</HomePhone>
+      <MobilePhone>447769359185</MobilePhone>
+      <Email></Email>
+     </DeliveryAddress>
+     <hasWonderRoomItems>false</hasWonderRoomItems>
+     <DeliveryMethod>UKSTD</DeliveryMethod>
+     <EarliestDeliveryDate>20150709</EarliestDeliveryDate>
+     <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+     <LatestDeliveryDate>20150709</LatestDeliveryDate>
+     <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+     <Price>49.95</Price>
+     <Discount>-45.00</Discount>
+     <Tax>0.00</Tax>
+     <ShippingPrice>4.95</ShippingPrice>
+     <DeductedVAT>0.00</DeductedVAT>
+     <Currency>GBP</Currency>
+     <Items>
+      <Item>
+       <SkuCode>26247861</SkuCode>
+       <Description>Leather credit card slip</Description>
+       <Brand>MULBERRY</Brand>
+       <Colour>Oak</Colour>
+       <colourSwatch>http://images.selfridges.com/is/image/selfridges/217-82025479-RL3433342G110_OAK_SW?$PDP_SWATCH$</colourSwatch>
+       <Size></Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/217-82025479-RL3433342G110_OAK_M?$PDP_TMB$</thumbnail>
+       <productUrl>http://www.test2.selfridges.com/GB/en/cat/mulberry-leather-credit-card-slip_217-82025479-RL3433342G110/</productUrl>
+       <Qty>1</Qty>
+       <UnitPrice>90.00</UnitPrice>
+       <TotalPrice>90.00</TotalPrice>
+       <Discount>-45.00</Discount>
+       <Tax>0.00</Tax>
+       <DeductedVAT>0.00</DeductedVAT>
+       <Status>X</Status>
+       <PaymentStatus>Cancelled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode></TrackingCode>
+       <giftMessage></giftMessage>
+       <giftBox>false</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+     </Items>
+    </OrderDeliveryGroup>
+    <OrderDeliveryGroup>
+     <DeliveryGroupId>16001004-02</DeliveryGroupId>
+     <Status>X</Status>
+     <DeliveryAddress>
+      <DeliveryName>Mr Vijay Kayyam</DeliveryName>
+      <Address1>1 Cornerfield</Address1>
+      <Address2></Address2>
+      <Address3></Address3>
+      <City>HATFIELD</City>
+      <County>Hertfordshire</County>
+      <PostCode>AL10 0UG</PostCode>
+      <CountryCode>GB</CountryCode>
+      <DeliveryInstruction></DeliveryInstruction>
+      <ContactPhone>447817713038</ContactPhone>
+      <HomePhone>447817713038</HomePhone>
+      <MobilePhone>447817713038</MobilePhone>
+      <Email></Email>
+     </DeliveryAddress>
+     <hasWonderRoomItems>false</hasWonderRoomItems>
+     <DeliveryMethod>UKSTD</DeliveryMethod>
+     <EarliestDeliveryDate>20150709</EarliestDeliveryDate>
+     <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+     <LatestDeliveryDate>20150709</LatestDeliveryDate>
+     <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+     <Price>49.95</Price>
+     <Discount>-45.00</Discount>
+     <Tax>0.00</Tax>
+     <ShippingPrice>4.95</ShippingPrice>
+     <DeductedVAT>0.00</DeductedVAT>
+     <Currency>GBP</Currency>
+     <Items>
+      <Item>
+       <SkuCode>26247861</SkuCode>
+       <Description>Leather credit card slip</Description>
+       <Brand>MULBERRY</Brand>
+       <Colour>Oak</Colour>
+       <colourSwatch>http://images.selfridges.com/is/image/selfridges/217-82025479-RL3433342G110_OAK_SW?$PDP_SWATCH$</colourSwatch>
+       <Size></Size>
+       <thumbnail>http://images.selfridges.com/is/image/selfridges/217-82025479-RL3433342G110_OAK_M?$PDP_TMB$</thumbnail>
+       <productUrl>http://www.test2.selfridges.com/GB/en/cat/mulberry-leather-credit-card-slip_217-82025479-RL3433342G110/</productUrl>
+       <Qty>1</Qty>
+       <UnitPrice>90.00</UnitPrice>
+       <TotalPrice>90.00</TotalPrice>
+       <Discount>-45.00</Discount>
+       <Tax>0.00</Tax>
+       <DeductedVAT>0.00</DeductedVAT>
+       <Status>X</Status>
+       <PaymentStatus>Cancelled</PaymentStatus>
+       <WonderRoomItem>false</WonderRoomItem>
+       <WonderRoomBrand></WonderRoomBrand>
+       <TrackingCode></TrackingCode>
+       <giftMessage></giftMessage>
+       <giftBox>false</giftBox>
+       <VATRate>20.00</VATRate>
+      </Item>
+     </Items>
+    </OrderDeliveryGroup>
+   </OrderDeliveryGroups>
+  </Order>
+ </EmailDataArea>
+</SFEmailMessages>
