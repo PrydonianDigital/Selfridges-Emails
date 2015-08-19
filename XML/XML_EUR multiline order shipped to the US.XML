@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="30_OrderConfirmation.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>ORDER_RECEIVED</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mr</Title>
+		<FirstName>Prasanth</FirstName>
+		<Surname>Jagarapu</Surname>
+		<Email>needtotest2318@gmail.com</Email>
+		<ContactNumber></ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+
+<Order>
+			<OrderHeader>
+				<OrderId>276568</OrderId>
+				<OrderStatus>C</OrderStatus>
+				<OrderPrice>398.66</OrderPrice>
+
+				<OrderDiscount>0.00</OrderDiscount>
+				<StaffDiscount>0.00</StaffDiscount>
+
+				<OrderTax>26.85</OrderTax>
+				<ShippingPrice>30.00</ShippingPrice>
+				<DeductedVAT>0.00</DeductedVAT>
+				<Currency>EUR</Currency>
+			</OrderHeader>
+			<OrderDeliveryGroups>
+
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>276568-01</DeliveryGroupId>
+						<Status>B</Status>
+
+								<DeliveryAddress>
+									<DeliveryName>Mr Prasanth Jagarapu</DeliveryName>
+									<Address1>136 Tatham Road</Address1>
+									<Address2>Bensalem</Address2>
+									<Address3></Address3>
+									<City>Bensalem</City>
+									<County>PA</County>
+									<PostCode>19020</PostCode>
+									<CountryCode>US</CountryCode>
+									<DeliveryInstruction></DeliveryInstruction>
+									<ContactPhone>07898809644</ContactPhone>
+									<HomePhone>07898809644</HomePhone>
+									<MobilePhone>07898809644</MobilePhone>
+									<Email></Email>
+								</DeliveryAddress>
+
+						<hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+							<DeliveryMethod>INTNONEU</DeliveryMethod>
+
+								<EarliestDeliveryDate></EarliestDeliveryDate>
+								<EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
+								<LatestDeliveryDate>20150827</LatestDeliveryDate>
+								<LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
+
+						<Price>398.66</Price>
+						<Discount>0.00</Discount>
+						<Tax>26.85</Tax>
+						<ShippingPrice>30.00</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>EUR</Currency>
+						<Items>
+
+								<Item>
+									<SkuCode>16879072</SkuCode>
+									<Description>100 Series wristwatch</Description>
+									<Brand>UNIFORM WARES</Brand>
+									<Colour>Brown</Colour>
+									<colourSwatch>http://images.selfridges.com/is/image/selfridges/106-3002457-103_BROWN_SW?$PDP_SWATCH$</colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/106-3002457-103_BROWN_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.slfst3p.selfridges.com/GB/en/cat/uniform-wares-100-series-wristwatch_106-3002457-103/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>164.07</UnitPrice>
+									<TotalPrice>164.07</TotalPrice>
+									<Discount>0.00</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>C</Status>
+									<PaymentStatus>Pending</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+
+										<Personalization>
+											<Text></Text>
+
+												<Colour></Colour>
+
+												<Font></Font>
+
+										</Personalization>
+
+								</Item>
+
+								<Item>
+									<SkuCode>11654797</SkuCode>
+									<Description>GA110HC Hyper Complex watch</Description>
+									<Brand>G-SHOCK</Brand>
+									<Colour>Black</Colour>
+									<colourSwatch>http://images.selfridges.com/is/image/selfridges/106-73036854-GA110HCBLKGOLD_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/106-73036854-GA110HCBLKGOLD_BLACK_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.slfst3p.selfridges.com/GB/en/cat/g-shock-ga110hc-hyper-complex-watch_106-73036854-GA110HCBLKGOLD/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>177.74</UnitPrice>
+									<TotalPrice>177.74</TotalPrice>
+									<Discount>0.00</Discount>
+									<Tax>26.85</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>C</Status>
+									<PaymentStatus>Pending</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+
+										<Personalization>
+											<Text></Text>
+
+												<Colour></Colour>
+
+												<Font></Font>
+
+										</Personalization>
+
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+			</OrderDeliveryGroups>
+
+</Order>
+	</EmailDataArea>
+</SFEmailMessages>

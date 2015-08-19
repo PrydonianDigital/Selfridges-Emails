@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="30_OrderConfirmation.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ORDER_RECEIVED</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Ms</Title>
+                <FirstName>Judith</FirstName>
+                <Surname>Test</Surname>
+                <Email>jrosenbergtest@gmail.com</Email>
+                <ContactNumber>00000777700</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+<Order>
+                        <OrderHeader>
+                                <OrderId>130004496</OrderId>
+                                <OrderStatus>C</OrderStatus>
+                                <OrderPrice>345.44</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>
+                                <StaffDiscount>0.00</StaffDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>18.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>EUR</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130004496-01</DeliveryGroupId>
+                                                <Status>B</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr Germany Test</DeliveryName>
+                                                                        <Address1>Lützowpl. 17</Address1>
+                                                                        <Address2></Address2>
+                                                                        <Address3></Address3>
+                                                                        <City>Berlin</City>
+                                                                        <County></County>
+                                                                        <PostCode>10 785</PostCode>
+                                                                        <CountryCode>DE</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>00000000000</ContactPhone>
+                                                                        <HomePhone>00000000000</HomePhone>
+                                                                        <MobilePhone>00000000000</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>INTEU</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate>20150821</EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20150827</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>345.44</Price>
+                                                <Discount>0.00</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>18.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>EUR</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>98290413</SkuCode>
+                                                                        <Description>910 skinny low-rise jeans</Description>
+                                                                        <Brand>J BRAND</Brand>
+                                                                        <Colour>Indigo blue</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/150-3000993-910BASIC_INDIGOBLUE_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>25</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/150-3000993-910BASIC_INDIGOBLUE_M?$PDP_TMB$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/j-brand-910-skinny-low-rise-jeans_150-3000993-910BASIC/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>137.00</UnitPrice>
+                                                                        <TotalPrice>137.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                                <Item>
+                                                                        <SkuCode>97376415</SkuCode>
+                                                                        <Description>Crew neck cotton t-shirt</Description>
+                                                                        <Brand>ZIMMERLI</Brand>
+                                                                        <Colour>White</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/102-85418922-2205125_WHITE_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>M</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/102-85418922-2205125_WHITE_M?$PDP_TMB$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/zimmerli-crew-neck-cotton-t-shirt_102-85418922-2205125/</productUrl>
+                                                                        <Qty>3</Qty>
+                                                                        <UnitPrice>63.48</UnitPrice>
+                                                                        <TotalPrice>190.44</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+</Order>
+        </EmailDataArea>
+</SFEmailMessages>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="30_OrderConfirmation.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ORDER_RECEIVED</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Ms</Title>
+                <FirstName>Judith</FirstName>
+                <Surname>Test</Surname>
+                <Email>jrosenbergtest@gmail.com</Email>
+                <ContactNumber>00000777700</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+<Order>
+                        <OrderHeader>
+                                <OrderId>130004495</OrderId>
+                                <OrderStatus>C</OrderStatus>
+                                <OrderPrice>117.62</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>
+                                <StaffDiscount>-91.83</StaffDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>4.95</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130004495-01</DeliveryGroupId>
+                                                <Status>B</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr Test Test</DeliveryName>
+                                                                        <Address1>2 Norrys Close</Address1>
+                                                                        <Address2>Cockfosters</Address2>
+                                                                        <Address3></Address3>
+                                                                        <City>BARNET</City>
+                                                                        <County>Hertfordshire</County>
+                                                                        <PostCode>EN4 9JY</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>000000000000</ContactPhone>
+                                                                        <HomePhone>000000000000</HomePhone>
+                                                                        <MobilePhone>000000000000</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTD</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate>20150821</EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20150821</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>117.62</Price>
+                                                <Discount>-91.83</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>4.95</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>10919323</SkuCode>
+                                                                        <Description>Zip&amp;ndash;up hoody</Description>
+                                                                        <Brand>RALPH LAUREN</Brand>
+                                                                        <Colour>Light sport heather</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/434-88064526-A14KHZ75B7715A0232_LIGHTSPORTHEATHER_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>L</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/434-88064526-A14KHZ75B7715A0232_LIGHTSPORTHEATHER_M?$PDP_TMB$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/ralph-lauren-zip-up-hoody_434-88064526-A14KHZ75B7715A0232/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>100.00</UnitPrice>
+                                                                        <TotalPrice>100.00</TotalPrice>
+                                                                        <Discount>-50.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                                <Item>
+                                                                        <SkuCode>98174843</SkuCode>
+                                                                        <Description>Pure silk vest</Description>
+                                                                        <Brand>HANRO</Brand>
+                                                                        <Colour>Black</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/263-1000262-1717_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>M</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/263-1000262-1717_BLACK_M?$PDP_TMB$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/hanro-pure-silk-vest_263-1000262-1717/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>69.50</UnitPrice>
+                                                                        <TotalPrice>69.50</TotalPrice>
+                                                                        <Discount>-24.33</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                                <Item>
+                                                                        <SkuCode>34093627</SkuCode>
+                                                                        <Description>Boy logo snapback cap</Description>
+                                                                        <Brand>BOY LONDON</Brand>
+                                                                        <Colour>White/black</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/143-3002657-BOYTRUCKERWHTBLK_WHITEBLACK_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>1 Size</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/143-3002657-BOYTRUCKERWHTBLK_WHITEBLACK_M?$PDP_TMB$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/boy-london-boy-logo-snapback-cap_143-3002657-BOYTRUCKERWHTBLK/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>35.00</UnitPrice>
+                                                                        <TotalPrice>35.00</TotalPrice>
+                                                                        <Discount>-17.50</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+</Order>
+        </EmailDataArea>
+</SFEmailMessages>
