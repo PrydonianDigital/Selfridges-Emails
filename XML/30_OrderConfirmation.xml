@@ -34,7 +34,7 @@
      <Status>B</Status>
      <DeliveryAddress>
       <DeliveryName>Mr paris1 paris2</DeliveryName>
-      <Address1>9 rue Béranger</Address1>
+      <Address1>9 rue Beranger</Address1>
       <Address2></Address2>
       <Address3></Address3>
       <City>Paris</City>
@@ -62,7 +62,7 @@
      <Items>
       <Item>
        <SkuCode>42471042</SkuCode>
-       <Description>Orchidée Impériale body cream 200ml</Description>
+       <Description>Orchidee Imperiale body cream 200ml</Description>
        <Brand>GUERLAIN</Brand>
        <Colour></Colour>
        <colourSwatch></colourSwatch>
@@ -86,13 +86,13 @@
       </Item>
       <Item>
        <SkuCode>98503766</SkuCode>
-       <Description>Super Spot Remover™ Blemish treatment Gel 10ml</Description>
+       <Description>Super Spot Remover Blemish treatment Gel 10ml</Description>
        <Brand>ORIGINS</Brand>
        <Colour></Colour>
        <colourSwatch></colourSwatch>
        <Size></Size>
        <thumbnail>http://images.selfridges.com/is/image/selfridges/332-85076694-0J3M01_M_M?$PDP_TMB$</thumbnail>
-       <productUrl>http://www.test2.selfridges.com/GB/en/cat/origins-super-spot-remover™-blemish-treatment-gel-10ml_332-85076694-0J3M01/</productUrl>
+       <productUrl>http://www.test2.selfridges.com/GB/en/cat/origins-super-spot-remover-blemish-treatment-gel-10ml_332-85076694-0J3M01/</productUrl>
        <Qty>1</Qty>
        <UnitPrice>15.00</UnitPrice>
        <TotalPrice>15.00</TotalPrice>
