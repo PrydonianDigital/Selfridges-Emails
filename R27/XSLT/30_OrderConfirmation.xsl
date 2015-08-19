@@ -5,6 +5,7 @@
 <xsl:import href="Template_SumPrice.xsl"/>
 <xsl:import href="Template_Items.xsl"/>
 <xsl:import href="Template_FormatDate.xsl"/>
+<xsl:import href="Template_CountryCode.xsl"/>
 <xsl:import href="Template_OrderTotals.xsl"/>
 
 <xsl:template match="/">
@@ -44,6 +45,9 @@
 									<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/Address3!=''"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/Address3, $special, $translated)"/><br /></xsl:if>
 									<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City, $special, $translated)"/><br /></xsl:if>
 									<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/PostCode!=''"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/PostCode, $special, $translated)"/><br /></xsl:if>
+									<xsl:call-template name="CountryCode">
+										<xsl:with-param name="CountryName" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/CountryCode" />
+									</xsl:call-template>
 								</p>
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left"><strong style="font-weight: bold;">Your order will be delivered by:</strong><br />
