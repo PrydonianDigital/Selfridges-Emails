@@ -5,7 +5,8 @@
 <xsl:import href="Template_SumPrice.xsl"/>
 <xsl:import href="Template_ThisDelivery.xsl"/>
 <xsl:import href="Template_ToFollow.xsl"/>
-<xsl:import href="Template_OrderTotals.xsl"/>
+<xsl:import href="Template_CountryCode.xsl"/>
+<xsl:import href="Template_OrderTotalsDespatch.xsl"/>
 <xsl:import href="Template_DespatchedDeliveryGroupId.xsl"/>
 
 <xsl:template match="/">
@@ -28,7 +29,7 @@
 					<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 						<td class="text-pad autolink mainText" style="border-collapse: collapse !important; vertical-align: top; text-align: left; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0px 10px 0;" align="left" valign="top">
 
-							<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
+							<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left"><strong style="font-weight: bold; text-transform: capitalize;">Dear <xsl:value-of select="translate(SFEmailMessages/Recipient/FirstName, $special, $translated)"/>,</strong></p>
 
 							<xsl:choose>
 
@@ -47,7 +48,17 @@
 
 							</xsl:choose>
 
-							<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Want to keep an eye on it? Tracking information is available for most items. To find yours, simply sign in to <a href="[EMV LINK]5[EMV /LINK]" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">My Account</a> and go to My Orders. If you placed your order without creating an account, unfortunately tracking information is not available.</p>
+							<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">
+								<xsl:choose>
+
+									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/trackingURL!=''">
+										Want to keep an eye on it? Find your <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">tracking information here</a>.
+									</xsl:when>
+									<xsl:otherwise>
+										Tracking information is available for most items. To find yours, simply sign in to <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">My Account</a> and go to My Orders.
+									</xsl:otherwise>
+								</xsl:choose>
+							</p>
 
 						<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item/Personalization!=''">
 
@@ -98,9 +109,9 @@
 
 	</table>
 
-<!-- show refunded totals -->
-<xsl:call-template name="orderTotals"/>
-<!-- end show refunded totals -->
+	<!-- show despatched subtotal -->
+	<xsl:call-template name="orderTotalsDespatch" />
+	<!-- end show despatched subtotal -->
 
 </xsl:if>
 
