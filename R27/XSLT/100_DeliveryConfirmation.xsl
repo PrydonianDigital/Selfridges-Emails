@@ -5,6 +5,7 @@
 <xsl:import href="Template_OrderTotals.xsl"/>
 <xsl:import href="Template_SumPrice.xsl"/>
 <xsl:import href="Template_Currency.xsl"/>
+<xsl:import href="Template_CountryCode.xsl"/>
 <xsl:import href="Template_DespatchedDeliveryGroupId.xsl"/>
 
 <xsl:template match="/">
