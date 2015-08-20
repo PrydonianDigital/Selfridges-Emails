@@ -44,6 +44,7 @@
 		<xsl:when test="$dd = 29">29</xsl:when>
 		<xsl:when test="$dd = 30">30</xsl:when>
 		<xsl:when test="$dd = 31">31</xsl:when>
+		<xsl:when test="$dd = 32">32</xsl:when>
 	</xsl:choose>
     <xsl:value-of select="' '" />
 	<xsl:choose>
