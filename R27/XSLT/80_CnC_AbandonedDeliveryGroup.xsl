@@ -2,7 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:import href="Template_Items.xsl"/>
-<xsl:import href="Template_Items.xsl"/>
 <xsl:import href="Template_Currency.xsl"/>
 <xsl:import href="Template_FormatDate.xsl"/>
 <xsl:import href="Template_ThisDelivery.xsl"/>
