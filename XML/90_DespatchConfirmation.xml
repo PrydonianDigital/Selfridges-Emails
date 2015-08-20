@@ -74,7 +74,6 @@
 
 								<Item>
 									<SkuCode>20320423</SkuCode>
-									<trackingURL>http://google.com</trackingURL>
 									<Description>Jasmine straight-leg trousers</Description>
 									<Brand>STELLA MCCARTNEY</Brand>
 									<Colour>Black</Colour>
@@ -96,6 +95,11 @@
 				   					<giftMessage>ewfewfrwfrwfrw</giftMessage>
 									<giftBox>false</giftBox>
 									<VATRate>20.00</VATRate>
+									<Personalization>
+										<Text>Vas</Text>
+										<Colour>Green</Colour>
+										<Font>Arial</Font>
+									</Personalization>
 								</Item>
 
 								<Item>
