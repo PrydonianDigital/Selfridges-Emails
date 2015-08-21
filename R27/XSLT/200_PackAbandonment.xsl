@@ -27,10 +27,7 @@
 
 						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left">We are sorry to tell you that the below item from your order <strong style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> has been cancelled. Unfortunately, when we went to dispatch the item to you, it didn't pass our quality checks.</p>
 
-						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left">We have now processed a refund for this item.
-							<xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher') and (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'GiftCard')">It will usually take 5 days for your original payment method to be credited, however some payment providers can take longer.</xsl:if>
-							<xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher') or (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'GiftCard')"> As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</xsl:if>
-						</p>
+						<p class="name" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px; padding: 0;" align="left">We have now processed a refund for this item. It will usually take 5 days for your original payment method to be credited, however some payment providers can take longer. If you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.</p>
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">We appreciate that this is really disappointing for you. Please know that we really value your custom and are constantly monitoring our standards to prevent this from happening again.</p>
 
