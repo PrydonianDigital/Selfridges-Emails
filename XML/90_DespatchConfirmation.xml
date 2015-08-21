@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-stylesheet type="text/xsl" href="../R27/XSLT/90_DespatchConfirmation.xsl"?>
+<?xml-stylesheet type="text/xsl" href="90_DespatchConfirmation.xsl"?>
 
 <SFEmailMessages>
 	<emailHeader>
@@ -75,6 +75,7 @@
 								<Item>
 									<SkuCode>20320423</SkuCode>
 									<Description>Jasmine straight-leg trousers</Description>
+									<trackingURL>foobar</trackingURL>
 									<Brand>STELLA MCCARTNEY</Brand>
 									<Colour>Black</Colour>
 									<colourSwatch>http://images.selfridges.com/is/image/selfridges/192-2000112-245376SX704_BLACK_SW?$PDP_SWATCH$</colourSwatch>
