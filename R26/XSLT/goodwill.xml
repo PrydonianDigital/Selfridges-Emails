@@ -19,7 +19,7 @@
 		<RefundDetails>
 	        <OrderId>16003529</OrderId>
 	        <ShippingRefundValue>5.00</ShippingRefundValue>
-	        <giftingRefundValue></giftingRefundValue>
+	        <giftingRefundValue>1</giftingRefundValue>
 	        <ShippingRefundReason>DC rejected - non-returnable</ShippingRefundReason>
 	        <giftingRefundReason></giftingRefundReason>
 	        <RefundedItems>
