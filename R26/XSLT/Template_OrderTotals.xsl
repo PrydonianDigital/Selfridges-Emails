@@ -32,7 +32,7 @@
 
 	</xsl:if>
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') or (SFEmailMessages/emailHeader/emailType!='INSTORE_REFUND') or (SFEmailMessages/emailHeader/emailType!='RETURN_REFUNDED')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') and (SFEmailMessages/emailHeader/emailType!='GOODWILL_REFUND')">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
@@ -42,21 +42,29 @@
 			<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item">
 			<xsl:choose>
 				<!-- WONDER ROOM -->
-				<xsl:when test="(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True') | (SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true')">
+				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
 					<xsl:call-template name="sumPrice">
-						<xsl:with-param name="pList" select="(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']) | (SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true'])"/>
+						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']"/>
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:call-template name="sumPrice">
-						<xsl:with-param name="pList" select="(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='false']) | (SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='False'])"/>
+						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='false']"/>
 					</xsl:call-template>
 				</xsl:otherwise>
 			</xsl:choose>
 			</xsl:if>
 
 			<xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">
-				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue), '###,###,###,###,###.00')"/>
+				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem[StockState='True']/ItemRefundValue), '###,###,###,###,###.00')"/>
+			</xsl:if>
+
+			<xsl:if test="SFEmailMessages/emailHeader/emailType='RETURN_REFUNDED'">
+				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='True']/ItemRefundValue), '###,###,###,###,###.00')"/>
+			</xsl:if>
+
+			<xsl:if test="SFEmailMessages/emailHeader/emailType='INSTORE_REFUND'">
+				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/RefundedValue), '###,###,###,###,###.00')"/>
 			</xsl:if>
 		</td>
 	</tr>
@@ -65,27 +73,27 @@
 
 	<!-- RETURN REFUND -->
 
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !=''">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !=''">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Refunded Gift Box
+			Delivery
 	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue,'###,###,###.00')"/>
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue,'###,###,###.00')"/>
 
 	</td></tr>
 	</xsl:if>
 	</xsl:if>
 
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !=''">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !=''">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Refunded Delivery
+			Gift Box
 	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue,'###,###,###.00')"/>
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue,'###,###,###.00')"/>
 
 	</td></tr>
 	</xsl:if>
@@ -95,19 +103,6 @@
 
 	<!-- GOODWILL -->
 
-	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !=''">
-
-	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Gift Box
-	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
-
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue,'###,###,###.00')"/>
-
-	</td></tr>
-	</xsl:if>
-	</xsl:if>
-
 	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue !='0.00'">
 	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue !=''">
 
@@ -116,6 +111,19 @@
 	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 
 	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+	</xsl:if>
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !=''">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Gift Box
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue,'###,###,###.00')"/>
 
 	</td></tr>
 	</xsl:if>
@@ -190,12 +198,13 @@
 
 	</xsl:for-each>
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType='RETURN_RECEIVED') or (SFEmailMessages/emailHeader/emailType='INSTORE_REFUND')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType='RETURN_REFUNDED')">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 			<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
-				<strong style="font-weight: bold;"><xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">Refund </xsl:if>Total</strong>
+				<strong style="font-weight: bold;">Refund Total</strong>
 			</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
-				<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/Value), '###,###,###.00')"/>
+				<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='True']/ItemRefundValue | SFEmailMessages/EmailDataArea/ReturnDetails/giftingRefundValue | SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue), '###,###,###.00')"/>
+
 			</td>
 		</tr>
 	</xsl:if>
@@ -203,9 +212,20 @@
 	<xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 			<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
-				<strong style="font-weight: bold;"><xsl:if test="SFEmailMessages/emailHeader/emailType='GOODWILL_REFUND'">Refund </xsl:if>Total</strong>
+				<strong style="font-weight: bold;">Refund Total</strong>
 			</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
+
 				<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue | SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue | SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue), '###,###,###.00')"/>
+			</td>
+		</tr>
+	</xsl:if>
+
+	<xsl:if test="SFEmailMessages/emailHeader/emailType='INSTORE_REFUND'">
+		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+			<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
+				<strong style="font-weight: bold;">Refund Total</strong>
+			</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
+				<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/RefundedValue | SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue | SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue), '###,###,###.00')"/>
 			</td>
 		</tr>
 	</xsl:if>
@@ -287,7 +307,7 @@
 									<span> (<xsl:value-of select="Last4Digits"/>)</span>
 								</xsl:when>
 								<xsl:otherwise>
-									<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="Value"/></span>
+									<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem[StockState='True']/ItemRefundValue | /SFEmailMessages/EmailDataArea/ReturnDetails/giftingRefundValue | /SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue), '###,###,###.00')"/></span>
 								</xsl:otherwise>
 							</xsl:choose>
 						</td>
