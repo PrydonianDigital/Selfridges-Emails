@@ -214,8 +214,31 @@
 			<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
 				<strong style="font-weight: bold;">Refund Total</strong>
 			</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
-
-				<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue | SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue | SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue), '###,###,###.00')"/>
+				<xsl:call-template name="currency"/>
+				<xsl:variable name="shipping">
+					<xsl:choose>
+						<xsl:when test="SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue!=''">
+							<xsl:value-of select="SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:number value="0.00"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+				<xsl:variable name="gifting">
+					<xsl:choose>
+						<xsl:when test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue!=''">
+							<xsl:value-of select="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:number value="0.00"/>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+				<xsl:variable name="var3" select="$gifting + $shipping" />
+				<xsl:variable name="var4" select="sum(SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue)" />
+				<xsl:variable name="var5" select="$var3 + $var4"/>
+				<xsl:value-of select="format-number($var5, '###,###,###.00')" />
 			</td>
 		</tr>
 	</xsl:if>
@@ -246,6 +269,32 @@
 									<span> (<xsl:value-of select="Last4Digits"/>)</span>
 								</xsl:when>
 								<xsl:otherwise>
+									<span>&#xA0;<xsl:call-template name="currency"/>
+									<xsl:variable name="shipping">
+										<xsl:choose>
+											<xsl:when test="/SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue!=''">
+												<xsl:value-of select="/SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue" />
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:number value="0.00"/>
+											</xsl:otherwise>
+										</xsl:choose>
+									</xsl:variable>
+									<xsl:variable name="gifting">
+										<xsl:choose>
+											<xsl:when test="/SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue!=''">
+												<xsl:value-of select="/SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue" />
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:number value="0.00"/>
+											</xsl:otherwise>
+										</xsl:choose>
+									</xsl:variable>
+									<xsl:variable name="var3" select="$gifting + $shipping" />
+									<xsl:variable name="var4" select="sum(/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue)" />
+									<xsl:variable name="var5" select="$var3 + $var4"/>
+									<xsl:value-of select="format-number($var5, '###,###,###.00')" />
+									</span>
 								</xsl:otherwise>
 							</xsl:choose>
 						</td>
@@ -262,7 +311,32 @@
 									<span> (<xsl:value-of select="Last4Digits"/>)</span>
 								</xsl:when>
 								<xsl:otherwise>
-									<span>&#xA0;<xsl:call-template name="currency"/><xsl:value-of select="format-number(sum(/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue | /SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue | /SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue), '###,###,###.00')"/></span>
+									<span>&#xA0;<xsl:call-template name="currency"/>
+									<xsl:variable name="shipping">
+										<xsl:choose>
+											<xsl:when test="/SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue!=''">
+												<xsl:value-of select="/SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue" />
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:number value="0.00"/>
+											</xsl:otherwise>
+										</xsl:choose>
+									</xsl:variable>
+									<xsl:variable name="gifting">
+										<xsl:choose>
+											<xsl:when test="/SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue!=''">
+												<xsl:value-of select="/SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue" />
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:number value="0.00"/>
+											</xsl:otherwise>
+										</xsl:choose>
+									</xsl:variable>
+									<xsl:variable name="var3" select="$gifting + $shipping" />
+									<xsl:variable name="var4" select="sum(/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/ItemRefundValue)" />
+									<xsl:variable name="var5" select="$var3 + $var4"/>
+									<xsl:value-of select="format-number($var5, '###,###,###.00')" />
+									</span>
 								</xsl:otherwise>
 							</xsl:choose>
 						</td>
