@@ -97,6 +97,14 @@
 
 									</xsl:when>
 
+									<!-- if has Wonder Room Items -->
+
+									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
+
+										<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">The items in your order will be available to collect from different locations in store. Please look out for separate <strong style="font-weight: bold;">'Ready to Collect'</strong> emails with your collection instructions.</p>
+
+									</xsl:when>
+
 									<!-- end if has Wonder Room Items -->
 
 									<xsl:otherwise><!-- nothing for no Wonder Room items --></xsl:otherwise>
