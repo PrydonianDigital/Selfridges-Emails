@@ -16,7 +16,7 @@
                 <CommunicationPreference>email</CommunicationPreference>
         </Recipient>
         <EmailDataArea>
-
+			<Currency>GBP</Currency>
 <RefundDetails>
         <OrderId>16003529</OrderId>
         <ShippingRefundValue>5.00</ShippingRefundValue>
