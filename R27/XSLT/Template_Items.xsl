@@ -58,6 +58,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:if test="ItemRefundValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></xsl:if>
+		<xsl:if test="RefundedValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(RefundedValue, '###,###,###,###,###.00')"/></xsl:if>
 	</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td></tr></table></td></tr>
 		</xsl:when>
 		<xsl:otherwise>
@@ -106,6 +107,7 @@
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:if test="ItemRefundValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(ItemRefundValue, '###,###,###,###,###.00')"/></xsl:if>
+		<xsl:if test="RefundedValue!=''"><xsl:call-template name="currency"/><xsl:value-of select="format-number(RefundedValue, '###,###,###,###,###.00')"/></xsl:if>
 	</td><td class="expander" style="border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 0;" align="left" valign="top"></td></tr></table></td></tr>
 
 		</xsl:otherwise>
