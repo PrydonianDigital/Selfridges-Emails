@@ -73,19 +73,6 @@
 
 	<!-- RETURN REFUND -->
 
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !=''">
-
-	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
-			Gift Box
-	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
-
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue,'###,###,###.00')"/>
-
-	</td></tr>
-	</xsl:if>
-	</xsl:if>
-
 	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !='0.00'">
 	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/ShippingRefundValue !=''">
 
@@ -99,22 +86,22 @@
 	</xsl:if>
 	</xsl:if>
 
-	<!-- end RETURN REFUND -->
-
-	<!-- GOODWILL -->
-
-	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !='0.00'">
-	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !=''">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue !=''">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
 			Gift Box
 	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 
-	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue,'###,###,###.00')"/>
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/ReturnDetails/GiftboxRefundValue,'###,###,###.00')"/>
 
 	</td></tr>
 	</xsl:if>
 	</xsl:if>
+
+	<!-- end RETURN REFUND -->
+
+	<!-- GOODWILL -->
 
 	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue !='0.00'">
 	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue !=''">
@@ -124,6 +111,19 @@
 	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
 
 	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/RefundDetails/ShippingRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+	</xsl:if>
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !='0.00'">
+	<xsl:if test="SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue !=''">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Gift Box
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/RefundDetails/giftingRefundValue,'###,###,###.00')"/>
 
 	</td></tr>
 	</xsl:if>
