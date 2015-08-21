@@ -3,35 +3,34 @@
 <?xml-stylesheet type="text/xsl" href="150_GoodwillRefund.xsl"?>
 
 <SFEmailMessages>
-        <emailHeader>
-                <emailType>GOODWILL_REFUND</emailType>
-        </emailHeader>
-        <Recipient>
-                <Title>Ms</Title>
-                <FirstName>Selfridges123</FirstName>
-                <Surname>selfridges</Surname>
-                <Email>selfridges123@gmail.com</Email>
-                <ContactNumber>0345345453543</ContactNumber>
-                <MobileNumber></MobileNumber>
-                <CommunicationPreference>email</CommunicationPreference>
-        </Recipient>
-        <EmailDataArea>
-			<Currency>GBP</Currency>
-<RefundDetails>
-        <OrderId>16003529</OrderId>
-        <ShippingRefundValue>5.00</ShippingRefundValue>
-        <giftingRefundValue>0.00</giftingRefundValue>
-        <ShippingRefundReason>DC rejected - non-returnable</ShippingRefundReason>
-        <giftingRefundReason></giftingRefundReason>
-        <RefundedItems>
+	<emailHeader>
+	    <emailType>GOODWILL_REFUND</emailType>
+	</emailHeader>
+	<Recipient>
+	        <Title>Ms</Title>
+	        <FirstName>Selfridges123</FirstName>
+	        <Surname>selfridges</Surname>
+	        <Email>selfridges123@gmail.com</Email>
+	        <ContactNumber>0345345453543</ContactNumber>
+	        <MobileNumber></MobileNumber>
+	        <CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<RefundDetails>
+	        <OrderId>16003529</OrderId>
+	        <ShippingRefundValue>5.00</ShippingRefundValue>
+	        <giftingRefundValue></giftingRefundValue>
+	        <ShippingRefundReason>DC rejected - non-returnable</ShippingRefundReason>
+	        <giftingRefundReason></giftingRefundReason>
+	        <RefundedItems>
 
-        </RefundedItems>
-</RefundDetails>
-<PaymentMethods>
-        <PaymentMethod>
-                <TenderType>GiftCard</TenderType>
-                <Value>185.00</Value>
-        </PaymentMethod>
-</PaymentMethods>
-        </EmailDataArea>
+			</RefundedItems>
+		</RefundDetails>
+		<PaymentMethods>
+			<PaymentMethod>
+	        	<TenderType>GiftCard</TenderType>
+				<Value>185.00</Value>
+			</PaymentMethod>
+		</PaymentMethods>
+	</EmailDataArea>
 </SFEmailMessages>
