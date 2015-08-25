@@ -56,7 +56,7 @@
 										Want to keep an eye on it? Find your <a href="{SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item/trackingURL}" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">tracking information here</a>.
 									</xsl:when>
 									<xsl:otherwise>
-
+										If you have an account with us, tracking information is available for most orders. Simply sign in to <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">My Account</a> and go to My Orders.
 									</xsl:otherwise>
 								</xsl:choose>
 							</p>
