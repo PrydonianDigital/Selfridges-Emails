@@ -27,11 +27,11 @@
 
 						<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">
 
-						<xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'eVoucher') and (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType != 'GiftCard')">
+						<xsl:if test="(SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/TenderType != 'eVoucher') or (SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/TenderType != 'GiftCard')">
 							It will usually take 5 days for your original payment method to be credited, however some payment providers can take longer.
 						</xsl:if>
 
-						<xsl:if test="(SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'eVoucher') or (SFEmailMessages/EmailDataArea/PaymentMethods/PaymentMethod/TenderType = 'GiftCard')">
+						<xsl:if test="(SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/TenderType = 'eVoucher') or (SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/TenderType = 'GiftCard')">
 							As you paid with a Gift Card or eVoucher, the payment will be refunded with an eVoucher in a separate email.
 						</xsl:if>
 

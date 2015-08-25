@@ -6,7 +6,7 @@
 <xsl:import href="Template_ThisDelivery.xsl"/>
 <xsl:import href="Template_ToFollow.xsl"/>
 <xsl:import href="Template_CountryCode.xsl"/>
-<xsl:import href="Template_OrderTotalsDespatch.xsl"/>
+<xsl:import href="Template_OrderTotals.xsl"/>
 <xsl:import href="Template_DespatchedDeliveryGroupId.xsl"/>
 
 <xsl:template match="/">
@@ -110,7 +110,7 @@
 	</table>
 
 	<!-- show despatched subtotal -->
-	<xsl:call-template name="orderTotalsDespatch" />
+	<xsl:call-template name="orderTotals" />
 	<!-- end show despatched subtotal -->
 
 </xsl:if>
