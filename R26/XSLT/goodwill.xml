@@ -18,42 +18,25 @@
 	<EmailDataArea>
 
 <RefundDetails>
-	<OrderId>16003583</OrderId>
-	<ShippingRefundValue>10</ShippingRefundValue>
-	<giftingRefundValue>10</giftingRefundValue>
+	<OrderId>16003647</OrderId>
+	<ShippingRefundValue></ShippingRefundValue>
+	<giftingRefundValue></giftingRefundValue>
 	<ShippingRefundReason></ShippingRefundReason>
 	<giftingRefundReason></giftingRefundReason>
 	<RefundedItems>
 
 			<RefundedItem>
-				<SkuCode>25225761</SkuCode>
-				<Description>Eagle repeat leggings</Description>
-				<Brand>BOY LONDON</Brand>
+				<SkuCode>34656952</SkuCode>
+				<Description>Golda pencil skirt</Description>
+				<Brand>THEORY</Brand>
 				<Colour>Black</Colour>
-				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/343-3002605-BOYLEGGINGS_BLACK_SW?$PDP_SWATCH$</ColourSwatch>
-				<Size>S/M</Size>
-				<Thumbnail>http://images.selfridges.com/is/image/selfridges/343-3002605-BOYLEGGINGS_BLACK_M?$PDP_TMB$</Thumbnail>
-				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/boy-london-eagle-repeat-leggings_343-3002605-BOYLEGGINGS/</ProductUrl>
+				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/187-2001525-D0005308_BLACK_SW?$PDP_SWATCH$</ColourSwatch>
+				<Size>4</Size>
+				<Thumbnail>http://images.selfridges.com/is/image/selfridges/187-2001525-D0005308_BLACK_M?$PDP_TMB$</Thumbnail>
+				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/theory-golda-pencil-skirt_187-2001525-D0005308/</ProductUrl>
 			    <Qty>1</Qty>
-			    <ItemRefundValue>2.33</ItemRefundValue>
-			    <ItemRefundReason>Damaged or faulty</ItemRefundReason>
-			    <TaxRefundValue></TaxRefundValue>
-			    <TaxRefundReason></TaxRefundReason>
-			    <Currency>GBP</Currency>
-			</RefundedItem>
-
-			<RefundedItem>
-				<SkuCode>47348684</SkuCode>
-				<Description>Genetic x Liberty Ross stretch-jacquard skinny mid-rise jeans</Description>
-				<Brand>GENETIC DENIM</Brand>
-				<Colour>Gold/black</Colour>
-				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/150-3003899-W1266MS01HYS_GOLDBLACK_SW?$PDP_SWATCH$</ColourSwatch>
-				<Size>26</Size>
-				<Thumbnail>http://images.selfridges.com/is/image/selfridges/150-3003899-W1266MS01HYS_GOLDBLACK_M?$PDP_TMB$</Thumbnail>
-				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/genetic-denim-genetic-x-liberty-ross-stretch-jacquard-skinny-mid-rise-jeans_150-3003899-W1266MS01HYS/</ProductUrl>
-			    <Qty>1</Qty>
-			    <ItemRefundValue>6.58</ItemRefundValue>
-			    <ItemRefundReason>Damaged or faulty</ItemRefundReason>
+			    <ItemRefundValue>3.89</ItemRefundValue>
+			    <ItemRefundReason>DC rejected - non-returnable</ItemRefundReason>
 			    <TaxRefundValue></TaxRefundValue>
 			    <TaxRefundReason></TaxRefundReason>
 			    <Currency>GBP</Currency>
@@ -64,13 +47,13 @@
 <PaymentMethods>
 	<PaymentMethod>
 		<TenderType>GiftCard</TenderType>
-		<Value>495.00</Value>
+		<Value>190.00</Value>
 	</PaymentMethod>
 </PaymentMethods>
 <RefundPaymentMethods>
 	<RefundPaymentMethod>
 	<TenderType>GiftCard</TenderType>
-	<RefundValue>13.91</RefundValue>
+	<RefundValue>3.89</RefundValue>
 	<Currency>GBP</Currency>
 	</RefundPaymentMethod>
 </RefundPaymentMethods>
