@@ -6,12 +6,11 @@
 <xsl:import href="Template_ThisDelivery.xsl"/>
 <xsl:import href="Template_ToFollow.xsl"/>
 <xsl:import href="Template_CountryCode.xsl"/>
-<xsl:import href="Template_OrderTotalsDespatch.xsl"/>
+<xsl:import href="Template_OrderTotals.xsl"/>
 <xsl:import href="Template_DespatchedDeliveryGroupId.xsl"/>
 
 <xsl:template match="/">
 
-	<!-- common accented/foreign characters -->
 	<xsl:variable name="special" select="àáâãäåæçèéêëìíîïðñòóôõöùúûüýÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞß" />
 
 	<xsl:variable name="translated" select="&#xE0;&#xE1;&#xE2;&#xE3;&#xE4;&#xE5;&#xE6;&#xE7;&#xE8;&#xE9;&#xEA;&#xEB;&#xEC;&#xED;&#xEE;&#xEF;&#xF0;&#xF1;&#xF2;&#xF3;&#xF4;&#xF5;&#xF6;&#xF9;&#xFA;&#xFB;&#xFC;&#xFD;&#xC0;&#xC1;&#xC2;&#xC3;&#xC4;&#xC5;&#xC6;&#xC7;&#xC8;&#xC9;&#xCA;&#xCB;&#xCC;&#xCD;&#xCE;&#xCF;&#xD0;&#xD1;&#xD2;&#xD3;&#xD4;&#xD5;&#xD6;&#xD8;&#xD9;&#xDA;&#xDB;&#xDC;&#xDD;&#xDE;&#xDF;" />
@@ -52,7 +51,7 @@
 							<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">
 								<xsl:choose>
 
-									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item/trackingURL!=''">
+									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/trackingURL!=''">
 										Want to keep an eye on it? Find your <a href="{SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item/trackingURL}" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">tracking information here</a>.
 									</xsl:when>
 									<xsl:otherwise>
@@ -111,7 +110,7 @@
 	</table>
 
 	<!-- show despatched subtotal -->
-	<xsl:call-template name="orderTotalsDespatch" />
+	<xsl:call-template name="orderTotals" />
 	<!-- end show despatched subtotal -->
 
 </xsl:if>
