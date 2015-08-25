@@ -42,7 +42,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='JPY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='KRW'"><span>&#x20a9;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/Currency='TWD'"><span>&#x24;</span></xsl:if>
-	<!-- refunded -->
+	<!-- refunded
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='GBP'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='USD'"><span>&#x24;</span></xsl:if>
@@ -61,7 +61,7 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='CHF'"><span>&#x43;&#x48;&#x46;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='JPY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='KRW'"><span>&#x20a9;</span></xsl:if>
-	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='TWD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundDetails/RefundedItems/RefundedItem/Currency='TWD'"><span>&#x24;</span></xsl:if-->
 	<!-- other -->
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='GBP'"><span>&#xa3;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
@@ -82,6 +82,26 @@
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='JPY'"><span>&#xa5;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='KRW'"><span>&#x20a9;</span></xsl:if>
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Currency='TWD'"><span>&#x24;</span></xsl:if>
+	<!-- other refunded -->
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='GBP'"><span>&#xa3;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='EUR'"><span>&#x20AC;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='USD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='CAD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='AUD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='SGD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='HKD'"><span>&#x24;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='CNY'"><span>&#xa5;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='AED'"><span>&#x62f;&#x2e;&#x625;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='SAR'"><span>&#xfdfc;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='KWD'"><span>&#xfeda;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='QAR'"><span>&#xfdfc;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='NOK'"><span>&#x6b;&#x72;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='SEK'"><span>&#x6b;&#x72;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='DKK'"><span>&#x6b;&#x72;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='CHF'"><span>&#x43;&#x48;&#x46;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='JPY'"><span>&#xa5;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='KRW'"><span>&#x20a9;</span></xsl:if>
+	<xsl:if test="/SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod/Currency='TWD'"><span>&#x24;</span></xsl:if>
 </xsl:template>
 
 </xsl:stylesheet>

@@ -19,8 +19,8 @@
 
 <RefundDetails>
 	<OrderId>16003647</OrderId>
-	<ShippingRefundValue></ShippingRefundValue>
-	<giftingRefundValue></giftingRefundValue>
+	<ShippingRefundValue>1</ShippingRefundValue>
+	<giftingRefundValue>2</giftingRefundValue>
 	<ShippingRefundReason></ShippingRefundReason>
 	<giftingRefundReason></giftingRefundReason>
 	<RefundedItems>
