@@ -394,7 +394,7 @@
 
 	</xsl:if>
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType = 'GOODWILL_REFUND')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType = 'GOODWILL_REFUND') or (SFEmailMessages/emailHeader/emailType = 'INSTORE_REFUND') or (SFEmailMessages/emailHeader/emailType = 'RETURN_REFUNDED')">
 
 		<xsl:for-each select="SFEmailMessages/EmailDataArea/RefundPaymentMethods/RefundPaymentMethod">
 			<xsl:choose>
