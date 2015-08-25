@@ -4,32 +4,76 @@
 
 <SFEmailMessages>
 	<emailHeader>
-	    <emailType>GOODWILL_REFUND</emailType>
+		<emailType>GOODWILL_REFUND</emailType>
 	</emailHeader>
 	<Recipient>
-	        <Title>Ms</Title>
-	        <FirstName>Selfridges123</FirstName>
-	        <Surname>selfridges</Surname>
-	        <Email>selfridges123@gmail.com</Email>
-	        <ContactNumber>0345345453543</ContactNumber>
-	        <MobileNumber></MobileNumber>
-	        <CommunicationPreference>email</CommunicationPreference>
+		<Title>Ms</Title>
+		<FirstName>Selfridges123</FirstName>
+		<Surname>selfridges</Surname>
+		<Email>selfridges123@gmail.com</Email>
+		<ContactNumber>0345345453543</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
 	</Recipient>
 	<EmailDataArea>
-		<RefundDetails>
-	        <OrderId>16003529</OrderId>
-	        <ShippingRefundValue>1</ShippingRefundValue>
-	        <giftingRefundValue>1</giftingRefundValue>
-	        <ShippingRefundReason>DC rejected - non-returnable</ShippingRefundReason>
-	        <giftingRefundReason></giftingRefundReason>
-	        <RefundedItems>
-			</RefundedItems>
-		</RefundDetails>
-		<PaymentMethods>
-			<PaymentMethod>
-	        	<TenderType>GiftCard</TenderType>
-				<Value>185.00</Value>
-			</PaymentMethod>
-		</PaymentMethods>
+
+<RefundDetails>
+	<OrderId>16003583</OrderId>
+	<ShippingRefundValue>10</ShippingRefundValue>
+	<giftingRefundValue>10</giftingRefundValue>
+	<ShippingRefundReason></ShippingRefundReason>
+	<giftingRefundReason></giftingRefundReason>
+	<RefundedItems>
+
+			<RefundedItem>
+				<SkuCode>25225761</SkuCode>
+				<Description>Eagle repeat leggings</Description>
+				<Brand>BOY LONDON</Brand>
+				<Colour>Black</Colour>
+				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/343-3002605-BOYLEGGINGS_BLACK_SW?$PDP_SWATCH$</ColourSwatch>
+				<Size>S/M</Size>
+				<Thumbnail>http://images.selfridges.com/is/image/selfridges/343-3002605-BOYLEGGINGS_BLACK_M?$PDP_TMB$</Thumbnail>
+				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/boy-london-eagle-repeat-leggings_343-3002605-BOYLEGGINGS/</ProductUrl>
+			    <Qty>1</Qty>
+			    <ItemRefundValue>2.33</ItemRefundValue>
+			    <ItemRefundReason>Damaged or faulty</ItemRefundReason>
+			    <TaxRefundValue></TaxRefundValue>
+			    <TaxRefundReason></TaxRefundReason>
+			    <Currency>GBP</Currency>
+			</RefundedItem>
+
+			<RefundedItem>
+				<SkuCode>47348684</SkuCode>
+				<Description>Genetic x Liberty Ross stretch-jacquard skinny mid-rise jeans</Description>
+				<Brand>GENETIC DENIM</Brand>
+				<Colour>Gold/black</Colour>
+				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/150-3003899-W1266MS01HYS_GOLDBLACK_SW?$PDP_SWATCH$</ColourSwatch>
+				<Size>26</Size>
+				<Thumbnail>http://images.selfridges.com/is/image/selfridges/150-3003899-W1266MS01HYS_GOLDBLACK_M?$PDP_TMB$</Thumbnail>
+				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/genetic-denim-genetic-x-liberty-ross-stretch-jacquard-skinny-mid-rise-jeans_150-3003899-W1266MS01HYS/</ProductUrl>
+			    <Qty>1</Qty>
+			    <ItemRefundValue>6.58</ItemRefundValue>
+			    <ItemRefundReason>Damaged or faulty</ItemRefundReason>
+			    <TaxRefundValue></TaxRefundValue>
+			    <TaxRefundReason></TaxRefundReason>
+			    <Currency>GBP</Currency>
+			</RefundedItem>
+
+	</RefundedItems>
+</RefundDetails>
+<PaymentMethods>
+	<PaymentMethod>
+		<TenderType>GiftCard</TenderType>
+		<Value>495.00</Value>
+	</PaymentMethod>
+</PaymentMethods>
+<RefundPaymentMethods>
+	<RefundPaymentMethod>
+	<TenderType>GiftCard</TenderType>
+	<RefundValue>13.91</RefundValue>
+	<Currency>GBP</Currency>
+	</RefundPaymentMethod>
+</RefundPaymentMethods>
+
 	</EmailDataArea>
 </SFEmailMessages>
