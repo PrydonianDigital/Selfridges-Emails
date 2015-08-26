@@ -43,14 +43,14 @@
 			<xsl:choose>
 				<!-- WONDER ROOM -->
 				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
-					<xsl:call-template name="sumPrice">
+					<xsl:call-template name="sumPriceNoVAT">
 						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']"/>
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:call-template name="sumPrice">
+					<xsl:call-template name="sumPriceNoVAT">
 						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='false'][Status!='X']"/>
-					</xsl:call-template>
+					</xsl:call-template>!
 				</xsl:otherwise>
 			</xsl:choose>
 			</xsl:if>

@@ -3,130 +3,277 @@
 <?xml-stylesheet type="text/xsl" href="90_DespatchConfirmation.xsl"?>
 
 <SFEmailMessages>
-        <emailHeader>
-                <emailType>ORDER_DESPATCHED</emailType>
-        </emailHeader>
-        <Recipient>
-                <Title>Mr</Title>
-                <FirstName>vijay</FirstName>
-                <Surname>kayyam</Surname>
-                <Email>vijay.20886@gmail.com</Email>
-                <ContactNumber>07769359185</ContactNumber>
-                <MobileNumber></MobileNumber>
-                <CommunicationPreference>email</CommunicationPreference>
-        </Recipient>
-        <EmailDataArea>
+	<emailHeader>
+		<emailType>ORDER_DESPATCHED</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mrs</Title>
+		<FirstName>Vas</FirstName>
+		<Surname>Ram</Surname>
+		<Email>vastest2020@gmail.com</Email>
+		<ContactNumber>536475879879</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
 
-<DespatchedDeliveryGroupId>16003644-01</DespatchedDeliveryGroupId>
+<DespatchedDeliveryGroupId>16002617-01</DespatchedDeliveryGroupId>
 <Order>
-                        <OrderHeader>
-                                <OrderId>16003644</OrderId>
-                                <OrderStatus>r</OrderStatus>
-                                <OrderPrice>148.00</OrderPrice>
+			<OrderHeader>
+				<OrderId>16002617</OrderId>
+				<OrderStatus>r</OrderStatus>
+				<OrderPrice>3832.95</OrderPrice>
 
-                                <OrderDiscount>0.00</OrderDiscount>
-                                <StaffDiscount>0.00</StaffDiscount>
+				<OrderDiscount>-20.00</OrderDiscount>
+				<StaffDiscount>0.00</StaffDiscount>
 
-                                <OrderTax>0.00</OrderTax>
-                                <ShippingPrice>5.00</ShippingPrice>
-                                <DeductedVAT>0.00</DeductedVAT>
-                                <Currency>GBP</Currency>
-                        </OrderHeader>
-                        <OrderDeliveryGroups>
+				<OrderTax>0.00</OrderTax>
+				<ShippingPrice>4.95</ShippingPrice>
+				<DeductedVAT>0.00</DeductedVAT>
+				<Currency>GBP</Currency>
+			</OrderHeader>
+			<OrderDeliveryGroups>
 
-                                        <OrderDeliveryGroup>
-                                                <DeliveryGroupId>16003644-01</DeliveryGroupId>
-                                                <Status>r</Status>^
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>16002617-01</DeliveryGroupId>
+						<Status>r</Status>
 
-                                                                <DeliveryAddress>
-                                                                        <DeliveryName>Mr vijay kayyam</DeliveryName>
-                                                                        <Address1>1 Cornerfield</Address1>
-                                                                        <Address2></Address2>
-                                                                        <Address3></Address3>
-                                                                        <City>HATFIELD</City>
-                                                                        <County>Hertfordshire</County>
-                                                                        <PostCode>AL10 0UG</PostCode>
-                                                                        <CountryCode>GB</CountryCode>
-                                                                        <DeliveryInstruction></DeliveryInstruction>
-                                                                        <ContactPhone>4477693591985</ContactPhone>
-                                                                        <HomePhone>4477693591985</HomePhone>
-                                                                        <MobilePhone>4477693591985</MobilePhone>
-                                                                        <Email></Email>
-                                                                </DeliveryAddress>
+								<DeliveryAddress>
+									<DeliveryName>Mrs Vas Ram</DeliveryName>
+									<Address1>12 Richens Close</Address1>
+									<Address2></Address2>
+									<Address3></Address3>
+									<City>HOUNSLOW</City>
+									<County></County>
+									<PostCode>TW3 1PL</PostCode>
+									<CountryCode>GB</CountryCode>
+									<DeliveryInstruction></DeliveryInstruction>
+									<ContactPhone>536475879879</ContactPhone>
+									<HomePhone>536475879879</HomePhone>
+									<MobilePhone>536475879879</MobilePhone>
+									<Email></Email>
+								</DeliveryAddress>
 
-                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+						<hasWonderRoomItems>false</hasWonderRoomItems>
 
 
-                                                        <DeliveryMethod>UKSTD</DeliveryMethod>
+							<DeliveryMethod>UKSTD</DeliveryMethod>
 
-                                                                <EarliestDeliveryDate>20150901</EarliestDeliveryDate>
-                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
-                                                                <LatestDeliveryDate>20150901</LatestDeliveryDate>
-                                                                <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+								<EarliestDeliveryDate>20150818</EarliestDeliveryDate>
+								<EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+								<LatestDeliveryDate>20150818</LatestDeliveryDate>
+								<LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
 
-                                                <Price>148.00</Price>
-                                                <Discount>0.00</Discount>
-                                                <Tax>0.00</Tax>
-                                                <ShippingPrice>5.00</ShippingPrice>
-                                                <DeductedVAT>0.00</DeductedVAT>
-                                                <Currency>GBP</Currency>
-                                                <Items>
+						<Price>431.83</Price>
+						<Discount>-3.12</Discount>
+						<Tax>0.00</Tax>
+						<ShippingPrice>4.95</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>GBP</Currency>
+						<Items>
 
-                                                                <Item>
-                                                                        <SkuCode>57989419</SkuCode>
-                                                                        <Description>Billfold wallet</Description>
-                                                                        <Brand>ASPINAL OF LONDON</Brand>
-                                                                        <Colour>Black</Colour>
-                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/528-10005-039004203410000_BLACK_SW?$PDP_SWATCH$</colourSwatch>
-                                                                        <Size></Size>
- <thumbnail>http://images.selfridges.com/is/image/selfridges/528-10005-039004203410000_BLACK_M?$PDP_TMB$</thumbnail>
-                                                                        <productUrl>http://www.test2.selfridges.com/GB/en/cat/aspinal-of-london-billfold-wallet_528-10005-039004203410000/</productUrl>
-                                                                        <Qty>1</Qty>
-                                                                        <UnitPrice>85.00</UnitPrice>
-                                                                        <TotalPrice>85.00</TotalPrice>
-                                                                        <Discount>0.00</Discount>
-                                                                        <Tax>0.00</Tax>
-                                                                        <DeductedVAT>0.00</DeductedVAT>
-                                                                        <Status>X</Status>
-                                                                        <PaymentStatus>Pending</PaymentStatus>
-                                                                        <WonderRoomItem>false</WonderRoomItem>
-                                                                        <WonderRoomBrand></WonderRoomBrand>
-                                                                        <TrackingCode></TrackingCode>
-                                                                        <giftMessage></giftMessage>
-                                                                        <giftBox>false</giftBox>
-                                                                        <VATRate>0.00</VATRate>
-                                                                </Item>
+								<Item>
+									<SkuCode>20320423</SkuCode>
+									<Description>Jasmine straight-leg trousers</Description>
+									<trackingURL>foobar</trackingURL>
+									<Brand>STELLA MCCARTNEY</Brand>
+									<Colour>Black</Colour>
+									<colourSwatch>http://images.selfridges.com/is/image/selfridges/192-2000112-245376SX704_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+									<Size>12</Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/192-2000112-245376SX704_BLACK_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test2.selfridges.com/GB/en/cat/stella-mccartney-jasmine-straight-leg-trousers_192-2000112-245376SX704/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>335.00</UnitPrice>
+									<TotalPrice>335.00</TotalPrice>
+									<Discount>-1.74</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>S</Status>
+									<PaymentStatus>Settled</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode>201508150003</TrackingCode>
+				   					<giftMessage>ewfewfrwfrwfrw</giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+									<Personalization>
+										<Text>Vas</Text>
+										<Colour>Green</Colour>
+										<Font>Arial</Font>
+									</Personalization>
+								</Item>
 
-                                                                <Item>
-                                                                        <SkuCode>24215107</SkuCode>
-                                                                        <Description>Weekender Slip Thru watch</Description>
-                                                                        <Brand>TIMEX</Brand>
-                                                                        <Colour>Blue red</Colour>
-                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/106-2001563-T2N747_BLUERED_SW?$PDP_SWATCH$</colourSwatch>
-                                                                        <Size></Size>
-                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/106-2001563-T2N747_BLUERED_M?$PDP_TMB$</thumbnail>
-                                                                        <productUrl>http://www.test2.selfridges.com/GB/en/cat/timex-weekender-slip-thru-watch_106-2001563-T2N747/</productUrl>
-                                                                        <Qty>1</Qty>
-                                                                        <UnitPrice>58.00</UnitPrice>
-                                                                        <TotalPrice>58.00</TotalPrice>
-                                                                        <Discount>0.00</Discount>
-                                                                        <Tax>0.00</Tax>
-                                                                        <DeductedVAT>0.00</DeductedVAT>
-                                                                        <Status>S</Status>
-                                                                        <PaymentStatus>Settled</PaymentStatus>
-                                                                        <WonderRoomItem>false</WonderRoomItem>
-                                                                        <WonderRoomBrand></WonderRoomBrand>
- <TrackingCode>201508251013</TrackingCode>
-                                                                        <giftMessage></giftMessage>
-                                                                        <giftBox>false</giftBox>
-                                                                        <VATRate>0.00</VATRate>
-                                                                </Item>
+								<Item>
+									<SkuCode>23093836</SkuCode>
+									<Description>Julian gabardine trousers</Description>
+									<Brand>JOSEPH</Brand>
+									<Colour>Black</Colour>
+									<colourSwatch>http://images.selfridges.com/is/image/selfridges/793-10038-W2127093045_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+									<Size>12</Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/793-10038-W2127093045_BLACK_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test2.selfridges.com/GB/en/cat/joseph-julian-gabardine-trousers_793-10038-W2127093045/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>255.00</UnitPrice>
+									<TotalPrice>255.00</TotalPrice>
+									<Discount>-1.32</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>X</Status>
+									<PaymentStatus>Pending</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage>wfrfrwfrwgr</giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
 
-                                                </Items>
-                                        </OrderDeliveryGroup>
+								<Item>
+									<SkuCode>75898472</SkuCode>
+									<Description>Selfridges gift box</Description>
+									<Brand></Brand>
+									<Colour></Colour>
+									<colourSwatch></colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/918-1000-SLFGIFTBOXING_M?$PDP_TMB$</thumbnail>
+									<productUrl>ProductDisplay?storeId=10052&amp;productId=167808&amp;catalogId=16151&amp;langId=-1</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>5.00</UnitPrice>
+									<TotalPrice>5.00</TotalPrice>
+									<Discount>-0.03</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>S</Status>
+									<PaymentStatus>Settled</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode>201508150003</TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>true</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
 
-                        </OrderDeliveryGroups>
+								<Item>
+									<SkuCode>75898472</SkuCode>
+									<Description>Selfridges gift box</Description>
+									<Brand></Brand>
+									<Colour></Colour>
+									<colourSwatch></colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/918-1000-SLFGIFTBOXING_M?$PDP_TMB$</thumbnail>
+									<productUrl>ProductDisplay?storeId=10052&amp;productId=167808&amp;catalogId=16151&amp;langId=-1</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>5.00</UnitPrice>
+									<TotalPrice>5.00</TotalPrice>
+									<Discount>-0.03</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>r</Status>
+									<PaymentStatus>Pending</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>true</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>16002617-02</DeliveryGroupId>
+						<Status>r</Status>
+
+								<DeliveryAddress>
+									<DeliveryName>Mrs Vas Ram</DeliveryName>
+									<Address1>12 Richens Close</Address1>
+									<Address2></Address2>
+									<Address3></Address3>
+									<City>HOUNSLOW</City>
+									<County></County>
+									<PostCode>TW3 1PL</PostCode>
+									<CountryCode>GB</CountryCode>
+									<DeliveryInstruction></DeliveryInstruction>
+									<ContactPhone>536475879879</ContactPhone>
+									<HomePhone>536475879879</HomePhone>
+									<MobilePhone>536475879879</MobilePhone>
+									<Email></Email>
+								</DeliveryAddress>
+
+						<hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+							<DeliveryMethod>DTEKSTDPRZ</DeliveryMethod>
+
+								<EarliestDeliveryDate>20150814</EarliestDeliveryDate>
+								<EarliestDeliveryTimeSlotEnd>070000</EarliestDeliveryTimeSlotEnd>
+								<LatestDeliveryDate>20150814</LatestDeliveryDate>
+								<LatestDeliveryTimeSlotEnd>160000</LatestDeliveryTimeSlotEnd>
+
+						<Price>3231.12</Price>
+						<Discount>-16.88</Discount>
+						<Tax>0.00</Tax>
+						<ShippingPrice>0.00</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>GBP</Currency>
+						<Items>
+
+								<Item>
+									<SkuCode>31055819</SkuCode>
+									<Description>46&#034; F6740 Series 6 Full HD LED Smart TV</Description>
+									<Brand>SAMSUNG</Brand>
+									<Colour></Colour>
+									<colourSwatch></colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/761-10044-SAMUE46F6740SBXXU_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test2.selfridges.com/GB/en/cat/samsung-46-f6740-series-6-full-hd-led-smart-tv_761-10044-SAMUE46F6740SBXXU/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>649.00</UnitPrice>
+									<TotalPrice>649.00</TotalPrice>
+									<Discount>-3.37</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>r</Status>
+									<PaymentStatus>Pending</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+								<Item>
+									<SkuCode>36714261</SkuCode>
+									<Description>65&#034; LA970W Ultra HD TV</Description>
+									<Brand>LG</Brand>
+									<Colour></Colour>
+									<colourSwatch></colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/761-10044-LG65LA970W_M?$PDP_TMB$</thumbnail>
+									<productUrl>http://www.test2.selfridges.com/GB/en/cat/lg-65-la970w-ultra-hd-tv_761-10044-LG65LA970W/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>2599.00</UnitPrice>
+									<TotalPrice>2599.00</TotalPrice>
+									<Discount>-13.51</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>r</Status>
+									<PaymentStatus>Pending</PaymentStatus>
+									<WonderRoomItem>false</WonderRoomItem>
+									<WonderRoomBrand></WonderRoomBrand>
+									<TrackingCode></TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+			</OrderDeliveryGroups>
 
 </Order>
-        </EmailDataArea>
+	</EmailDataArea>
 </SFEmailMessages>
