@@ -50,7 +50,7 @@
 				<xsl:otherwise>
 					<xsl:call-template name="sumPriceNoVAT">
 						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='false'][Status!='X']"/>
-					</xsl:call-template>!
+					</xsl:call-template>
 				</xsl:otherwise>
 			</xsl:choose>
 			</xsl:if>
