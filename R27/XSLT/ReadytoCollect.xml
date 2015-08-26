@@ -29,7 +29,7 @@
 				<OrderTax>0.00</OrderTax>
 				<ShippingPrice>0.00</ShippingPrice>
 				<DeductedVAT>0.00</DeductedVAT>
-				<Currency>EUR</Currency>
+				<Currency>GBP</Currency>
 			</OrderHeader>
 			<OrderDeliveryGroups>
 
@@ -67,23 +67,23 @@
 
 								<Item>
 									<SkuCode>45552793</SkuCode>
-									<Description>Trinity 18ct pink, yellow and white-gold bracelet</Description>
-									<Brand>CARTIER</Brand>
+									<Description>Fusion end 18ct white-gold ring</Description>
+									<Brand>GEORG JENSEN</Brand>
 									<Colour></Colour>
 									<colourSwatch></colourSwatch>
 									<Size></Size>
-									<thumbnail>http://images.selfridges.com/is/image/selfridges/852-10134-B6016700_M?$PDP_TMB$</thumbnail>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/664-10009-FUSIONWHITEGOLDENDRING_M?$PDP_M_ALL$</thumbnail>
 									<productUrl>http://www.test1.selfridges.com/GB/en/cat/cartier-trinity-18ct-pink-yellow-and-white-gold-bracelet_852-10134-B6016700/</productUrl>
 									<Qty>1</Qty>
-									<UnitPrice>565.80</UnitPrice>
-									<TotalPrice>565.80</TotalPrice>
+									<UnitPrice>520.00</UnitPrice>
+									<TotalPrice>520.00</TotalPrice>
 									<Discount>0.00</Discount>
 									<Tax>0.00</Tax>
 									<DeductedVAT>0.00</DeductedVAT>
 									<Status>g</Status>
 									<PaymentStatus>Settled</PaymentStatus>
 									<WonderRoomItem>True</WonderRoomItem>
-									<WonderRoomBrand>CARTIER</WonderRoomBrand>
+									<WonderRoomBrand>GEORG JENSEN</WonderRoomBrand>
 									<TrackingCode>201508136001</TrackingCode>
 				   					<giftMessage></giftMessage>
 									<giftBox>false</giftBox>
@@ -100,7 +100,7 @@
 	<PaymentMethod>
 		<TenderType>MASTERCARD</TenderType>
 		<Last4Digits>4444</Last4Digits>
-		<Value>574.00</Value>
+		<Value>520.00</Value>
 	</PaymentMethod>
 </PaymentMethods>
 	</EmailDataArea>
