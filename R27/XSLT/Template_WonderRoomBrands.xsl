@@ -39,7 +39,7 @@
 
 	<xsl:if test="/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand='TIFFANY &amp; CO'">
 
-		<img src="http://placehold.it/580x150/222222/efefef?text={/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand}" style="outline: none; text-decoration: none; image-rendering: auto; -ms-interpolation-mode: nearest-neighbor; width: auto; max-width: 100%; float: none; clear: both; display: block; Margin: 0;" align="none" alt="{/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand}" title="{/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand}" />
+		<img src="http://p7tre.emv3.com/IL/8/0/1/1101066801/1100497269.jpg" style="outline: none; text-decoration: none; image-rendering: auto; -ms-interpolation-mode: nearest-neighbor; width: 580px; max-width: 100%; float: none; clear: both; display: block; Margin: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #e8e8e8;" align="none" alt="{/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand}" title="{/SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand}" />
 
 	</xsl:if>
 
