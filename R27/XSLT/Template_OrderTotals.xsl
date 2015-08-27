@@ -42,9 +42,9 @@
 			<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item">
 			<xsl:choose>
 				<!-- WONDER ROOM -->
-				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='true'">
+				<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
 					<xsl:call-template name="sumPriceNoVAT">
-						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='true']"/>
+						<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']"/>
 					</xsl:call-template>
 				</xsl:when>
 				<xsl:otherwise>
@@ -192,7 +192,7 @@
 		<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
 			<strong style="font-weight: bold;">Total</strong>
 		</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
-		<xsl:if test="OrderPrice !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="OrderPrice"/></span> </xsl:if>
+		<xsl:if test="OrderPrice !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="format-number(OrderPrice,'###,###,###.00')"/></span> </xsl:if>
 		</td>
 	</tr>
 
