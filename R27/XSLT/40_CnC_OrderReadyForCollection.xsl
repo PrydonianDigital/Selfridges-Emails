@@ -97,7 +97,7 @@
 
 						</xsl:if>
 
-										<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0; padding: 4px 0 0 0;" align="left">Thank you for choosing <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item/WonderRoomBrand, $special, $translated)"/></strong> at Selfridges.</p>
+										<p class="signoff" style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 18px 0; padding: 4px 0 0 0;" align="left">Thank you for choosing <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item/WonderRoomBrand, $special, $translated)"/></strong> at Selfridges.</p>
 
 									</xsl:when>
 

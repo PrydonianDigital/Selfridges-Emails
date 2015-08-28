@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>FRAUD_REVIEW</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mrs</Title>
+		<FirstName>review</FirstName>
+		<Surname>tester</Surname>
+		<Email>hreview@review.com</Email>
+		<ContactNumber>086775756756</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<OrderId>130005208</OrderId>
+	</EmailDataArea>
+</SFEmailMessages>

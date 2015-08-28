@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="40_CnC_OrderReadyForCollection.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>CLICK_AND_COLLECT_READY_FOR_COLLECTION</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mr</Title>
+		<FirstName>Parin</FirstName>
+		<Surname>Shah</Surname>
+		<Email>parin.shah@pmcretail.com</Email>
+		<ContactNumber>9016413242</ContactNumber>
+		<MobileNumber></MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+
+<Order>
+			<OrderHeader>
+				<OrderId>130004078</OrderId>
+				<OrderStatus>g</OrderStatus>
+				<OrderPrice>8300.00</OrderPrice>
+
+				<OrderDiscount>0.00</OrderDiscount>
+				<StaffDiscount>0.00</StaffDiscount>
+
+				<OrderTax>0.00</OrderTax>
+				<ShippingPrice>0.00</ShippingPrice>
+				<DeductedVAT>0.00</DeductedVAT>
+				<Currency>GBP</Currency>
+			</OrderHeader>
+			<OrderDeliveryGroups>
+
+					<OrderDeliveryGroup>
+						<DeliveryGroupId>130004078-01</DeliveryGroupId>
+						<Status>g</Status>
+
+									<Barcode type="jpg" encoding="base64">[CDATA[MDA2MDAxMDEwNDg3MjMxNTA4MTMxMDI5NDU=]]</Barcode>
+
+								<StoreAddress>
+									<storeNickName>London</storeNickName>
+									<Address1>400 Oxford Street</Address1>
+									<Address2/>
+									<Address3/>
+									<City>London</City>
+									<County/>
+									<PostCode>W1A 1AB</PostCode>
+									<CountryCode>GB</CountryCode>
+								</StoreAddress>
+								<CollectionDate>20150814</CollectionDate>
+								<ExpirationDays>7</ExpirationDays>
+
+						<hasWonderRoomItems>True</hasWonderRoomItems>
+
+
+							<DeliveryMethod>UKSTORE</DeliveryMethod>
+
+						<Price>5400.80</Price>
+						<Discount>0.00</Discount>
+						<Tax>0.00</Tax>
+						<ShippingPrice>0.00</ShippingPrice>
+						<DeductedVAT>0.00</DeductedVAT>
+						<Currency>EUR</Currency>
+						<Items>
+
+								<Item>
+									<SkuCode>45552793</SkuCode>
+									<Description>Serpenti forever crocodile shoulder bag</Description>
+									<Brand>BVLGARI</Brand>
+									<Colour>Violet</Colour>
+									<colourSwatch></colourSwatch>
+									<Size></Size>
+									<thumbnail>http://images.selfridges.com/is/image/selfridges/709-10045-39774_VIOLET_M?$PDP_M_ALL$</thumbnail>
+									<productUrl>http://www.test1.selfridges.com/GB/en/cat/cartier-trinity-18ct-pink-yellow-and-white-gold-bracelet_852-10134-B6016700/</productUrl>
+									<Qty>1</Qty>
+									<UnitPrice>8300.00</UnitPrice>
+									<TotalPrice>8300.00</TotalPrice>
+									<Discount>0.00</Discount>
+									<Tax>0.00</Tax>
+									<DeductedVAT>0.00</DeductedVAT>
+									<Status>g</Status>
+									<PaymentStatus>Settled</PaymentStatus>
+									<WonderRoomItem>True</WonderRoomItem>
+									<WonderRoomBrand>BVLGARI</WonderRoomBrand>
+									<TrackingCode>201508136001</TrackingCode>
+				   					<giftMessage></giftMessage>
+									<giftBox>false</giftBox>
+									<VATRate>20.00</VATRate>
+								</Item>
+
+						</Items>
+					</OrderDeliveryGroup>
+
+			</OrderDeliveryGroups>
+
+</Order>
+<PaymentMethods>
+	<PaymentMethod>
+		<TenderType>MASTERCARD</TenderType>
+		<Last4Digits>4444</Last4Digits>
+		<Value>2025.00</Value>
+	</PaymentMethod>
+</PaymentMethods>
+	</EmailDataArea>
+</SFEmailMessages>

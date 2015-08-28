@@ -51,8 +51,8 @@
 							<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">
 								<xsl:choose>
 
-									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/trackingURL!=''">
-										Want to keep an eye on it? Find your <a href="{SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item/trackingURL}" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">tracking information here ></a>.
+									<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item/TrackingURL!=''">
+										Want to keep an eye on it? Find your <a href="{SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item/TrackingURL}" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">tracking information here ›</a>
 									</xsl:when>
 									<xsl:otherwise>
 										If you have an account with us, tracking information is available for most orders. Simply sign in to <a href="https://www.selfridges.com/GB/en/cat/MyAccount/" style="color: #545454 !important; text-decoration: underline !important;" target="_blank">My Account</a> and go to My Orders.
