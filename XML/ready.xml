@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="40_CnC_OrderReadyForCollection.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>CLICK_AND_COLLECT_READY_FOR_COLLECTION</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mr</Title>
+                <FirstName>Pratikkumar</FirstName>
+                <Surname>Patel</Surname>
+                <Email>pratik.patel@pmcretail.com</Email>
+                <ContactNumber>0788898989</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+<Order>
+                        <OrderHeader>
+                                <OrderId>130006831</OrderId>
+                                <OrderStatus>g</OrderStatus>
+                                <OrderPrice>314.00</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>
+                                <StaffDiscount>0.00</StaffDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>0.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130006831-01</DeliveryGroupId>
+                                                <Status>g</Status>
+
+                                                                        <Barcode type="jpg" encoding="base64">[CDATA[MDA2MDAxMDEwNDk2NTIxNTA5MTQxNTQ3MTg=]]</Barcode>
+
+                                                                <StoreAddress>
+                                                                        <storeNickName>London</storeNickName>
+                                                                        <Address1>400 Oxford Street</Address1>^
+                                                                                                                                                                                                                        <Address2/>
+                                                                        <Address3/>
+                                                                        <City>London</City>
+                                                                        <County/>
+                                                                        <PostCode>W1A 1AB</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                </StoreAddress>
+                                                                <CollectionDate>20150915</CollectionDate>
+                                                                <ExpirationDays>2</ExpirationDays>
+
+                                                <hasWonderRoomItems>true</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTORE</DeliveryMethod>
+
+                                                <Price>314.00</Price>
+                                                <Discount>0.00</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>0.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>42245087</SkuCode>
+                                                                        <Description>BV6071 frameless rectangle sunglasses</Description>
+                                                                        <Brand>BVLGARI</Brand>
+                                                                        <Colour>Gunmetal</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/779-10017-BV6071BSLVGRYGRD_GUNMETAL_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/779-10017-BV6071BSLVGRYGRD_GUNMETAL_M?$PDP_M_ALL$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/bvlgari-bv6071-frameless-rectangle-sunglasses_779-10017-BV6071BSLVGRYGRD/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>314.00</UnitPrice>
+                                                                        <TotalPrice>314.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>^
+                                                                                                                                                                                                                        <Status>g</Status>
+                                                                        <PaymentStatus>Settled</PaymentStatus>
+                                                                        <WonderRoomItem>true</WonderRoomItem>
+                                                                        <WonderRoomBrand>BVLGARI</WonderRoomBrand>
+                                                                        <TrackingCode>201509146002</TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+</Order>
+<PaymentMethods>
+        <PaymentMethod>
+                <TenderType>VISA DELTA</TenderType>
+                <Last4Digits>1111</Last4Digits>
+                <Value>314.00</Value>
+        </PaymentMethod>
+</PaymentMethods>
+        </EmailDataArea>
+</SFEmailMessages>

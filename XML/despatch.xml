@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="90_DespatchConfirmation.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ORDER_DESPATCHED</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mr</Title>
+                <FirstName>vijay</FirstName>
+                <Surname>kayyam</Surname>
+                <Email>vijay.20886@gmail.com</Email>
+                <ContactNumber>8736587436583243</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+<DespatchedDeliveryGroupId>130007099-01</DespatchedDeliveryGroupId>
+<Order>
+                        <OrderHeader>
+                                <OrderId>130007099</OrderId>
+                                <OrderStatus>S</OrderStatus>
+                                <OrderPrice>81.04</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>
+                                <StaffDiscount>-58.63</StaffDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>15.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130007099-01</DeliveryGroupId>
+                                                <Status>S</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr Vijayapal Kayyam</DeliveryName>
+                                                                        <Address1>2 residence</Address1>
+                                                                        <Address2>gallieni</Address2>
+                                                                        <Address3></Address3>
+ <City>palaiseau</City>
+                                                                        <County></County>
+                                                                        <PostCode>91 120</PostCode>
+                                                                        <CountryCode>FR</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>07769359185</ContactPhone>
+                                                                        <HomePhone>07769359185</HomePhone>
+                                                                        <MobilePhone>07769359185</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>INTEU</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate></EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20150926</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>81.04</Price>
+                                                <Discount>-58.63</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>15.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>96974322</SkuCode>
+                                                                        <Description>Mega&amp;ndash;Mushroom Skin Relief Soothing Treatment Lotion 200ml</Description>
+                                                                        <Brand>ORIGINS</Brand>
+                                                                        <Colour></Colour>
+                                                                        <colourSwatch></colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/332-85076694-0HR201_M?$PDP_M_ALL$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/origins-mega-mushroom-skin-relief-soothing-treatment-lotion-200ml_332-85076694-0HR201/</productUrl>
+<Qty>1</Qty>
+                                                                        <UnitPrice>24.74</UnitPrice>
+                                                                        <TotalPrice>24.74</TotalPrice>
+                                                                        <Discount>-8.66</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>S</Status>
+                                                                        <PaymentStatus>Settled</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode>20150916004</TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                                <TrackingURL></TrackingURL>
+
+                                                                </Item>
+
+                                                                <Item>
+                                                                        <SkuCode>91441539</SkuCode>
+                                                                        <Description>Asolo leather wallet</Description>
+                                                                        <Brand>HUGO BOSS</Brand>
+                                                                        <Colour>Black</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/111-78064228-50128314ASOLO001_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/111-78064228-50128314ASOLO001_BLACK_M?$PDP_M_ALL$</thumbnail>
+
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>99.93</UnitPrice>
+                                                                        <TotalPrice>99.93</TotalPrice>
+                                                                        <Discount>-49.97</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>r</Status>
+                                                                        <PaymentStatus>Cancelled</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                                <TrackingURL></TrackingURL>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+</Order>
+        </EmailDataArea>
+</SFEmailMessages>

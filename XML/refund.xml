@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="140_ReturnRefunded.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>RETURN_REFUNDED</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mrs</Title>
+                <FirstName>Vas</FirstName>
+                <Surname>Ram</Surname>
+                <Email>vastest2020@gmail.com</Email>
+                <ContactNumber>2456767688</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+        <RefundType>ALL</RefundType>
+                <ReturnDetails>
+        <OrderId>130005703</OrderId>
+        <ReturnedItems>
+
+                        <ReturnedItem>
+                              <SkuCode>41777558</SkuCode>
+                              <Description>Alpha Bravo Annapolis cross body bag</Description>
+                              <Brand>TUMI</Brand>
+                              <Colour>Hickory</Colour>
+                              <colourSwatch>http://images.selfridges.com/is/image/selfridges/836-10067-22304HICKORY_HICKORY_SW?$PDP_SWATCH$</colourSwatch>
+                              <Size></Size>
+                              <thumbnail>http://images.selfridges.com/is/image/selfridges/836-10067-22304HICKORY_HICKORY_M?$PDP_M_ALL$</thumbnail>
+                              <productUrl>http://www.test1.selfridges.com/GB/en/cat/tumi-alpha-bravo-annapolis-cross-body-bag_836-10067-22304HICKORY/</productUrl>
+                              <Qty>1</Qty>
+
+                              <ItemRefundValue>195.00</ItemRefundValue>
+
+                                  <Qty>1.0</Qty>
+
+                                <RefundedTax>0.00</RefundedTax>
+                                <StockState>True</StockState>
+
+                              <Currency>GBP</Currency>
+
+                                    <Personalization>
+                                          <Text></Text>
+
+                                            <Colour></Colour>
+
+                                            <Font></Font>
+
+                                    </Personalization>
+
+                        </ReturnedItem>
+
+        </ReturnedItems>
+        <ShippingRefundValue>0.00</ShippingRefundValue>
+        <GiftboxRefundValue>0.00</GiftboxRefundValue>
+</ReturnDetails><PaymentMethods>
+        <PaymentMethod>
+                <TenderType>MASTERCARD</TenderType>
+                <Last4Digits>4444</Last4Digits>
+                <Value>200.00</Value>
+        </PaymentMethod>
+</PaymentMethods>
+<RefundPaymentMethods>
+        <RefundPaymentMethod>
+        <TenderType>MasterCard</TenderType>
+        <RefundValue>195.00</RefundValue>
+        <Currency>GBP</Currency>
+        </RefundPaymentMethod>
+</RefundPaymentMethods>
+
+        </EmailDataArea>
+</SFEmailMessages>

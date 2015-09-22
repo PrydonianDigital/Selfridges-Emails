@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="30_OrderConfirmation.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ORDER_RECEIVED</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mr</Title>
+                <FirstName>Vijayapal</FirstName>
+                <Surname>Kayyam</Surname>
+                <Email>vijay.20886@gmail.com</Email>
+                <ContactNumber>07769359185</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+<Order>
+                        <OrderHeader>
+                                <OrderId>130007311</OrderId>
+                                <OrderStatus>C</OrderStatus>
+                                <OrderPrice>406.00</OrderPrice>
+
+                                <OrderDiscount>-44.00</OrderDiscount>
+                                <StaffDiscount>0.00</StaffDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>10.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130007311-01</DeliveryGroupId>
+                                                <Status>B</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr vijay kayyam</DeliveryName>
+                                                                        <Address1>104 Fenman Gardens</Address1>
+                                                                        <Address2></Address2>
+<Address3></Address3>
+                                                                        <City>ILFORD</City>
+                                                                        <County></County>
+                                                                        <PostCode>IG3 9TS</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>8736587436583243</ContactPhone>
+                                                                        <HomePhone>8736587436583243</HomePhone>
+                                                                        <MobilePhone>8736587436583243</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>true</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTD</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate></EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20150926</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>170000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>225.50</Price>
+                                                <Discount>-24.50</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>5.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>46996428</SkuCode>
+                                                                        <Description>0BV8136B square sunglasses</Description>
+                                                                        <Brand>BVLGARI</Brand>
+                                                                        <Colour>Dark havana</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/779-10017-8053672255317_DARKHAVANA_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/779-10017-8053672255317_DARKHAVANA_M?$PDP_M_ALL$</thumbnail>
+<productUrl>http://www.test1.selfridges.com/GB/en/cat/bvlgari-0bv8136b-square-sunglasses_779-10017-8053672255317/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>245.00</UnitPrice>
+                                                                        <TotalPrice>245.00</TotalPrice>
+                                                                        <Discount>-24.50</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>true</WonderRoomItem>
+                                                                        <WonderRoomBrand>BVLGARI</WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130007311-02</DeliveryGroupId>
+                                                <Status>B</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr vijay kayyam</DeliveryName>
+                                                                        <Address1>104 Fenman Gardens</Address1>
+                                                                        <Address2></Address2>
+<Address3></Address3>
+                                                                        <City>ILFORD</City>
+                                                                        <County></County>
+                                                                        <PostCode>IG3 9TS</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>8736587436583243</ContactPhone>
+                                                                        <HomePhone>8736587436583243</HomePhone>
+                                                                        <MobilePhone>8736587436583243</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>DTUMSTD</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate>20150928</EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20150928</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>225800</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>180.50</Price>
+                                                <Discount>-19.50</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>5.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>41777558</SkuCode>
+                                                                        <Description>Alpha Bravo Annapolis cross body bag</Description>
+                                                                        <Brand>TUMI</Brand>
+                                                                        <Colour>Hickory</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/836-10067-22304HICKORY_HICKORY_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/836-10067-22304HICKORY_HICKORY_M?$PDP_M_ALL$</thumbnail>
+<productUrl>http://www.test1.selfridges.com/GB/en/cat/tumi-alpha-bravo-annapolis-cross-body-bag_836-10067-22304HICKORY/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>195.00</UnitPrice>
+                                                                        <TotalPrice>195.00</TotalPrice>
+                                                                        <Discount>-19.50</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+</Order>
+        </EmailDataArea>
+</SFEmailMessages>

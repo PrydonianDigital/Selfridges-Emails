@@ -16,47 +16,53 @@
 		<CommunicationPreference>email</CommunicationPreference>
 	</Recipient>
 	<EmailDataArea>
-
-<RefundDetails>
-	<OrderId>16003647</OrderId>
-	<ShippingRefundValue>1</ShippingRefundValue>
-	<giftingRefundValue>2</giftingRefundValue>
-	<ShippingRefundReason></ShippingRefundReason>
-	<giftingRefundReason></giftingRefundReason>
-	<RefundedItems>
-
-			<RefundedItem>
-				<SkuCode>34656952</SkuCode>
-				<Description>Golda pencil skirt</Description>
-				<Brand>THEORY</Brand>
-				<Colour>Black</Colour>
-				<ColourSwatch>http://images.selfridges.com/is/image/selfridges/187-2001525-D0005308_BLACK_SW?$PDP_SWATCH$</ColourSwatch>
-				<Size>4</Size>
-				<Thumbnail>http://images.selfridges.com/is/image/selfridges/187-2001525-D0005308_BLACK_M?$PDP_TMB$</Thumbnail>
-				<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/theory-golda-pencil-skirt_187-2001525-D0005308/</ProductUrl>
-			    <Qty>1</Qty>
-			    <ItemRefundValue>3.89</ItemRefundValue>
-			    <ItemRefundReason>DC rejected - non-returnable</ItemRefundReason>
-			    <TaxRefundValue></TaxRefundValue>
-			    <TaxRefundReason></TaxRefundReason>
-			    <Currency>GBP</Currency>
-			</RefundedItem>
-
-	</RefundedItems>
-</RefundDetails>
-<PaymentMethods>
-	<PaymentMethod>
-		<TenderType>GiftCard</TenderType>
-		<Value>190.00</Value>
-	</PaymentMethod>
-</PaymentMethods>
-<RefundPaymentMethods>
-	<RefundPaymentMethod>
-	<TenderType>GiftCard</TenderType>
-	<RefundValue>3.89</RefundValue>
-	<Currency>GBP</Currency>
-	</RefundPaymentMethod>
-</RefundPaymentMethods>
-
+		<RefundDetails>
+			<OrderId>16003581</OrderId>
+			<ShippingRefundValue></ShippingRefundValue>
+			<giftingRefundValue></giftingRefundValue>
+			<ShippingRefundReason></ShippingRefundReason>
+			<giftingRefundReason></giftingRefundReason>
+			<RefundedItems>
+				<RefundedItem>
+					<SkuCode>42469612</SkuCode>
+					<Description>July medium tote bag</Description>
+					<Brand>KIPLING</Brand>
+					<Colour>Tango red</Colour>
+					<ColourSwatch>http://images.selfridges.com/is/image/selfridges/193-3000656-JULYMTOTERED_TANGORED_SW?$PDP_SWATCH$</ColourSwatch>
+					<Size></Size>
+					<Thumbnail>http://images.selfridges.com/is/image/selfridges/193-3000656-JULYMTOTERED_TANGORED_M?$PDP_TMB$</Thumbnail>
+					<ProductUrl>http://www.test2.selfridges.com/GB/en/cat/kipling-july-medium-tote-bag_193-3000656-JULYMTOTERED/</ProductUrl>
+					<Qty>1</Qty>
+					<ItemRefundValue>12.00</ItemRefundValue>
+					<ItemRefundReason>Damaged or faulty</ItemRefundReason>
+					<TaxRefundValue></TaxRefundValue>
+					<TaxRefundReason></TaxRefundReason>
+					<Currency>GBP</Currency>
+				</RefundedItem>
+			</RefundedItems>
+		</RefundDetails>
+		<PaymentMethods>
+			<PaymentMethod>
+				<TenderType>VISA DELTA</TenderType>
+				<Last4Digits>1111</Last4Digits>
+				<Value>89.00</Value>
+				</PaymentMethod>
+				<PaymentMethod>
+				<TenderType>EVoucher</TenderType>
+				<Value>10.00</Value>
+			</PaymentMethod>
+		</PaymentMethods>
+		<RefundPaymentMethods>
+			<RefundPaymentMethod>
+				<TenderType>Visa Delta</TenderType>
+				<RefundValue>2.00</RefundValue>
+				<Currency>GBP</Currency>
+				</RefundPaymentMethod>
+				<RefundPaymentMethod>
+				<TenderType>eVoucher</TenderType>
+				<RefundValue>10.00</RefundValue>
+				<Currency>GBP</Currency>
+			</RefundPaymentMethod>
+		</RefundPaymentMethods>
 	</EmailDataArea>
 </SFEmailMessages>

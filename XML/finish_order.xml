@@ -1,0 +1,18 @@
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>PAYMENT_TYPE</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mrs</Title>
+		<FirstName>Firstname</FirstName>
+		<Surname>Lastname</Surname>
+		<Email>email@address.com</Email>
+		<ContactNumber>02071112222</ContactNumber>
+		<MobileNumber>07888000000</MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<OrderId>1111111111</OrderId>
+		<OrderLink>https://www.selfridges.com/webapp/wcs/stores/servlet/BasketOrderCalculate?orderId=1111111111</OrderLink>
+	</EmailDataArea>
+</SFEmailMessages>

@@ -1,0 +1,25 @@
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>PAYMENT_TYPE</emailType>
+	</emailHeader>
+	<Recipient>
+		<Title>Mrs</Title>
+		<FirstName>Firstname</FirstName>
+		<Surname>Lastname</Surname>
+		<Email>email@address.com</Email>
+		<ContactNumber>02071112222</ContactNumber>
+		<MobileNumber>07888000000</MobileNumber>
+		<CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+		<OrderId>1111111111</OrderId>
+		<TopUp>http://global.alipay.com/ospay/</TopUp>
+		<PaymentMethods>
+			<PaymentMethod>
+				<TenderType>Alipay</TenderType>
+				<AccountNumber>4444</AccountNumber>
+				<Balance>2025.00</Balance>
+			</PaymentMethod>
+		</PaymentMethods>
+	</EmailDataArea>
+</SFEmailMessages>
