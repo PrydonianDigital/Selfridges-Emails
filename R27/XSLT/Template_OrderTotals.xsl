@@ -32,7 +32,7 @@
 
 	</xsl:if>
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') and (SFEmailMessages/emailHeader/emailType!='GOODWILL_REFUND') and (SFEmailMessages/emailHeader/emailType!='ORDER_DESPATCHED')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') and (SFEmailMessages/emailHeader/emailType!='GOODWILL_REFUND') and (SFEmailMessages/emailHeader/emailType!='ORDER_DESPATCHED') and (SFEmailMessages/emailHeader/emailType!='PACK_ABANDONMENT')">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
@@ -61,7 +61,48 @@
 
 	</xsl:if>
 
+	<xsl:if test="SFEmailMessages/emailHeader/emailType='PACK_ABANDONMENT'">
 
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Subtotal
+		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<xsl:call-template name="currency"/>
+			<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/Item/UnitPrice), '###,###,###,###,###.00')"/>
+		</td>
+	</tr>
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/Item/DeliveryChargeRefundValue !='0.00'">
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Delivery
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/Item/DeliveryChargeRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/Item/GiftBoxRefundValue !='0.00'">
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Gift Box
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/Item/GiftBoxRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+
+	<xsl:if test="SFEmailMessages/EmailDataArea/Item/TotalRefundValue !='0.00'">
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+				<strong style="font-weight: bold;">Refund Total</strong>
+	</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+
+	<xsl:call-template name="currency" /><xsl:value-of select="format-number(SFEmailMessages/EmailDataArea/Item/TotalRefundValue,'###,###,###.00')"/>
+
+	</td></tr>
+	</xsl:if>
+
+	</xsl:if>
 
 	<xsl:if test="SFEmailMessages/emailHeader/emailType='ORDER_DESPATCHED'">
 
