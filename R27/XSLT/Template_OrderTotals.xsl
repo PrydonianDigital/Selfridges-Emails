@@ -32,7 +32,7 @@
 
 	</xsl:if>
 
-	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') and (SFEmailMessages/emailHeader/emailType!='GOODWILL_REFUND')">
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='RETURN_RECEIVED') and (SFEmailMessages/emailHeader/emailType!='GOODWILL_REFUND') and (SFEmailMessages/emailHeader/emailType!='ORDER_DESPATCHED')">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
@@ -55,6 +55,27 @@
 
 			<xsl:if test="SFEmailMessages/emailHeader/emailType='INSTORE_REFUND'">
 				<xsl:value-of select="format-number(sum(SFEmailMessages/EmailDataArea/ReturnDetails/ReturnedItems/ReturnedItem/RefundedValue), '###,###,###,###,###.00')"/>
+			</xsl:if>
+		</td>
+	</tr>
+
+	</xsl:if>
+
+
+
+	<xsl:if test="SFEmailMessages/emailHeader/emailType='ORDER_DESPATCHED'">
+
+	<xsl:variable name="currentDelivery" select="SFEmailMessages/EmailDataArea/DespatchedDeliveryGroupId" />
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Subtotal
+		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<xsl:call-template name="currency"/>
+			<xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item">
+				<xsl:call-template name="sumPriceNoVAT">
+					<xsl:with-param name="pList" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]/Items/Item[Status!='X']"/>
+				</xsl:call-template>
 			</xsl:if>
 		</td>
 	</tr>
@@ -121,6 +142,58 @@
 
 	<!-- end GOODWILL -->
 
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType='ORDER_DESPATCHED')">
+
+	<xsl:variable name="currentDelivery" select="SFEmailMessages/EmailDataArea/DespatchedDeliveryGroupId" />
+
+	<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup[DeliveryGroupId=$currentDelivery]">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Delivery
+		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<xsl:if test="ShippingPrice !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="ShippingPrice"/></span> </xsl:if>
+		</td>
+	</tr>
+
+	<xsl:if test="Discount !='0.00'">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Discount
+		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<xsl:if test="Discount !=''"><xsl:variable name="OD" select="Discount"/><span>-<xsl:call-template name="currency"/><xsl:apply-templates select="currency" /><xsl:value-of select="translate($OD, '-', '')"/></span></xsl:if>
+		</td>
+	</tr>
+
+	</xsl:if>
+
+	<xsl:if test="Tax !='0.00'">
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="left" valign="top">
+			Import Duties
+		</td><td class="textright" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 14px; Margin: 0; padding: 10px;" align="right" valign="top">
+			<xsl:if test="Tax !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="Tax"/></span> </xsl:if>
+		</td>
+	</tr>
+
+	</xsl:if>
+
+	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+		<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
+			<strong style="font-weight: bold;">Total</strong>
+		</td><td class="textright total" style="border-collapse: collapse !important; vertical-align: top; text-align: right; font-weight: bold; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="right" valign="top">
+		<xsl:if test="Price !=''"><span><xsl:call-template name="currency"/><xsl:value-of select="Price"/></span> </xsl:if>
+		</td>
+	</tr>
+
+	</xsl:for-each>
+
+	</xsl:if>
+
+	<xsl:if test="(SFEmailMessages/emailHeader/emailType!='ORDER_DESPATCHED')">
+
 	<xsl:for-each select="SFEmailMessages/EmailDataArea/Order/OrderHeader">
 
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
@@ -178,6 +251,7 @@
 
 	</xsl:if-->
 
+
 	<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
 		<td class="total" style="border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 270px; color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold; line-height: 21px; font-size: 18px; Margin: 0; padding: 10px;" align="left" valign="top">
 			<strong style="font-weight: bold;">Total</strong>
@@ -187,6 +261,8 @@
 	</tr>
 
 	</xsl:for-each>
+
+	</xsl:if>
 
 	<xsl:if test="(SFEmailMessages/emailHeader/emailType='RETURN_REFUNDED')">
 		<tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
