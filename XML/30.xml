@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="30_OrderConfirmation.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ORDER_RECEIVED</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Ms</Title>
+                <FirstName>Jasmine</FirstName>
+                <Surname>Dosani</Surname>
+                <Email>jasmine.dosani@pmcretail.com</Email>
+                <ContactNumber>9876787678</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+<Order>
+                        <OrderHeader>
+                                <OrderId>130008769</OrderId>
+                                <OrderStatus>C</OrderStatus>
+                                <OrderPrice>230.00</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>
+                                <StaffDiscount>0.00</StaffDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>0.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130008769-01</DeliveryGroupId>
+                                                <Status>B</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName></DeliveryName>
+                                                                        <Address1>The Bullring</Address1>
+                                                                        <Address2>Upper Mall East</Address2>
+																		 <Address3></Address3>
+                                                                        <City>Birmingham</City>
+                                                                        <County>Birmingham</County>
+                                                                        <PostCode>B5 4BP</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone></ContactPhone>
+                                                                        <HomePhone></HomePhone>
+                                                                        <MobilePhone></MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTORE</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate></EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd></EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20151004</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>230.00</Price>
+                                                <Discount>0.00</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>0.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>47318328</SkuCode>
+                                                                        <Description>Johnstons cashmere tartan scarf</Description>
+                                                                        <Brand>JOHNSTONS</Brand>
+                                                                        <Colour>Royal stewart</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/133-79005136-WA000016KU0303_ROYALSTEWART_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/133-79005136-WA000016KU0303_ROYALSTEWART_M?$PDP_M_ALL$</thumbnail>
+ <productUrl>http://www.test1.selfridges.com/GB/en/cat/johnstons-johnstons-cashmere-tartan-scarf_133-79005136-WA000016KU0303/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>90.00</UnitPrice>
+                                                                        <TotalPrice>90.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text>text 1 2 3</Text>
+
+                                                                                                <Colour>Blue-#0000FF</Colour>
+
+                                                                                                <Font>Arial</Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                                <Item>
+                                                                        <SkuCode>47318281</SkuCode>
+                                                                        <Description>Cashmere plain scarf</Description>
+                                                                        <Brand>JOHNSTONS</Brand>
+                                                                        <Colour>Camel</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/133-79005136-WA000016SB2029_CAMEL_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size></Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/133-79005136-WA000016SB2029_CAMEL_M?$PDP_M_ALL$</thumbnail>
+ <productUrl>http://www.test1.selfridges.com/GB/en/cat/johnstons-cashmere-plain-scarf_133-79005136-WA000016SB2029/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>90.00</UnitPrice>
+                                                                        <TotalPrice>90.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>20.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text>te</Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+</Order>
+        </EmailDataArea>
+</SFEmailMessages>

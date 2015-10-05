@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="200_PackAbandonment.xsl"?>
+
+<SFEmailMessages>
+	<emailHeader>
+		<emailType>PACK_ABANDONMENT</emailType>
+	</emailHeader>
+	<Recipient>
+               <Title>Mr</Title>
+               <FirstName>vijay</FirstName>
+               <Surname>kayyam</Surname>
+               <Email>vijay.20886@gmail.com</Email>
+               <ContactNumber>8736587436583243</ContactNumber>
+               <MobileNumber></MobileNumber>
+               <CommunicationPreference>email</CommunicationPreference>
+	</Recipient>
+	<EmailDataArea>
+	<OrderId>130008523</OrderId>
+	<Currency>GBP</Currency>
+	<Item>
+               <SkuCode>89936146</SkuCode>
+               <Description>Contrast&amp;ndash;lining eight card billfold wallet</Description>
+               <Brand>LAUNER</Brand>
+               <Colour>Brown/green</Colour>
+               <colourSwatch>http://images.selfridges.com/is/image/selfridges/111-81024568-805BROWNCALFGREENINNER_BROWNGREEN_SW?$PDP_SWATCH$</colourSwatch>
+               <Size></Size>
+               <thumbnail>http://images.selfridges.com/is/image/selfridges/111-81024568-805BROWNCALFGREENINNER_BROWNGREEN_M?$PDP_M_ALL$</thumbnail>
+               <productUrl>http://www.test1.selfridges.com/GB/en/cat/launer-contrast-lining-eight-card-billfold-wallet_111-81024568-805BROWNCALFGREENINNER/</productUrl>
+               <Qty>1</Qty>
+               <UnitPrice>154.75</UnitPrice>
+               <TotalPrice>154.75</TotalPrice>
+               <Discount>-85.12</Discount>
+               <Tax>52.76</Tax>
+               <DeductedVAT>0.00</DeductedVAT>
+               <Status>X</Status>
+               <PaymentStatus>Cancelled</PaymentStatus>
+               <WonderRoomItem>false</WonderRoomItem>
+               <WonderRoomBrand></WonderRoomBrand>
+               <DeliveryChargeRefundValue>25.00</DeliveryChargeRefundValue>
+               <GiftBoxRefundValue>0.00</GiftBoxRefundValue>
+               <TaxRefundValue>52.76</TaxRefundValue>
+               <VATRefundValue>0.00</VATRefundValue>
+               <TotalRefundValue>179.75</TotalRefundValue>
+       </Item>
+
+       </EmailDataArea>
+</SFEmailMessages>

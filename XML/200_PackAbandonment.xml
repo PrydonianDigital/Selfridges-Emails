@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="200_PackAbandonment.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>PACK_ABANDONMENT</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mr</Title>
+                <FirstName>vijay</FirstName>
+                <Surname>kayyam</Surname>
+                <Email>vijay.20886@gmail.com</Email>
+                <ContactNumber>8736587436583243</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+ <EmailDataArea>
+
+        <OrderId>130009557</OrderId>
+        <Currency>GBP</Currency>
+        <Item>
+                <SkuCode>37884451</SkuCode>
+                <Description>Bescu belt</Description>
+                <Brand>DIESEL</Brand>
+                <Colour>Black</Colour>
+                <colourSwatch>http://images.selfridges.com/is/image/selfridges/766-10023-00S8Z6_BLACK_SW?$PDP_SWATCH$</colourSwatch>
+                <Size>30</Size>
+                <thumbnail>http://images.selfridges.com/is/image/selfridges/766-10023-00S8Z6_BLACK_M?$PDP_M_ALL$</thumbnail>
+                <productUrl>http://www.test1.selfridges.com/GB/en/cat/diesel-bescu-belt_766-10023-00S8Z6/</productUrl>
+                <Qty>1</Qty>
+                <UnitPrice>16.92</UnitPrice>
+                <TotalPrice>16.92</TotalPrice>
+                <Discount>-3.38</Discount>
+                <Tax>5.40</Tax>
+                <DeductedVAT>0.00</DeductedVAT>
+                <Status>X</Status>
+                <PaymentStatus>Cancelled</PaymentStatus>
+                <WonderRoomItem>false</WonderRoomItem>
+                <WonderRoomBrand></WonderRoomBrand>
+                <DeliveryChargeRefundValue>0.00</DeliveryChargeRefundValue>
+                <GiftBoxRefundValue>5.00</GiftBoxRefundValue>
+                <TaxRefundValue>5.40</TaxRefundValue>
+                <VATRefundValue>0.00</VATRefundValue>
+                <TotalRefundValue>23.94</TotalRefundValue>
+        </Item>
+
+        </EmailDataArea>
+</SFEmailMessages>

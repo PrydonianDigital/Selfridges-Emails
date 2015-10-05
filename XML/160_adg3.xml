@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="160_OrderCancellationAbandonedDeliveryGroup.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ABANDONED_DELIVERY_GROUP</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mr</Title>
+                <FirstName>vijay</FirstName>
+                <Surname>kayyam</Surname>
+                <Email>vijay.20886@gmail.com</Email>
+                <ContactNumber>8736587436583243</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+        <AbandonedDeliveryGroupId>130008776-01</AbandonedDeliveryGroupId>
+        <Order>
+                                        <OrderHeader>
+                                <OrderId>130008776</OrderId>
+                                <OrderStatus>X</OrderStatus>
+                                <OrderPrice>80.00</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>^
+<OrderTax>0.00</OrderTax>
+                                <ShippingPrice>5.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130008776-01</DeliveryGroupId>
+                                                <Status>X</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr vijay kayyam</DeliveryName>
+                                                                        <Address1>104 Fenman Gardens</Address1>
+                                                                        <Address2></Address2>
+                                                                        <Address3></Address3>
+                                                                        <City>ILFORD</City>
+                                                                        <County></County>
+                                                                        <PostCode>IG3 9TS</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>8736587436583243</ContactPhone>
+                                                                        <HomePhone>8736587436583243</HomePhone>
+                                                                        <MobilePhone>8736587436583243</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTD</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate>20151005</EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20151005</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>80.00</Price>
+                                                <Discount>0.00</Discount>
+                                                <Tax>0.00</Tax>
+<ShippingPrice>5.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>40602967</SkuCode>
+                                                                        <Description>Coloured regular-fit tapered jeans</Description>
+                                                                        <Brand>THE KOOPLES</Brand>
+                                                                        <Colour>Red</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/963-10097-HP818FIT_RED_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>31</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/963-10097-HP818FIT_RED_M?$PDP_M_ALL$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/the-kooples-coloured-regular-fit-tapered-jeans_963-10097-HP818FIT/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>70.00</UnitPrice>
+                                                                        <TotalPrice>70.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>X</Status>
+                                                                        <PaymentStatus>Cancelled</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+</Item>
+
+                                                                <Item>
+                                                                        <SkuCode>45402135</SkuCode>
+                                                                        <Description>Two Six Nine Fragrance 50ml</Description>
+                                                                        <Brand>FRAGRANCE LAB</Brand>
+                                                                        <Colour></Colour>
+                                                                        <colourSwatch></colourSwatch>
+                                                                        <Size>50ml</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/483-220414-TFLPIE269_M?$PDP_M_ALL$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/fragrance-lab-two-six-nine-fragrance-50ml_483-220414-TFLPIE269/</productUrl>
+                                                                        <Qty>1</Qty>
+                                                                        <UnitPrice>5.00</UnitPrice>
+                                                                        <TotalPrice>5.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>X</Status>
+                                                                        <PaymentStatus>Cancelled</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+  </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+        </Order>
+        </EmailDataArea>
+</SFEmailMessages>

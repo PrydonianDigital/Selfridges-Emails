@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="160_OrderCancellationAbandonedDeliveryGroup.xsl"?>
+
+<SFEmailMessages>
+        <emailHeader>
+                <emailType>ABANDONED_DELIVERY_GROUP</emailType>
+        </emailHeader>
+        <Recipient>
+                <Title>Mr</Title>
+                <FirstName>vijay</FirstName>
+                <Surname>kayyam</Surname>
+                <Email>vijay.20886@gmail.com</Email>
+                <ContactNumber>8736587436583243</ContactNumber>
+                <MobileNumber></MobileNumber>
+                <CommunicationPreference>email</CommunicationPreference>
+        </Recipient>
+        <EmailDataArea>
+
+        <AbandonedDeliveryGroupId>130008949-01</AbandonedDeliveryGroupId>
+        <Order>
+                                        <OrderHeader>
+                                <OrderId>130008949</OrderId>
+                                <OrderStatus>C</OrderStatus>
+                                <OrderPrice>120.00</OrderPrice>
+
+                                <OrderDiscount>0.00</OrderDiscount>
+
+                                <OrderTax>0.00</OrderTax>
+                                <ShippingPrice>10.00</ShippingPrice>
+                                <DeductedVAT>0.00</DeductedVAT>
+                                <Currency>GBP</Currency>
+                        </OrderHeader>
+                        <OrderDeliveryGroups>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130008949-01</DeliveryGroupId>
+                                                <Status>X</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr vijay kayyam</DeliveryName>
+                                                                        <Address1>4 Cornerfield</Address1>
+                                                                        <Address2></Address2>
+                                                                        <Address3></Address3>
+                                                                        <City>HATFIELD</City>
+                                                                        <County>Hertfordshire</County>
+<PostCode>AL10 0UG</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>07769359185</ContactPhone>
+                                                                        <HomePhone>07769359185</HomePhone>
+                                                                        <MobilePhone>07769359185</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTD</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate>20151006</EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20151006</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>60.00</Price>
+                                                <Discount>0.00</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>5.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>40471136</SkuCode>
+                                                                        <Description>Miami T trousers</Description>
+                                                                        <Brand>REISS</Brand>
+                                                                        <Colour>Stone</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/903-10025-21300703_STONE_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>32</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/903-10025-21300703_STONE_M?$PDP_M_ALL$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/reiss-miami-t-trousers_903-10025-21300703/</productUrl>
+                                                                        <Qty>1</Qty>
+<Qty>1</Qty>
+                                                                        <UnitPrice>55.00</UnitPrice>
+                                                                        <TotalPrice>55.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>X</Status>
+                                                                        <PaymentStatus>Cancelled</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                                        <OrderDeliveryGroup>
+                                                <DeliveryGroupId>130008949-02</DeliveryGroupId>
+                                                <Status>B</Status>
+
+                                                                <DeliveryAddress>
+                                                                        <DeliveryName>Mr vijay kayyam</DeliveryName>
+                                                                        <Address1>104 Fenman Gardens</Address1>
+                                                                        <Address2></Address2>
+                                                                        <Address3></Address3>
+                                                                        <City>ILFORD</City>
+                                                                        <County></County>
+<PostCode>IG3 9TS</PostCode>
+                                                                        <CountryCode>GB</CountryCode>
+                                                                        <DeliveryInstruction></DeliveryInstruction>
+                                                                        <ContactPhone>8736587436583243</ContactPhone>
+                                                                        <HomePhone>8736587436583243</HomePhone>
+                                                                        <MobilePhone>8736587436583243</MobilePhone>
+                                                                        <Email></Email>
+                                                                </DeliveryAddress>
+
+                                                <hasWonderRoomItems>false</hasWonderRoomItems>
+
+
+                                                        <DeliveryMethod>UKSTD</DeliveryMethod>
+
+                                                                <EarliestDeliveryDate>20151006</EarliestDeliveryDate>
+                                                                <EarliestDeliveryTimeSlotEnd>060000</EarliestDeliveryTimeSlotEnd>
+                                                                <LatestDeliveryDate>20151006</LatestDeliveryDate>
+                                                                <LatestDeliveryTimeSlotEnd>163000</LatestDeliveryTimeSlotEnd>
+
+                                                <Price>60.00</Price>
+                                                <Discount>0.00</Discount>
+                                                <Tax>0.00</Tax>
+                                                <ShippingPrice>5.00</ShippingPrice>
+                                                <DeductedVAT>0.00</DeductedVAT>
+                                                <Currency>GBP</Currency>
+                                                <Items>
+
+                                                                <Item>
+                                                                        <SkuCode>40471136</SkuCode>
+                                                                        <Description>Miami T trousers</Description>
+                                                                        <Brand>REISS</Brand>
+                                                                        <Colour>Stone</Colour>
+                                                                        <colourSwatch>http://images.selfridges.com/is/image/selfridges/903-10025-21300703_STONE_SW?$PDP_SWATCH$</colourSwatch>
+                                                                        <Size>32</Size>
+                                                                        <thumbnail>http://images.selfridges.com/is/image/selfridges/903-10025-21300703_STONE_M?$PDP_M_ALL$</thumbnail>
+                                                                        <productUrl>http://www.test1.selfridges.com/GB/en/cat/reiss-miami-t-trousers_903-10025-21300703/</productUrl>
+                                                                        <Qty>1</Qty>
+<UnitPrice>55.00</UnitPrice>
+                                                                        <TotalPrice>55.00</TotalPrice>
+                                                                        <Discount>0.00</Discount>
+                                                                        <Tax>0.00</Tax>
+                                                                        <DeductedVAT>0.00</DeductedVAT>
+                                                                        <Status>C</Status>
+                                                                        <PaymentStatus>Pending</PaymentStatus>
+                                                                        <WonderRoomItem>false</WonderRoomItem>
+                                                                        <WonderRoomBrand></WonderRoomBrand>
+                                                                        <TrackingCode></TrackingCode>
+                                                                        <giftMessage></giftMessage>
+                                                                        <giftBox>false</giftBox>
+                                                                        <VATRate>0.00</VATRate>
+
+                                                                                <Personalization>
+                                                                                        <Text></Text>
+
+                                                                                                <Colour></Colour>
+
+                                                                                                <Font></Font>
+
+                                                                                </Personalization>
+
+                                                                </Item>
+
+                                                </Items>
+                                        </OrderDeliveryGroup>
+
+                        </OrderDeliveryGroups>
+
+        </Order>
+        </EmailDataArea>
+</SFEmailMessages>
