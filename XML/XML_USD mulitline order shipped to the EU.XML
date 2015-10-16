@@ -26,9 +26,9 @@
 				<OrderDiscount>0.00</OrderDiscount>
 				<StaffDiscount>0.00</StaffDiscount>
 
-				<OrderTax>0.00</OrderTax>
+				<OrderTax>10.00</OrderTax>
 				<ShippingPrice>24.00</ShippingPrice>
-				<DeductedVAT>0.00</DeductedVAT>
+				<DeductedVAT>10.00</DeductedVAT>
 				<Currency>USD</Currency>
 			</OrderHeader>
 			<OrderDeliveryGroups>
@@ -64,7 +64,7 @@
 								<LatestDeliveryTimeSlotEnd>000000</LatestDeliveryTimeSlotEnd>
 
 						<Price>294.25</Price>
-						<Discount>0.00</Discount>
+						<Discount>10.00</Discount>
 						<Tax>0.00</Tax>
 						<ShippingPrice>24.00</ShippingPrice>
 						<DeductedVAT>0.00</DeductedVAT>
@@ -83,7 +83,7 @@
 									<Qty>1</Qty>
 									<UnitPrice>185.31</UnitPrice>
 									<TotalPrice>185.31</TotalPrice>
-									<Discount>0.00</Discount>
+									<Discount>-10.00</Discount>
 									<Tax>0.00</Tax>
 									<DeductedVAT>0.00</DeductedVAT>
 									<Status>C</Status>
