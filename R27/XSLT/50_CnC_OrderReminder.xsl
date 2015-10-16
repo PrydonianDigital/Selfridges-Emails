@@ -32,11 +32,11 @@
 
 							<xsl:when test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/hasWonderRoomItems='True'">
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your recent <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City"/></xsl:if></strong>.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your recent <strong class="name" style="font-weight: bold;"><xsl:value-of select="translate(SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/Items/Item[WonderRoomItem='True']/WonderRoomBrand, $special, $translated)"/></strong> order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/StoreAddress/storeNickName!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/StoreAddress/storeNickName"/></xsl:if></strong>.</p>
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Remember, we can only hold on to it for 5 days from <strong class="name" style="font-weight: bold;">
 <xsl:call-template name="formatdate">
-	<xsl:with-param name="datestr" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/LatestDeliveryDate"/>
+	<xsl:with-param name="datestr" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/CollectionDate"/>
 </xsl:call-template></strong>. After that, the order will be cancelled and you'll be refunded.</p>
 
 								<p><strong style="font-weight: bold;">What next?</strong></p>
@@ -57,11 +57,11 @@
 
 							<xsl:otherwise>
 
-								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your recent order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/DeliveryAddress/City"/></xsl:if></strong>.</p>
+								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Your recent order <strong class="name" style="font-weight: bold;"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderHeader/OrderId"/></strong> is ready and waiting for you at <strong style="font-weight: bold;">Selfridges <xsl:if test="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/StoreAddress/storeNickName!=''"><xsl:value-of select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/StoreAddress/storeNickName"/></xsl:if></strong>.</p>
 
 								<p style="color: #545454; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: normal; text-align: left; line-height: 21px; font-size: 14px; Margin: 0 0 14px; padding: 0;" align="left">Remember, we can only hold on to it for 7 days from  <strong style="font-weight: bold;">
 								<xsl:call-template name="formatdate">
-									<xsl:with-param name="datestr" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/LatestDeliveryDate"/>
+									<xsl:with-param name="datestr" select="SFEmailMessages/EmailDataArea/Order/OrderDeliveryGroups/OrderDeliveryGroup/CollectionDate"/>
 								</xsl:call-template>
 								</strong>. After that, your order will be cancelled and you'll be refunded.
 								</p>
